@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "schemaVersion": "0.0",
+    "$id": "https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterTank/schema.json",
+    "title": "WasteWaterTreatment - Tank",
+    "description": "This entity contains an harmonised description of a generic Tank made for the Wastewater treatment domain. For a given type of tank, all possible variables that can be measures are listed as properties. In the description property, the type of tank (anaerobic, pre-dinitrification, nitrification etc.)can be defined.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "tank"
+                    ],
+                    "description": "NGSI-LD Entity Type"
+                },
+                "tss": {
+                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/tss"
+                },
+                "nh4": {
+                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/nh4"
+                },
+                "no3": {
+                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/no3"
+                },
+                "do": {
+                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/do"
+                },
+                "redox": {
+                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/redox"
+                },
+                "sludgeLevel": {
+                    "type": "number",
+                    "description": "Property. Model: https://schema.org/Number. Units: 'metre'. Sludge Level measured in a secondary settler tank"
+                },
+                "tn": {
+                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/tn"
+                },
+                "temperature": {
+                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/temperature"
+                },
+                "pH": {
+                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/pH"
+                },
+                "startsAt": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "Relationship. A relationship indicating the entity the tank is connected to in the upstream point"
+                },
+                "endsAt": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "Relationship. A relationship indicating the entity the tank is connected to in the downstream point"
+                }
+            }
+        }
+    ],
+    "required": [
+        "id",
+        "type",
+        "name",
+        "description"
+    ]
+}
