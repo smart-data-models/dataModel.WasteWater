@@ -16,9 +16,9 @@
             "properties": {
                 "type": "string",
                 "enum": [
-                    "blower"
+                    "Blower"
                 ],
-                "description": "NGSI-LD Entity Type"
+                "description": "Property. NGSI-LD Entity Type. It has to be Blower"
             },
             "airflow": {
                 "type": "number",

@@ -16,9 +16,9 @@
                 "type": {
                     "type": "string",
                     "enum": [
-                        "offGasStack"
+                        "OffGasStack"
                     ],
-                    "description": "NGSI-LD Entity Type"
+                    "description": "Property. NGSI-LD Entity Type. it has to be OffGasStack"
                 },
                 "n2o": {
                     "type": "number",

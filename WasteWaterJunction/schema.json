@@ -17,9 +17,9 @@
                 "type": {
                     "type": "string",
                     "enum": [
-                        "junction"
+                        "WasteWaterJunction"
                     ],
-                    "description": "NGSI-LD Entity Type"
+                    "description": "Property. It has to be WasteWaterJunction. NGSI-LD Entity Type"
                 },
                 "tss": {
                     "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/tss"
