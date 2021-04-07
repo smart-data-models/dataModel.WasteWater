@@ -1,11 +1,13 @@
 Entität: WasteWaterJunction  
 ===========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterJunction/LICENSE.md)  
+Globale Beschreibung: **Dieses Element enthält eine harmonisierte Beschreibung einer generischen Abzweigung, die für den Bereich der Abwasserbehandlung erstellt wurde. Abzweigungen können in bestimmten Abschnitten der Aufbereitungsanlage vorhanden sein. In der Abwasseraufbereitung ist die Abzweigung am nützlichsten, wenn sie ein Standort eines Sensors ist, der eine bestimmte Variable misst.**  
 
 ## Liste der Eigenschaften  
 
-Erforderliche Eigenschaften  
-- Keine erforderlichen Eigenschaften  ## Datenmodell Beschreibung der Eigenschaften  
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `bod`: Propety. Konzentration des biologischen Sauerstoffbedarfs, gemessen im Zulauf oder Ablauf.  - `cod`: Chemische Sauerstoffbedarfskonzentration, gemessen im Zulauf oder Ablauf.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `do`: Konzentration des gelösten Sauerstoffs, gemessen im Abwasser.  - `emissionFlow`: Gasemissionsvolumenstrom, der an einer Verbindungsstelle gemessen wird, bevor er in einem Abgaskamin emittiert wird.  - `endsAt`: Eine Beziehung, die die Entität angibt, mit der der Knotenpunkt im nachgelagerten Punkt verbunden ist  - `flowrate`: Durchflussmenge des Abwassers.  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `name`: Der Name dieses Elements.  - `nh4`: Ammoniakkonzentration, gemessen in einem Tank.  - `no3`: Nitratkonzentration im Abwasser gemessen.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pH`: Der pH-Wert des Wassers wird gemessen.  - `po4`: Ortho-Phosphat-Konzentration im Abwasser gemessen.  - `redox`: Redoxlevel gemessen im Abwasser.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `startsAt`: Eine Beziehung, die die Entität angibt, mit der der Knotenpunkt im vorgelagerten Punkt verbunden ist  - `temperature`: Temperatur des Abwassers gemessen.  - `tic`: Gesamte anorganische Kohlenstoffkonzentration, gemessen im Zulauf oder Ablauf.  - `tn`: Gesamt-Stickstoffkonzentration, gemessen im Abwasser.  - `toc`: Konzentration des gesamten organischen Kohlenstoffs, gemessen im Zulauf oder Ablauf.  - `tss`: Konzentration der gesamten suspendierten Feststoffe, die in einem Tank gemessen wird.  - `type`: Es muss WasteWaterJunction sein. NGSI-LD Entity Typ    
+Erforderliche Eigenschaften  
+- `description`  - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -355,9 +357,187 @@ WasteWaterJunction:
 ## Beispiel-Nutzlasten  
 #### WasteWaterJunction NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für eine WasteWaterJunction im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
+  "type": "WasteWaterJunction",  
+  "name": "Junction 2",  
+  "description": "A junction in the treatment lane representing a sampling location for the effluent wastewater.",  
+  "nh4": 0.5,  
+  "no3": 5.2,  
+  "do": 1.2,  
+  "redox": 250,  
+  "tn": 7.18,  
+  "toc": 16.28,  
+  "po4": 0.29,  
+  "bod": 2.44,  
+  "cod": 36.6,  
+  "flowrate": 27650,  
+  "temperature": 16,  
+  "pH": 7.8,  
+  "startsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
+}  
+```  
 #### WasteWaterJunction NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für eine WasteWaterJunction im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
+  "type": "WasteWaterJunction",  
+  "name": {  
+    "type": "Text",  
+    "value": "Junction 2"  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": "A junction in the treatment lane representing a sampling location for the effluent wastewater."  
+  },  
+  "nh4": {  
+    "type": "Number",  
+    "value": 0.5  
+  },  
+  "no3": {  
+    "type": "Number",  
+    "value": 5.2  
+  },  
+  "do": {  
+    "type": "Number",  
+    "value": 1.2  
+  },  
+  "redox": {  
+    "type": "Number",  
+    "value": 250  
+  },  
+  "tn": {  
+    "type": "Number",  
+    "value": 7.18  
+  },  
+  "toc": {  
+    "type": "Number",  
+    "value": 16.28  
+  },  
+  "po4": {  
+    "type": "Number",  
+    "value": 0.29  
+  },  
+  "bod": {  
+    "type": "Number",  
+    "value": 2.44  
+  },  
+  "cod": {  
+    "type": "Number",  
+    "value": 36.6  
+  },  
+  "flowrate": {  
+    "type": "Number",  
+    "value": 27650  
+  },  
+  "temperature": {  
+    "type": "Number",  
+    "value": 16  
+  },  
+  "pH": {  
+    "type": "Number",  
+    "value": 7.8  
+  },  
+  "startsAt": {  
+    "type": "Relationship",  
+    "value": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
+  }  
+}  
+```  
 #### WasteWaterJunction NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für eine WasteWaterJunction im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "@context": "https://smartdatamodels.org/context.jsonld",  
+  "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
+  "type": "WasteWaterJunction",  
+  "name": "Junction 2",  
+  "description": "A junction in the treatment lane representing a sampling location for the effluent wastewater.",  
+  "nh4": 0.5,  
+  "no3": 5.2,  
+  "do": 1.2,  
+  "redox": 250,  
+  "tn": 7.18,  
+  "toc": 16.28,  
+  "po4": 0.29,  
+  "bod": 2.44,  
+  "cod": 36.6,  
+  "flowrate": 27650,  
+  "temperature": 16,  
+  "pH": 7.8,  
+  "startsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
+}  
+```  
 #### WasteWaterJunction NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für eine WasteWaterJunction im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+[  
+  {  
+    "@context": "https://smartdatamodels.org/context.jsonld",  
+    "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
+    "type": "WasteWaterJunction",  
+    "name": {  
+      "type": "Property",  
+      "value": "Junction 2"  
+    },  
+    "description": {  
+      "type": "Property",  
+      "value": "A junction in the treatment lane representing a sampling location for the effluent wastewater."  
+    },  
+    "nh4": {  
+      "type": "Property",  
+      "value": 0.5  
+    },  
+    "no3": {  
+      "type": "Property",  
+      "value": 5.2  
+    },  
+    "do": {  
+      "type": "Property",  
+      "value": 1.2  
+    },  
+    "redox": {  
+      "type": "Property",  
+      "value": 250  
+    },  
+    "tn": {  
+      "type": "Property",  
+      "value": 7.18  
+    },  
+    "toc": {  
+      "type": "Property",  
+      "value": 16.28  
+    },  
+    "po4": {  
+      "type": "Property",  
+      "value": 0.29  
+    },  
+    "bod": {  
+      "type": "Property",  
+      "value": 2.44  
+    },  
+    "cod": {  
+      "type": "Property",  
+      "value": 36.6  
+    },  
+    "flowrate": {  
+      "type": "Property",  
+      "value": 27650  
+    },  
+    "temperature": {  
+      "type": "Property",  
+      "value": 16  
+    },  
+    "pH": {  
+      "type": "Property",  
+      "value": 7.8  
+    },  
+    "startsAt": {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
+    }  
+  }  
+]  
+```  
