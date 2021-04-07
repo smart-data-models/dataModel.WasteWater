@@ -1,11 +1,13 @@
 Entité : Blower  
 ===============  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.WasteWater/blob/master/Blower/LICENSE.md)  
+Description globale : **Cette entité contient une description harmonisée d'un ventilateur conçu pour le domaine du traitement des eaux usées. L'entité représente un ventilateur utilisé à des fins d'aération dans le processus de traitement des eaux usées. Des paramètres importants sont mesurés pour réguler et mesurer la quantité de flux d'air fournie au réservoir d'aération dans le bioréacteur. La consommation d'énergie d'une soufflante est également une information importante pour le contrôle et l'optimisation en temps réel de la station d'épuration des eaux usées.  
 
 ## Liste des propriétés  
 
-Propriétés requises  
-- Aucune propriété requise  ## Description des propriétés du modèle de données  
+- `address`: L'adresse postale  - `airflow`: Flux d'air soufflé par une soufflerie.  - `airflowEstimation`: Estimation de l'écoulement de l'air par simulation de capteur logiciel AI.  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `endsAt`: Une relation indiquant l'entité à laquelle le souffleur est connecté dans le point aval.  - `energy`: Énergie consommée par un ventilateur.  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pressure`: Mesure de la pression dans la soufflerie.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `startsAt`: Une relation indiquant l'entité à laquelle le souffleur est connecté dans le point amont.  - `type`: Type d'entité NGSI-LD. Il doit s'agir de Blower    
+Propriétés requises  
+- `description`  - `id`  - `type`  ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -290,9 +292,85 @@ Blower:
 ## Exemples de charges utiles  
 #### Blower NGSI-v2 valeurs-clés Exemple  
 Voici un exemple de souffleur au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Blower:Blower2",  
+  "type": "Blower",  
+  "name": "Blower 2",  
+  "description": "Blower 2 providing aeration for wastewater treatment process.",  
+  "airflow": 368.75,  
+  "energy": 229.89,  
+  "pressure": 84.06  
+}  
+```  
 #### Souffleur NGSI-v2 normalisé Exemple  
 Voici un exemple de souffleur au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Blower:Blower2",  
+  "type": "Blower",  
+  "name": {  
+    "type": "Text",  
+    "value": "Blower 2"  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": "Blower 2 providing aeration for wastewater treatment process."  
+  },  
+  "airflow": {  
+    "type": "Number",  
+    "value": 368.75  
+  },  
+  "energy": {  
+    "type": "Number",  
+    "value": 229.89  
+  },  
+  "pressure": {  
+    "type": "Number",  
+    "value": 84.06  
+  }  
+}  
+```  
 #### Souffleur NGSI-LD valeurs-clés Exemple  
 Voici un exemple de souffleur au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "@context": "https://smartdatamodels.org/context.jsonld",  
+  "id": "urn:ngsi-ld:Blower:Blower2",  
+  "type": "Blower",  
+  "name": "Blower 2",  
+  "description": "Blower 2 providing aeration for wastewater treatment process.",  
+  "airflow": 368.75,  
+  "energy": 229.89,  
+  "pressure": 84.06  
+}  
+```  
 #### Souffleur NGSI-LD normalisé Exemple  
 Voici un exemple de souffleur au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "@context": "https://smartdatamodels.org/context.jsonld",  
+  "id": "urn:ngsi-ld:Blower:Blower2",  
+  "type": "Blower",  
+  "name": {  
+    "type": "Property",  
+    "value": "Blower 2"  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "Blower 2 providing aeration for wastewater treatment process."  
+  },  
+  "airflow": {  
+    "type": "Property",  
+    "value": 368.75  
+  },  
+  "energy": {  
+    "type": "Property",  
+    "value": 229.89  
+  },  
+  "pressure": {  
+    "type": "Property",  
+    "value": 84.06  
+  }  
+}  
+```  
