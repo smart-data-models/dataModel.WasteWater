@@ -15,7 +15,7 @@
             "type": "Property",
             "value": 380
         },
-        "https://smart-data-models.github.io/data-models/terms.jsonld#/definitions/co2": {
+        "co2": {
             "type": "Property",
             "value": 1.8
         },
@@ -27,11 +27,11 @@
             "type": "Property",
             "value": 18.6
         },
-        "https://smart-data-models.github.io/data-models/terms.jsonld#/definitions/startsAt": {
+        "startsAt": {
             "type": "Relationship",
             "object": "urn:ngsi-ld:WasteWaterJunction:junction3"
         },
-        "https://smart-data-models.github.io/data-models/terms.jsonld#/definitions/endsAt": {
+        "endsAt": {
             "type": "Relationship",
             "object": "urn:ngsi-ld:WasteWaterJunction:junction4"
         }
