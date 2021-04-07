@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/schema#",
   "$id": "https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWater-schema.json",
-  "title": "FIWARE - Wastewater Treatment base schema",
+  "title": "Smart Data Models - Wastewater Treatment base schema",
   "descriptions": "Common NGSI-LD definitions of a wastewater treatment data models",
   "type": "object",
   "definitions": {
