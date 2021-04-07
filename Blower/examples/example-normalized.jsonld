@@ -1,0 +1,25 @@
+{
+  "@context": "https://smartdatamodels.org/context.jsonld",
+  "id": "urn:ngsi-ld:Blower:Blower2",
+  "type": "Blower",
+  "name": {
+    "type": "Property",
+    "value": "Blower 2"
+  },
+  "description": {
+    "type": "Property",
+    "value": "Blower 2 providing aeration for wastewater treatment process."
+  },
+  "airflow": {
+    "type": "Property",
+    "value": 368.75
+  },
+  "https://uri.fiware.org/ns/data-models#energy": {
+    "type": "Property",
+    "value": 229.89
+  },
+  "https://uri.fiware.org/ns/data-models#pressure": {
+    "type": "Property",
+    "value": 84.06
+  }
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "@context": "https://smartdatamodels.org/context.jsonld",
+    "id": "urn:ngsi-ld:WasteWaterJunction:junction2",
+    "type": "WasteWaterJunction",
+    "name": {
+      "type": "Property",
+      "value": "Junction 2"
+    },
+    "description": {
+      "type": "Property",
+      "value": "A junction in the treatment lane representing a sampling location for the effluent wastewater."
+    },
+    "nh4": {
+      "type": "Property",
+      "value": 0.5
+    },
+    "no3": {
+      "type": "Property",
+      "value": 5.2
+    },
+    "do": {
+      "type": "Property",
+      "value": 1.2
+    },
+    "redox": {
+      "type": "Property",
+      "value": 250
+    },
+    "tn": {
+      "type": "Property",
+      "value": 7.18
+    },
+    "toc": {
+      "type": "Property",
+      "value": 16.28
+    },
+    "po4": {
+      "type": "Property",
+      "value": 0.29
+    },
+    "bod": {
+      "type": "Property",
+      "value": 2.44
+    },
+    "cod": {
+      "type": "Property",
+      "value": 36.6
+    },
+    "flowrate": {
+      "type": "Property",
+      "value": 27650
+    },
+    "temperature": {
+      "type": "Property",
+      "value": 16
+    },
+    "pH": {
+      "type": "Property",
+      "value": 7.8
+    },
+    "startsAt": {
+      "type": "Relationship",
+      "object": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"
+    }
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "@context": "https://smartdatamodels.org/context.jsonld",
+  "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",
+  "type": "WasteWaterTank",
+  "name": {
+    "type": "Property",
+    "value": "Aerobic Tank 2"
+  },
+  "description": {
+    "type": "Property",
+    "value": "Aerobic tank in treatment lane 2."
+  },
+  "tss": {
+    "type": "Property",
+    "value": 3500
+  },
+  "nh4": {
+    "type": "Property",
+    "value": 1.3
+  },
+  "no3": {
+    "type": "Property",
+    "value": 5.2
+  },
+  "do": {
+    "type": "Property",
+    "value": 1.2
+  },
+  "redox": {
+    "type": "Property",
+    "value": 250
+  },
+  "sludgeLevel": {
+    "type": "Property",
+    "value": 0.8
+  },
+  "temperature": {
+    "type": "Property",
+    "value": 16
+  },
+  "pH": {
+    "type": "Property",
+    "value": 7.8
+  },
+  "startsAt": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:WasteWaterTank:facultativeTank2"
+  },
+  "endsAt": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"
+  }
+}

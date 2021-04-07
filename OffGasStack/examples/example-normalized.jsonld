@@ -1,0 +1,37 @@
+{
+  "@context": "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",
+  "type": "OffGasStack",
+  "name": {
+    "type": "Property",
+    "value": "Off Gas Stack 2"
+  },
+  "description": {
+    "type": "Property",
+    "value": "Off gas stack from treatment lane 2."
+  },
+  "n2o": {
+    "type": "Property",
+    "value": 380
+  },
+  "co2": {
+    "type": "Property",
+    "value": 1.8
+  },
+  "ch4": {
+    "type": "Property",
+    "value": 35
+  },
+  "o2": {
+    "type": "Property",
+    "value": 18.6
+  },
+  "startsAt": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:WasteWaterJunction:junction3"
+  },
+  "endsAt": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:WasteWaterJunction:junction4"
+  }
+}
