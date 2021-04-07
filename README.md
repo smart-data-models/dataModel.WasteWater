@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+# dataModel.WasteWater
 
-You can use the [editor on GitHub](https://github.com/smart-data-models/dataModel.WasteWater/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### List of data models
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The following entity types are available:
+- [Blower](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/Blower/README.md). This entity contains an harmonised description of a Blower made for the Wastewater treatment domain. The entity represents a Blower that are used for aeration purposes in the wastewater treatment process. Important parameters are measured to regulate and measure the amount of airflow is being provided to the aeration tank in the bioreactor. Energy consumption of a blower is also important information for real-time control and optimisation of the wastewater treatment plant.
 
-### Markdown
+- [OffGasStack](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/OffGasStack/README.md). This entity contains a harmonised description of a generic Off-gas Stack made for the Wastewater treatment domain. This entity represents stacks that are present in some wastewater treatment plants where the emissions, greenhouse gases included, are emitted.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- [WasteWaterJunction](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterJunction/README.md). This entity contains an harmonised description of a generic Junction made for the Wastewater treatment domain. Junctions could be in place in certain sections of thetreatment plant. In wastewater treatment purposes, the junction is most useful if it is a locationof a sensor that measures a specific variable.
 
-```markdown
-Syntax highlighted code block
+- [WasteWaterTank](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterTank/README.md). This entity contains an harmonised description of a generic Tank made for the Wastewater treatment domain. For a given type of tank, all possible variables that can be measures are listed as properties. In the description property, the type of tank (anaerobic, pre-dinitrification, nitrification etc.)can be defined.
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+### Contributors
+[Link](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/CONTRIBUTORS.yaml) to the 1 current contributors of the data models of this Subject.
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/smart-data-models/dataModel.WasteWater/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Contribution
+You can raise an [issue](https://github.com/smart-data-models/dataModel.WasteWater/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.WasteWater/pulls) on existing data models
