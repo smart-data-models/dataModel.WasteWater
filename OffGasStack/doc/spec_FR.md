@@ -1,11 +1,13 @@
 Entité : OffGasStack  
 ====================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.WasteWater/blob/master/OffGasStack/LICENSE.md)  
+Description globale : **Cette entité contient une description harmonisée d'une cheminée d'échappement générique réalisée pour le domaine du traitement des eaux usées. Cette entité représente les cheminées qui sont présentes dans certaines usines de traitement des eaux usées où les émissions, y compris les gaz à effet de serre, sont émises**.  
 
 ## Liste des propriétés  
 
-Propriétés requises  
-- Aucune propriété requise  ## Description des propriétés du modèle de données  
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `ch4`: Les émissions de gaz CH4 d'une entité de la cheminée.  - `co2`: Les émissions de gaz CO2 d'une entité de la cheminée.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `endsAt`: Relation indiquant l'entité à laquelle la cheminée d'évacuation des gaz est connectée dans le point en aval.  - `id`: Identifiant unique de l'entité  - `location`:   - `n2o`: Les émissions de gaz N2O d'une entité de la cheminée.  - `name`: Le nom de cet élément.  - `o2`: Les émissions de gaz O2 d'une entité de la cheminée.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `startsAt`: Relation indiquant l'entité à laquelle la cheminée hors gaz est connectée dans le point amont.  - `type`: Type d'entité NGSI-LD. Il doit être OffGasStack.    
+Propriétés requises  
+- `description`  - `id`  - `type`  ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -290,9 +292,101 @@ OffGasStack:
 ## Exemples de charges utiles  
 #### Exemple de valeurs-clés NGSI-v2 de OffGasStack  
 Voici un exemple d'un OffGasStack au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-#### Exemple normalisé OffGasStack NGSI-v2  
+#### OffGasStack NGSI-v2 normalisé Exemple  
 Voici un exemple d'un OffGasStack au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+  "type": "OffGasStack",  
+  "name": {  
+    "type": "Text",  
+    "value": "Off Gas Stack 2"  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": "Off gas stack from treatment lane 2."  
+  },  
+  "n2o": {  
+    "type": "Number",  
+    "value": 380  
+  },  
+  "co2": {  
+    "type": "Number",  
+    "value": 1.8  
+  },  
+  "ch4": {  
+    "type": "Number",  
+    "value": 35  
+  },  
+  "o2": {  
+    "type": "Number",  
+    "value": 18.6  
+  },  
+  "startsAt": {  
+    "type": "Relationship",  
+    "value": "urn:ngsi-ld:WasteWaterJunction:junction3"  
+  },  
+  "endsAt": {  
+    "type": "Relationship",  
+    "value": "urn:ngsi-ld:WasteWaterJunction:junction4"  
+  }  
+}  
+```  
 #### Exemple de valeurs de clés NGSI-LD de la pile à gaz OffGasStack  
 Voici un exemple d'un OffGasStack au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "@context": "https://smartdatamodels.org/context.jsonld",  
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+  "type": "OffGasStack",  
+  "name": "Off Gas Stack 2",  
+  "description": "Off gas stack from treatment lane 2.",  
+  "n2o": 380,  
+  "co2": 1.8,  
+  "ch4": 35,  
+  "o2": 18.6,  
+  "startsAt": "urn:ngsi-ld:WasteWaterJunction:junction3",  
+  "endsAt": "urn:ngsi-ld:WasteWaterJunction:junction4"  
+}  
+```  
 #### Exemple normalisé de NGSI-LD OffGasStack  
 Voici un exemple d'un OffGasStack au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "@context": "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+  "type": "OffGasStack",  
+  "name": {  
+    "type": "Property",  
+    "value": "Off Gas Stack 2"  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "Off gas stack from treatment lane 2."  
+  },  
+  "n2o": {  
+    "type": "Property",  
+    "value": 380  
+  },  
+  "co2": {  
+    "type": "Property",  
+    "value": 1.8  
+  },  
+  "ch4": {  
+    "type": "Property",  
+    "value": 35  
+  },  
+  "o2": {  
+    "type": "Property",  
+    "value": 18.6  
+  },  
+  "startsAt": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:WasteWaterJunction:junction3"  
+  },  
+  "endsAt": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:WasteWaterJunction:junction4"  
+  }  
+}  
+```  
