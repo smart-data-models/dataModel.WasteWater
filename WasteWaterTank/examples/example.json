@@ -1,0 +1,16 @@
+{
+  "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",
+  "type": "WasteWaterTank",
+  "name": "Aerobic Tank 2",
+  "description": "Aerobic tank in treatment lane 2.",
+  "tss": 3500,
+  "nh4": 1.3,
+  "no3": 5.2,
+  "do": 1.2,
+  "redox": 250,
+  "sludgeLevel": 0.8,
+  "temperature": 16,
+  "pH": 7.8,
+  "startsAt": "urn:ngsi-ld:WasteWaterTank:facultativeTank2",
+  "endsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"
+}
