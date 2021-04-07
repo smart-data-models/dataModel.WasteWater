@@ -1,11 +1,13 @@
 Entität: WasteWaterTank  
 =======================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterTank/LICENSE.md)  
+Globale Beschreibung: **Diese Entität enthält eine harmonisierte Beschreibung eines generischen Tanks, der für den Bereich der Abwasserbehandlung hergestellt wurde. Für einen bestimmten Tanktyp werden alle möglichen Variablen, die gemessen werden können, als Eigenschaften aufgeführt. In der Beschreibungseigenschaft kann die Art des Tanks (anaerob, Vor-Dinitrifikation, Nitrifikation usw.) definiert werden.  
 
 ## Liste der Eigenschaften  
 
-Erforderliche Eigenschaften  
-- Keine erforderlichen Eigenschaften  ## Datenmodell Beschreibung der Eigenschaften  
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `do`: Konzentration des gelösten Sauerstoffs, gemessen im Abwasser.  - `endsAt`: Eine Beziehung, die die Entität angibt, mit der der Tank im nachgeschalteten Punkt verbunden ist  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `name`: Der Name dieses Elements.  - `nh4`: Ammoniakkonzentration, gemessen in einem Tank.  - `no3`: Nitratkonzentration im Abwasser gemessen.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pH`: Der pH-Wert des Wassers wird gemessen.  - `redox`: Redoxlevel gemessen im Abwasser.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `sludgeLevel`: Schlammspiegel gemessen in einem sekundären Absetzbecken  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `startsAt`: Eine Beziehung, die die Entität angibt, mit der der Tank im vorgelagerten Punkt verbunden ist  - `temperature`: Temperatur des Abwassers gemessen.  - `tn`: Gesamt-Stickstoffkonzentration, gemessen im Abwasser.  - `tss`: Konzentration der gesamten suspendierten Feststoffe, die in einem Tank gemessen wird.  - `type`: NGSI-LD Entity Type. Es muss WasteWaterTank sein    
+Erforderliche Eigenschaften  
+- `description`  - `id`  - `name`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -320,9 +322,155 @@ WasteWaterTank:
 ## Beispiel-Nutzlasten  
 #### WasteWaterTank NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für einen WasteWaterTank im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
+  "type": "WasteWaterTank",  
+  "name": "Aerobic Tank 2",  
+  "description": "Aerobic tank in treatment lane 2.",  
+  "tss": 3500,  
+  "nh4": 1.3,  
+  "no3": 5.2,  
+  "do": 1.2,  
+  "redox": 250,  
+  "sludgeLevel": 0.8,  
+  "temperature": 16,  
+  "pH": 7.8,  
+  "startsAt": "urn:ngsi-ld:WasteWaterTank:facultativeTank2",  
+  "endsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
+}  
+```  
 #### WasteWaterTank NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für einen WasteWaterTank im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
+  "type": "WasteWaterTank",  
+  "name": {  
+    "type": "Text",  
+    "value": "Aerobic Tank 2"  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": "Aerobic tank in treatment lane 2."  
+  },  
+  "tss": {  
+    "type": "Number",  
+    "value": 3500  
+  },  
+  "nh4": {  
+    "type": "Number",  
+    "value": 1.3  
+  },  
+  "no3": {  
+    "type": "Number",  
+    "value": 5.2  
+  },  
+  "do": {  
+    "type": "Number",  
+    "value": 1.2  
+  },  
+  "redox": {  
+    "type": "Number",  
+    "value": 250  
+  },  
+  "sludgeLevel": {  
+    "type": "Number",  
+    "value": 0.8  
+  },  
+  "temperature": {  
+    "type": "Number",  
+    "value": 16  
+  },  
+  "pH": {  
+    "type": "Number",  
+    "value": 7.8  
+  },  
+  "startsAt": {  
+    "type": "Relationship",  
+    "value": "urn:ngsi-ld:WasteWaterTank:facultativeTank2"  
+  },  
+  "endsAt": {  
+    "type": "Relationship",  
+    "value": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
+  }  
+}  
+```  
 #### WasteWaterTank NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für einen WasteWaterTank im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "@context": "https://smartdatamodels.org/context.jsonld",  
+  "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
+  "type": "WasteWaterTank",  
+  "name": "Aerobic Tank 2",  
+  "description": "Aerobic tank in treatment lane 2.",  
+  "tss": 3500,  
+  "nh4": 1.3,  
+  "no3": 5.2,  
+  "do": 1.2,  
+  "redox": 250,  
+  "sludgeLevel": 0.8,  
+  "temperature": 16,  
+  "pH": 7.8,  
+  "startsAt": "urn:ngsi-ld:WasteWaterTank:facultativeTank2",  
+  "endsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
+}  
+```  
 #### WasteWaterTank NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für einen WasteWaterTank im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "@context": "https://smartdatamodels.org/context.jsonld",  
+  "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
+  "type": "WasteWaterTank",  
+  "name": {  
+    "type": "Property",  
+    "value": "Aerobic Tank 2"  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "Aerobic tank in treatment lane 2."  
+  },  
+  "tss": {  
+    "type": "Property",  
+    "value": 3500  
+  },  
+  "nh4": {  
+    "type": "Property",  
+    "value": 1.3  
+  },  
+  "no3": {  
+    "type": "Property",  
+    "value": 5.2  
+  },  
+  "do": {  
+    "type": "Property",  
+    "value": 1.2  
+  },  
+  "redox": {  
+    "type": "Property",  
+    "value": 250  
+  },  
+  "sludgeLevel": {  
+    "type": "Property",  
+    "value": 0.8  
+  },  
+  "temperature": {  
+    "type": "Property",  
+    "value": 16  
+  },  
+  "pH": {  
+    "type": "Property",  
+    "value": 7.8  
+  },  
+  "startsAt": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:WasteWaterTank:facultativeTank2"  
+  },  
+  "endsAt": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
+  }  
+}  
+```  
