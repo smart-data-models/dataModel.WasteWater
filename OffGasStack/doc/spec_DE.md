@@ -1,11 +1,13 @@
 Entität: OffGasStack  
 ====================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/OffGasStack/LICENSE.md)  
+Globale Beschreibung: **Diese Entität enthält eine harmonisierte Beschreibung eines generischen Abgaskamins für den Bereich der Abwasserbehandlung. Diese Entität repräsentiert Schornsteine, die in einigen Kläranlagen vorhanden sind, in denen die Emissionen, einschließlich Treibhausgase, emittiert werden.**  
 
 ## Liste der Eigenschaften  
 
-Erforderliche Eigenschaften  
-- Keine erforderlichen Eigenschaften  ## Datenmodell Beschreibung der Eigenschaften  
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `ch4`: CH4-Gas-Emissionen aus einer Abgasschornstein-Einheit.  - `co2`: CO2-Gasemissionen aus einer Abgasanlage.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `endsAt`: Eine Beziehung, die die Entität angibt, mit der der Abgasstapel im nachgelagerten Punkt verbunden ist.  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `n2o`: N2O-Gasemissionen aus einer Abgasanlage.  - `name`: Der Name dieses Elements.  - `o2`: O2-Gasemissionen aus einer Abgasschornsteineinheit.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `startsAt`: Eine Beziehung, die die Entität angibt, mit der der Off-Gas-Stack im vorgelagerten Punkt verbunden ist.  - `type`: NGSI-LD Entity Type. es muss OffGasStack sein    
+Erforderliche Eigenschaften  
+- `description`  - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -290,9 +292,115 @@ OffGasStack:
 ## Beispiel-Nutzlasten  
 #### OffGasStack NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für einen OffGasStack im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+  "type": "OffGasStack",  
+  "name": "Off Gas Stack 2",  
+  "description": "Off gas stack from treatment lane 2.",  
+  "n2o": 380,  
+  "co2": 1.8,  
+  "ch4": 35,  
+  "o2": 18.6,  
+  "startsAt": "urn:ngsi-ld:WasteWaterJunction:junction3",  
+  "endsAt": "urn:ngsi-ld:WasteWaterJunction:junction4"  
+}  
+```  
 #### OffGasStack NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für einen OffGasStack im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+  "type": "OffGasStack",  
+  "name": {  
+    "type": "Text",  
+    "value": "Off Gas Stack 2"  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": "Off gas stack from treatment lane 2."  
+  },  
+  "n2o": {  
+    "type": "Number",  
+    "value": 380  
+  },  
+  "co2": {  
+    "type": "Number",  
+    "value": 1.8  
+  },  
+  "ch4": {  
+    "type": "Number",  
+    "value": 35  
+  },  
+  "o2": {  
+    "type": "Number",  
+    "value": 18.6  
+  },  
+  "startsAt": {  
+    "type": "Relationship",  
+    "value": "urn:ngsi-ld:WasteWaterJunction:junction3"  
+  },  
+  "endsAt": {  
+    "type": "Relationship",  
+    "value": "urn:ngsi-ld:WasteWaterJunction:junction4"  
+  }  
+}  
+```  
 #### OffGasStack NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für einen OffGasStack im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "@context": "https://smartdatamodels.org/context.jsonld",  
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+  "type": "OffGasStack",  
+  "name": "Off Gas Stack 2",  
+  "description": "Off gas stack from treatment lane 2.",  
+  "n2o": 380,  
+  "co2": 1.8,  
+  "ch4": 35,  
+  "o2": 18.6,  
+  "startsAt": "urn:ngsi-ld:WasteWaterJunction:junction3",  
+  "endsAt": "urn:ngsi-ld:WasteWaterJunction:junction4"  
+}  
+```  
 #### OffGasStack NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für einen OffGasStack im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "@context": "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+  "type": "OffGasStack",  
+  "name": {  
+    "type": "Property",  
+    "value": "Off Gas Stack 2"  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "Off gas stack from treatment lane 2."  
+  },  
+  "n2o": {  
+    "type": "Property",  
+    "value": 380  
+  },  
+  "co2": {  
+    "type": "Property",  
+    "value": 1.8  
+  },  
+  "ch4": {  
+    "type": "Property",  
+    "value": 35  
+  },  
+  "o2": {  
+    "type": "Property",  
+    "value": 18.6  
+  },  
+  "startsAt": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:WasteWaterJunction:junction3"  
+  },  
+  "endsAt": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:WasteWaterJunction:junction4"  
+  }  
+}  
+```  
