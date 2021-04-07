@@ -1,0 +1,10 @@
+{
+  "@context": "https://smartdatamodels.org/context.jsonld",
+  "id": "urn:ngsi-ld:Blower:Blower2",
+  "type": "Blower",
+  "name": "Blower 2",
+  "description": "Blower 2 providing aeration for wastewater treatment process.",
+  "airflow": 368.75,
+  "energy": 229.89,
+  "pressure": 84.06
+}
