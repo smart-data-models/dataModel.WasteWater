@@ -1,5 +1,5 @@
 {
-  "@context": "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+  "@context": "https://smartdatamodels.org/context.jsonld",
   "id": "urn:ngsi-ld:Blower:Blower2",
   "type": "Blower",
   "name": "Blower 2",
