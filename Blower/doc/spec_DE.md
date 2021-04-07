@@ -1,11 +1,13 @@
 Entität: Gebläse  
 ================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/Blower/LICENSE.md)  
+Globale Beschreibung: **Diese Entität enthält eine harmonisierte Beschreibung eines Gebläses, das für die Domäne "Abwasserbehandlung" hergestellt wurde. Die Entität repräsentiert ein Gebläse, das für Belüftungszwecke im Abwasserbehandlungsprozess verwendet wird. Wichtige Parameter werden gemessen, um die Menge des Luftstroms zu regulieren und zu messen, der dem Belüftungsbecken im Bioreaktor zugeführt wird. Der Energieverbrauch eines Gebläses ist ebenfalls eine wichtige Information für die Echtzeitsteuerung und -optimierung der Kläranlage.**  
 
 ## Liste der Eigenschaften  
 
-Erforderliche Eigenschaften  
-- Keine erforderlichen Eigenschaften  ## Datenmodell Beschreibung der Eigenschaften  
+- `address`: Die Postanschrift  - `airflow`: Luftstrom, der von einem Gebläse ausgeblasen wird.  - `airflowEstimation`: Luftstromabschätzung durch AI-Soft-Sensor-Simulation.  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `endsAt`: Eine Beziehung, die die Entität angibt, mit der das Gebläse im nachgeschalteten Punkt verbunden ist.  - `energy`: Energie, die von einem Gebläse verbraucht wird.  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pressure`: Druckmessung im Gebläse.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `startsAt`: Eine Beziehung, die die Entität angibt, mit der das Gebläse im vorgeschalteten Punkt verbunden ist.  - `type`: NGSI-LD Entity Type. Es muss Blower sein    
+Erforderliche Eigenschaften  
+- `description`  - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -290,9 +292,85 @@ Blower:
 ## Beispiel-Nutzlasten  
 #### Gebläse NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für einen Blower im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Blower:Blower2",  
+  "type": "Blower",  
+  "name": "Blower 2",  
+  "description": "Blower 2 providing aeration for wastewater treatment process.",  
+  "airflow": 368.75,  
+  "energy": 229.89,  
+  "pressure": 84.06  
+}  
+```  
 #### Gebläse NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für einen Blower im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Blower:Blower2",  
+  "type": "Blower",  
+  "name": {  
+    "type": "Text",  
+    "value": "Blower 2"  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": "Blower 2 providing aeration for wastewater treatment process."  
+  },  
+  "airflow": {  
+    "type": "Number",  
+    "value": 368.75  
+  },  
+  "energy": {  
+    "type": "Number",  
+    "value": 229.89  
+  },  
+  "pressure": {  
+    "type": "Number",  
+    "value": 84.06  
+  }  
+}  
+```  
 #### Gebläse NGSI-LD Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für einen Blower im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "@context": "https://smartdatamodels.org/context.jsonld",  
+  "id": "urn:ngsi-ld:Blower:Blower2",  
+  "type": "Blower",  
+  "name": "Blower 2",  
+  "description": "Blower 2 providing aeration for wastewater treatment process.",  
+  "airflow": 368.75,  
+  "energy": 229.89,  
+  "pressure": 84.06  
+}  
+```  
 #### Gebläse NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für einen Blower im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "@context": "https://smartdatamodels.org/context.jsonld",  
+  "id": "urn:ngsi-ld:Blower:Blower2",  
+  "type": "Blower",  
+  "name": {  
+    "type": "Property",  
+    "value": "Blower 2"  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "Blower 2 providing aeration for wastewater treatment process."  
+  },  
+  "airflow": {  
+    "type": "Property",  
+    "value": 368.75  
+  },  
+  "energy": {  
+    "type": "Property",  
+    "value": 229.89  
+  },  
+  "pressure": {  
+    "type": "Property",  
+    "value": 84.06  
+  }  
+}  
+```  
