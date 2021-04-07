@@ -1,11 +1,13 @@
 Entidad: OffGasStack  
 ====================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/OffGasStack/LICENSE.md)  
+Descripción global: **Esta entidad contiene una descripción armonizada de una chimenea genérica de gases de escape realizada para el ámbito del tratamiento de aguas residuales. Esta entidad representa las chimeneas presentes en algunas plantas de tratamiento de aguas residuales en las que se emiten los gases de efecto invernadero.  
 
 ## Lista de propiedades  
 
-Propiedades requeridas  
-- No hay propiedades requeridas  ## Descripción del modelo de datos de las propiedades  
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `ch4`: Emisiones de gas CH4 de una entidad de la chimenea de gases.  - `co2`: Emisiones de gases de CO2 de una entidad fuera de la chimenea.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `endsAt`: Una relación que indica la entidad a la que está conectada la pila de gas apagada en el punto posterior.  - `id`: Identificador único de la entidad  - `location`:   - `n2o`: Emisiones de gas N2O de una entidad de la chimenea de gases.  - `name`: El nombre de este artículo.  - `o2`: Emisiones de gas O2 de una entidad de la chimenea de gases.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `startsAt`: Una relación que indica la entidad a la que está conectada la pila de gas apagada en el punto anterior.  - `type`: Tipo de entidad NGSI-LD. Tiene que ser OffGasStack    
+Propiedades requeridas  
+- `description`  - `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -290,9 +292,115 @@ OffGasStack:
 ## Ejemplo de carga útil  
 #### OffGasStack NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un OffGasStack en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+  "type": "OffGasStack",  
+  "name": "Off Gas Stack 2",  
+  "description": "Off gas stack from treatment lane 2.",  
+  "n2o": 380,  
+  "co2": 1.8,  
+  "ch4": 35,  
+  "o2": 18.6,  
+  "startsAt": "urn:ngsi-ld:WasteWaterJunction:junction3",  
+  "endsAt": "urn:ngsi-ld:WasteWaterJunction:junction4"  
+}  
+```  
 #### OffGasStack NGSI-v2 normalizado Ejemplo  
 Este es un ejemplo de un OffGasStack en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+  "type": "OffGasStack",  
+  "name": {  
+    "type": "Text",  
+    "value": "Off Gas Stack 2"  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": "Off gas stack from treatment lane 2."  
+  },  
+  "n2o": {  
+    "type": "Number",  
+    "value": 380  
+  },  
+  "co2": {  
+    "type": "Number",  
+    "value": 1.8  
+  },  
+  "ch4": {  
+    "type": "Number",  
+    "value": 35  
+  },  
+  "o2": {  
+    "type": "Number",  
+    "value": 18.6  
+  },  
+  "startsAt": {  
+    "type": "Relationship",  
+    "value": "urn:ngsi-ld:WasteWaterJunction:junction3"  
+  },  
+  "endsAt": {  
+    "type": "Relationship",  
+    "value": "urn:ngsi-ld:WasteWaterJunction:junction4"  
+  }  
+}  
+```  
 #### OffGasStack NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un OffGasStack en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "@context": "https://smartdatamodels.org/context.jsonld",  
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+  "type": "OffGasStack",  
+  "name": "Off Gas Stack 2",  
+  "description": "Off gas stack from treatment lane 2.",  
+  "n2o": 380,  
+  "co2": 1.8,  
+  "ch4": 35,  
+  "o2": 18.6,  
+  "startsAt": "urn:ngsi-ld:WasteWaterJunction:junction3",  
+  "endsAt": "urn:ngsi-ld:WasteWaterJunction:junction4"  
+}  
+```  
 #### OffGasStack NGSI-LD normalizado Ejemplo  
 Este es un ejemplo de un OffGasStack en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "@context": "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+  "type": "OffGasStack",  
+  "name": {  
+    "type": "Property",  
+    "value": "Off Gas Stack 2"  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "Off gas stack from treatment lane 2."  
+  },  
+  "n2o": {  
+    "type": "Property",  
+    "value": 380  
+  },  
+  "co2": {  
+    "type": "Property",  
+    "value": 1.8  
+  },  
+  "ch4": {  
+    "type": "Property",  
+    "value": 35  
+  },  
+  "o2": {  
+    "type": "Property",  
+    "value": 18.6  
+  },  
+  "startsAt": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:WasteWaterJunction:junction3"  
+  },  
+  "endsAt": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:WasteWaterJunction:junction4"  
+  }  
+}  
+```  
