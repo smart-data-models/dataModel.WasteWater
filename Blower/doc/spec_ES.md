@@ -1,11 +1,13 @@
 Entidad: Soplador  
 =================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/Blower/LICENSE.md)  
+Descripción global: **Esta entidad contiene una descripción armonizada de un soplador fabricado para el ámbito del tratamiento de aguas residuales. La entidad representa un soplador que se utiliza con fines de aireación en el proceso de tratamiento de aguas residuales. Se miden parámetros importantes para regular y medir la cantidad de flujo de aire que se suministra al tanque de aireación en el biorreactor. El consumo de energía de un soplador es también una información importante para el control en tiempo real y la optimización de la planta de tratamiento de aguas residuales.**  
 
 ## Lista de propiedades  
 
-Propiedades requeridas  
-- No hay propiedades requeridas  ## Descripción del modelo de datos de las propiedades  
+- `address`: La dirección postal  - `airflow`: Flujo de aire soplado por un soplador.  - `airflowEstimation`: Estimación del flujo de aire mediante la simulación de sensores blandos AI.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `endsAt`: Una relación que indica la entidad a la que está conectado el soplador en el punto posterior.  - `energy`: Energía consumida por un soplador.  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pressure`: Medición de la presión en el soplador.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `startsAt`: Una relación que indica la entidad a la que está conectado el soplador en el punto anterior.  - `type`: Tipo de entidad NGSI-LD. Tiene que ser Soplador    
+Propiedades requeridas  
+- `description`  - `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -290,9 +292,85 @@ Blower:
 ## Ejemplo de carga útil  
 #### Soplador NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un Blower en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Blower:Blower2",  
+  "type": "Blower",  
+  "name": "Blower 2",  
+  "description": "Blower 2 providing aeration for wastewater treatment process.",  
+  "airflow": 368.75,  
+  "energy": 229.89,  
+  "pressure": 84.06  
+}  
+```  
 #### Soplador NGSI-v2 normalizado Ejemplo  
 Aquí hay un ejemplo de un soplador en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Blower:Blower2",  
+  "type": "Blower",  
+  "name": {  
+    "type": "Text",  
+    "value": "Blower 2"  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": "Blower 2 providing aeration for wastewater treatment process."  
+  },  
+  "airflow": {  
+    "type": "Number",  
+    "value": 368.75  
+  },  
+  "energy": {  
+    "type": "Number",  
+    "value": 229.89  
+  },  
+  "pressure": {  
+    "type": "Number",  
+    "value": 84.06  
+  }  
+}  
+```  
 #### Soplador NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un Blower en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "@context": "https://smartdatamodels.org/context.jsonld",  
+  "id": "urn:ngsi-ld:Blower:Blower2",  
+  "type": "Blower",  
+  "name": "Blower 2",  
+  "description": "Blower 2 providing aeration for wastewater treatment process.",  
+  "airflow": 368.75,  
+  "energy": 229.89,  
+  "pressure": 84.06  
+}  
+```  
 #### Soplador NGSI-LD normalizado Ejemplo  
 Aquí hay un ejemplo de un soplador en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "@context": "https://smartdatamodels.org/context.jsonld",  
+  "id": "urn:ngsi-ld:Blower:Blower2",  
+  "type": "Blower",  
+  "name": {  
+    "type": "Property",  
+    "value": "Blower 2"  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "Blower 2 providing aeration for wastewater treatment process."  
+  },  
+  "airflow": {  
+    "type": "Property",  
+    "value": 368.75  
+  },  
+  "energy": {  
+    "type": "Property",  
+    "value": 229.89  
+  },  
+  "pressure": {  
+    "type": "Property",  
+    "value": 84.06  
+  }  
+}  
+```  
