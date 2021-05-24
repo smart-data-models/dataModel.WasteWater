@@ -1,10 +1,11 @@
 description: This is a compilation list of the current adopters of the data model Blower of the Subject dataModel.WasteWater. All fields are non mandatory. More info at https://smart-data-models.github.io/data-models/templates/dataModel/CURRENT_ADOPTERS.yaml
 currentAdopters:
 -
- adopter: 
- description: 
- mail: 
- organization: 
- project: 
+ adopter: Siddharth Seshan
+ description: Demonstration of Fiware while integrating to the legacy system of the Amsterdam West WWTP in an EU project
+ called Fiware4Water. The Blower data model is currently being used in collaboration with Waternet.
+ mail: siddharth.seshan@kwrwater.nl
+ organization: KWR Water Research Institue
+ project: Fiware4Water
  comments: 
  startDate: 
