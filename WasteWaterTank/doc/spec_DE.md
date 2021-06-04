@@ -1,11 +1,12 @@
 Entität: WasteWaterTank  
 =======================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterTank/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Diese Entität enthält eine harmonisierte Beschreibung eines generischen Tanks, der für den Bereich der Abwasserbehandlung hergestellt wurde. Für einen bestimmten Tanktyp werden alle möglichen Variablen, die gemessen werden können, als Eigenschaften aufgeführt. In der Beschreibungseigenschaft kann die Art des Tanks (anaerob, Vor-Dinitrifikation, Nitrifikation usw.) definiert werden.  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `do`: Konzentration des gelösten Sauerstoffs, gemessen im Abwasser.  - `endsAt`: Eine Beziehung, die die Entität angibt, mit der der Tank im nachgeschalteten Punkt verbunden ist  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `name`: Der Name dieses Elements.  - `nh4`: Ammoniakkonzentration, gemessen in einem Tank.  - `no3`: Nitratkonzentration im Abwasser gemessen.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pH`: Der pH-Wert des Wassers wird gemessen.  - `redox`: Redoxlevel gemessen im Abwasser.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `sludgeLevel`: Schlammspiegel gemessen in einem sekundären Absetzbecken  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `startsAt`: Eine Beziehung, die die Entität angibt, mit der der Tank im vorgelagerten Punkt verbunden ist  - `temperature`: Temperatur des Abwassers gemessen.  - `tn`: Gesamt-Stickstoffkonzentration, gemessen im Abwasser.  - `tss`: Konzentration der gesamten suspendierten Feststoffe, die in einem Tank gemessen wird.  - `type`: NGSI-LD Entity Type. Es muss WasteWaterTank sein    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `do`: Konzentration des gelösten Sauerstoffs, gemessen im Abwasser.  - `endsAt`: Eine Beziehung, die die Entität angibt, mit der der Tank im nachgeschalteten Punkt verbunden ist  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `nh4`: Ammoniumkonzentration, gemessen in einem Tank.  - `no3`: Nitratkonzentration im Abwasser gemessen.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pH`: Der pH-Wert des Wassers wird gemessen.  - `redox`: Redoxlevel im Abwasser gemessen.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `sludgeLevel`: Schlammspiegel gemessen in einem sekundären Absetzbecken  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `startsAt`: Eine Beziehung, die die Entität angibt, mit der der Tank im vorgelagerten Punkt verbunden ist  - `temperature`: Temperatur des Abwassers gemessen.  - `tn`: Gesamt-Stickstoffkonzentration, gemessen im Abwasser.  - `tss`: Konzentration der gesamten suspendierten Feststoffe, die in einem Tank gemessen wird.  - `type`: NGSI-LD Entity Type. Es muss WasteWaterTank sein    
 Erforderliche Eigenschaften  
 - `description`  - `id`  - `name`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -26,14 +27,11 @@ WasteWaterTank:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -86,10 +84,10 @@ WasteWaterTank:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -109,7 +107,8 @@ WasteWaterTank:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -132,7 +131,8 @@ WasteWaterTank:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -157,7 +157,8 @@ WasteWaterTank:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -179,7 +180,8 @@ WasteWaterTank:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -204,7 +206,8 @@ WasteWaterTank:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -231,12 +234,12 @@ WasteWaterTank:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
     nh4:    
-      description: 'Ammonia concentration measured in a tank.'    
+      description: 'Ammonium concentration measured in a tank.'    
       type: Property    
       x-ngsi:    
         model: ' https://schema.org/Number'    
@@ -268,8 +271,8 @@ WasteWaterTank:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
