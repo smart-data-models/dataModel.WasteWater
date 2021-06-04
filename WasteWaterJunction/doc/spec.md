@@ -1,11 +1,12 @@
 Entity: WasteWaterJunction  
 ==========================  
 [Open License](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterJunction/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **This entity contains an harmonised description of a generic Junction made for the Wastewater treatment domain. Junctions could be in place in certain sections of thetreatment plant. In wastewater treatment purposes, the junction is most useful if it is a locationof a sensor that measures a specific variable.**  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bod`: Propety. Biological Oxygen Demand concentration measured in the influent or effluent.  - `cod`: Chemical Oxygen Deman concentration measured in the influent or effluent.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `do`: Dissolved Oxygen concentration measured in wastewater.  - `emissionFlow`: Gas emission flow volume measured at a junction prior to being emitted in an off-gas stack.  - `endsAt`: A relationship indicating the entity the junction is connected to in the downstream point  - `flowrate`: Flowrate of wastewater.  - `id`: Unique identifier of the entity  - `location`:   - `name`: The name of this item.  - `nh4`: Ammonia concentration measured in a tank.  - `no3`: Nitrate concentration measured in wastewater.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH`: Water pH level measured.  - `po4`: Ortho-phosphate concentration measured in wastewater.  - `redox`: Redox level measured in wastewater.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `startsAt`: A relationship indicating the entity the junction is connected to in the upstream point  - `temperature`: Wastewater temperature measured.  - `tic`: Total Inorganic Carbon concentration measured in the influent or effluent.  - `tn`: Total Nitrogen concentration measured in wastewater.  - `toc`: Total Organic Carbon concentration measured in the influent or effluent.  - `tss`: total suspended solids concentration measured in a tank.  - `type`: It has to be WasteWaterJunction. NGSI-LD Entity Type    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bod`: Propety. Biological Oxygen Demand concentration measured in the influent or effluent.  - `cod`: Chemical Oxygen Deman concentration measured in the influent or effluent.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `do`: Dissolved Oxygen concentration measured in wastewater.  - `emissionFlow`: Gas emission flow volume measured at a junction prior to being emitted in an off-gas stack.  - `endsAt`: A relationship indicating the entity the junction is connected to in the downstream point  - `flowrate`: Flowrate of wastewater.  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `nh4`: Ammonium concentration measured in a tank.  - `no3`: Nitrate concentration measured in wastewater.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH`: Water pH level measured.  - `po4`: Ortho-phosphate concentration measured in wastewater.  - `redox`: Redox level measured in wastewater.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `startsAt`: A relationship indicating the entity the junction is connected to in the upstream point  - `temperature`: Wastewater temperature measured.  - `tic`: Total Inorganic Carbon concentration measured in the influent or effluent.  - `tn`: Total Nitrogen concentration measured in wastewater.  - `toc`: Total Organic Carbon concentration measured in the influent or effluent.  - `tss`: total suspended solids concentration measured in a tank.  - `type`: It has to be WasteWaterJunction. NGSI-LD Entity Type    
 Required properties  
 - `description`  - `id`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
@@ -26,14 +27,11 @@ WasteWaterJunction:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -110,10 +108,10 @@ WasteWaterJunction:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -133,7 +131,8 @@ WasteWaterJunction:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +155,8 @@ WasteWaterJunction:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +181,8 @@ WasteWaterJunction:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +204,8 @@ WasteWaterJunction:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +230,8 @@ WasteWaterJunction:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -255,12 +258,12 @@ WasteWaterJunction:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
     nh4:    
-      description: 'Ammonia concentration measured in a tank.'    
+      description: 'Ammonium concentration measured in a tank.'    
       type: Property    
       x-ngsi:    
         model: ' https://schema.org/Number'    
@@ -298,8 +301,8 @@ WasteWaterJunction:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
