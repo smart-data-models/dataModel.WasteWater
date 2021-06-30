@@ -57,7 +57,7 @@
                 },
                 "cod": {
                     "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Chemical Oxygen Deman concentration measured in the influent or effluent."
+                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Chemical Oxygen Demand concentration measured in the influent or effluent."
                 },
                 "flowrate": {
                     "type": "number",
@@ -68,6 +68,10 @@
                 },
                 "pH": {
                     "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/pH"
+                },
+                "pressure": {
+                    "type": "number",
+                    "description": "Property. Model: https://schema.org/Number. Units: kPa. Pressure measured at given location. Most relevant for airflow as provided by blowers to wastewater tanks"
                 },
                 "emissionFlow": {
                     "type": "number",
