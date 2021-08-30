@@ -49,6 +49,30 @@
                 "pH": {
                     "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/pH"
                 },
+                "energy": {
+                    "properties": {
+                        "measured": {
+                            "type": "number",
+                            "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Energy measured by a device."
+                        },
+                        "estimated": {
+                            "type": "number",
+                            "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Energy estimated by a model."
+                        }
+                    }
+                },
+                "airflow": {
+                    "properties": {
+                        "measured": {
+                            "type": "number",
+                            "description": "Property. Model: https://schema.org/Number. Units: 'm/s'. Airflow measured by a device."
+                        },
+                        "estimated": {
+                            "type": "number",
+                            "description": "Property. Model: https://schema.org/Number. Units: 'm/s'. Airflow estimated by a model."
+                        }
+                    }
+                },
                 "startsAt": {
                     "type": "string",
                     "format": "uri",
