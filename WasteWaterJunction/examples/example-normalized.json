@@ -1,0 +1,64 @@
+{
+  "id": "urn:ngsi-ld:WasteWaterJunction:junction2",
+  "type": "WasteWaterJunction",
+  "name": {
+    "type": "Text",
+    "value": "Junction 2"
+  },
+  "description": {
+    "type": "Text",
+    "value": "A junction in the treatment lane representing a sampling location for the effluent wastewater."
+  },
+  "nh4": {
+    "type": "Number",
+    "value": 0.5
+  },
+  "no3": {
+    "type": "Number",
+    "value": 5.2
+  },
+  "do": {
+    "type": "Number",
+    "value": 1.2
+  },
+  "redox": {
+    "type": "Number",
+    "value": 250
+  },
+  "tn": {
+    "type": "Number",
+    "value": 7.18
+  },
+  "toc": {
+    "type": "Number",
+    "value": 16.28
+  },
+  "po4": {
+    "type": "Number",
+    "value": 0.29
+  },
+  "bod": {
+    "type": "Number",
+    "value": 2.44
+  },
+  "cod": {
+    "type": "Number",
+    "value": 36.6
+  },
+  "flowrate": {
+    "type": "Number",
+    "value": 27650
+  },
+  "temperature": {
+    "type": "Number",
+    "value": 16
+  },
+  "pH": {
+    "type": "Number",
+    "value": 7.8
+  },
+  "startsAt": {
+    "type": "Relationship",
+    "value": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"
+  }
+}

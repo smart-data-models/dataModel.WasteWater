@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/schema#",
   "$id": "https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWater-schema.json",
-  "title": "FIWARE - Wastewater Treatment base schema",
+  "title": "Smart Data Models - Wastewater Treatment base schema",
   "descriptions": "Common NGSI-LD definitions of a wastewater treatment data models",
   "type": "object",
   "definitions": {
@@ -11,7 +11,7 @@
     },
     "nh4": {
       "type": "number",
-      "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Ammonia concentration measured in a tank."
+      "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Ammonium concentration measured in a tank."
     },
     "no3": {
       "type": "number",
