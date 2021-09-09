@@ -24,9 +24,9 @@
                 "type": "number",
                 "description": "Property. Model: https://schema.org/Number. Units: 'm/s'. Airflow blown by a blower."
             },
-            "energy": {
+            "power": {
                 "type": "number",
-                "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Energy consumed by a blower."
+                "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Power consumed by a blower."
             },
             "pressure": {
                 "type": "number",

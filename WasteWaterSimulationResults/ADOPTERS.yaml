@@ -1,5 +1,5 @@
 
-description: This is a compilation list of the current adopters of the data model Blower of the Subject Wastewater.  All fields are non mandatory. More info at https://smart-data-models.github.io/data-models/templates/dataModel/CURRENT_ADOPTERS.yaml
+description: This is a compilation list of the current adopters of the data model WasteWaterSimulationResults of the Subject Wastewater.  All fields are non mandatory. More info at https://smart-data-models.github.io/data-models/templates/dataModel/CURRENT_ADOPTERS.yaml
 currentAdopters:
 -
  adopter: Siddharth Seshan
@@ -8,5 +8,5 @@ currentAdopters:
  mail: siddharth.seshan@kwrwater.nl
  organization: KWR Water Research Institue
  project: Fiware4Water
- comments: 
- startDate: 
+ comments:
+ startDate:
