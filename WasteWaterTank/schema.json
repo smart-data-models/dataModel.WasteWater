@@ -1,5 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterTank/schema.json",
     "$schemaVersion": "0.0.2",
     "title": "WasteWaterTreatment - Waste Water Tank",
