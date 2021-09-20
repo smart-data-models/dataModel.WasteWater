@@ -1,0 +1,90 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "schemaVersion": "0.0",
+    "$id": "https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterSimulationResults/schema.json",
+    "title": "WasteWaterTreatment - WasteWaterTreatmentResults",
+    "description": "This entity contains an harmonised description of a WasteWaterSimulationResults made for the Wastewater treatment domain. The entity contains properties that are parameters whichhave been predicted or forecasted by models through a simulation.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "properties": {
+                "type": "string",
+                "enum": [
+                    "WasteWaterSimulationResults"
+                ],
+                "description": "Property.NGSI-LD Entity Type. It has to be a WasteWaterSimulationResults."
+            },
+            "airflow": {
+                "type": "Property",
+                "description": "Property. Model: https://schema.org/Number. Units: 'm/s'. Estimation of airflow from a blower generated through aeration of a given wastewater entity, by a simulation/data-driven model.",
+                "value": {
+                    "type": "number"
+                },
+                "targetURI": {
+                    "type": "Relationship",
+                    "description": "Relationship. Model: https://schema.org/URL. The id of the entity to which the simulated parameter is associated with.",
+                    "value": {
+                        "type": "string",
+                        "format": "uri"
+                    }
+                }
+            },
+            "power": {
+                "type": "Property",
+                "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Estimation of power consumed by a blower for the aeration process to a given wastewater entity, by a simulation/data-driven model.",
+                "value": {
+                    "type": "number"
+                },
+                "targetURI": {
+                    "type": "Relationship",
+                    "description": "Relationship. Model: https://schema.org/URL. The id of the entity to which the simulated parameter is associated with.",
+                    "value": {
+                        "type": "string",
+                        "format": "uri"
+                    }
+                }
+            },
+            "nh4": {
+                "type": "Property",
+                "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Estimation of ammonia concentration at a given wastewater entity, by a simulation/data-driven model.",
+                "value": {
+                    "type": "number"
+                },
+                "targetURI": {
+                    "type": "Relationship",
+                    "description": "Relationship. Model: https://schema.org/URL. The id of the entity to which the simulated parameter is associated with.",
+                    "value": {
+                        "type": "string",
+                        "format": "uri"
+                    }
+                }
+            },
+            "no3": {
+                "type": "Property",
+                "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Estimation of nitrate concentration at a given wastewater entity, by a simulation/data-driven model.",
+                "value": {
+                    "type": "number"
+                },
+                "targetURI": {
+                    "type": "Relationship",
+                    "description": "Relationship. Model: https://schema.org/URL. The id of the entity to which the simulated parameter is associated with.",
+                    "value": {
+                        "type": "string",
+                        "format": "uri"
+                    }
+                }
+            }
+        }
+    ],
+    "required": [
+        "id",
+        "type",
+        "description"
+    ]
+}
