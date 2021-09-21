@@ -1,0 +1,2 @@
+"id_", "type_", "name__type_", "name__value_", "description__type_", "description__value_", "airflow__type_", "airflow__value_", "energy__type_", "energy__value_", "pressure__type_", "pressure__value_"
+"urn:ngsi-ld:Blower:Blower2", "Blower", "Text", "Blower 2", "Text", "Blower 2 providing aeration for wastewater treatment process.", "Number", "368.75", "Number", "229.89", "Number", "84.06"
