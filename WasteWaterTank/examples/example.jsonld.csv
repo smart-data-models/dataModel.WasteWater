@@ -1,0 +1,2 @@
+"@context_", "id_", "type_", "name_", "description_", "tss_", "nh4_", "no3_", "do_", "redox_", "sludgeLevel_", "temperature_", "pH_", "startsAt_", "endsAt_"
+"https://smartdatamodels.org/context.jsonld", "urn:ngsi-ld:WasteWaterTank:aerobicTank2", "WasteWaterTank", "Aerobic Tank 2", "Aerobic tank in treatment lane 2.", "3500", "1.3", "5.2", "1.2", "250", "0.8", "16", "7.8", "urn:ngsi-ld:WasteWaterTank:facultativeTank2", "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"
