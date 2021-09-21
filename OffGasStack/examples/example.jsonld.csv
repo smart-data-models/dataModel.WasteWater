@@ -1,0 +1,2 @@
+"@context_", "id_", "type_", "name_", "description_", "n2o_", "co2_", "ch4_", "o2_", "startsAt_", "endsAt_"
+"https://smartdatamodels.org/context.jsonld", "urn:ngsi-ld:OffGasStack:OffGasStack2", "OffGasStack", "Off Gas Stack 2", "Off gas stack from treatment lane 2.", "380", "1.8", "35", "18.6", "urn:ngsi-ld:WasteWaterJunction:junction3", "urn:ngsi-ld:WasteWaterJunction:junction4"
