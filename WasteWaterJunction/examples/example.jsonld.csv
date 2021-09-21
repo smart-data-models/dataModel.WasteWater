@@ -1,0 +1,2 @@
+"@context_", "id_", "type_", "name_", "description_", "nh4_", "no3_", "do_", "redox_", "tn_", "toc_", "po4_", "bod_", "cod_", "flowrate_", "temperature_", "pH_", "startsAt_"
+"https://smartdatamodels.org/context.jsonld", "urn:ngsi-ld:WasteWaterJunction:junction2", "WasteWaterJunction", "Junction 2", "A junction in the treatment lane representing a sampling location for the effluent wastewater.", "0.5", "5.2", "1.2", "250", "7.18", "16.28", "0.29", "2.44", "36.6", "27650", "16", "7.8", "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"
