@@ -1,0 +1,2 @@
+"id_", "type_", "name_", "description_", "airflow_", "energy_", "pressure_"
+"urn:ngsi-ld:Blower:Blower2", "Blower", "Blower 2", "Blower 2 providing aeration for wastewater treatment process.", "368.75", "229.89", "84.06"
