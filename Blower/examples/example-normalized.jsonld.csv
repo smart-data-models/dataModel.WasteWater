@@ -1,0 +1,2 @@
+"@context_", "id_", "type_", "name__type_", "name__value_", "description__type_", "description__value_", "airflow__type_", "airflow__value_", "energy__type_", "energy__value_", "pressure__type_", "pressure__value_"
+"https://smartdatamodels.org/context.jsonld", "urn:ngsi-ld:Blower:Blower2", "Blower", "Property", "Blower 2", "Property", "Blower 2 providing aeration for wastewater treatment process.", "Property", "368.75", "Property", "229.89", "Property", "84.06"
