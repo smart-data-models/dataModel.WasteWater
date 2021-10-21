@@ -1,0 +1,31 @@
+[
+    {
+        "@context": "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "id": "urn:ngsi-ld:WasteWaterSimulationResults:dataValidation",
+        "type": "WasteWaterSimulationResults",
+        "name": {
+            "type": "Property",
+            "value": "Data Validation"
+        },
+        "description": {
+            "type": "Property",
+            "value": "AI-based data validation application. Simulation of NH4 and NO3 parameters in aerobic tank of bioreactor using deep learning models."
+        },
+        "nh4": {
+            "type": "Property",
+            "value": 1.83,
+            "targetURI": {
+                "type": "Relationship",
+                "object": "urn:ngsi-ld:WasteWaterTank:aerobicTank02"
+            }
+        },
+        "no3": {
+            "type": "Property",
+            "value": 6.27,
+            "targetURI": {
+                "type": "Relationship",
+                "object": "urn:ngsi-ld:WasteWaterTank:aerobicTank02"
+            }
+        }
+    }
+]
