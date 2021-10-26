@@ -6,7 +6,7 @@ Version: 0.0.1
 This entity contains an harmonised description of a generic Junction made for the Wastewater treatment domain. Junctions could be in place in certain sections of thetreatment plant. In wastewater treatment purposes, the junction is most useful if it is a locationof a sensor that measures a specific variable.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterJunction/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/WasteWaterJunction/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterJunction/doc/spec.md)
 
