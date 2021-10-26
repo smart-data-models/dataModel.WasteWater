@@ -6,7 +6,7 @@ Version: 0.0.2
 This entity contains an harmonised description of a generic Tank made for the Wastewater treatment domain. For a given type of tank, all possible variables that can be measures are listed as properties. In the description property, the type of tank (anaerobic, pre-dinitrification, nitrification etc.)can be defined.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterTank/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/WasteWaterTank/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterTank/doc/spec.md)
 
