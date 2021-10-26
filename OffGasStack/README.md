@@ -6,7 +6,7 @@ Version: 0.0.1
 This entity contains a harmonised description of a generic Off-gas Stack made for the Wastewater treatment domain. This entity represents stacks that are present in some wastewater treatment plants where the emissions, greenhouse gases included, are emitted.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.WasteWater/blob/master/OffGasStack/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/OffGasStack/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/OffGasStack/doc/spec.md)
 
