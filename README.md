@@ -9,6 +9,8 @@ The following entity types are available:
 
 - [WasteWaterJunction](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterJunction/README.md). This entity contains an harmonised description of a generic Junction made for the Wastewater treatment domain. Junctions could be in place in certain sections of thetreatment plant. In wastewater treatment purposes, the junction is most useful if it is a locationof a sensor that measures a specific variable.
 
+- [WasteWaterSimulationResults](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterSimulationResults/README.md). This entity contains an harmonised description of a WasteWaterSimulationResults made for the Wastewater treatment domain. The entity contains properties that are parameters which have been predicted or forecasted by models through a simulation.
+
 - [WasteWaterTank](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterTank/README.md). This entity contains an harmonised description of a generic Tank made for the Wastewater treatment domain. For a given type of tank, all possible variables that can be measures are listed as properties. In the description property, the type of tank (anaerobic, pre-dinitrification, nitrification etc.)can be defined.
 
 

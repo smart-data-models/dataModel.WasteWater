@@ -1,0 +1,2 @@
+"id_", "type_", "name_", "description_", "nh4_", "no3_"
+"urn:ngsi-ld:WasteWaterSimulationResults:dataValidation", "WasteWaterSimulationResults", "Data Validation", "AI-based data validation application. Simulation of NH4 and NO3 parameters in aerobic tank of bioreactor using deep learning models.", "1.83", "6.27"
