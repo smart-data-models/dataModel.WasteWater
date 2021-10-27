@@ -1,6 +1,6 @@
 {
   "id": "urn:ngsi-ld:WasteWaterSimulationResults:dataValidation",
-  "type": "WasteWaterSimulationResults",
+  "type": "WasteWaterSimulationResult",
   "name": {
     "type": "Property",
     "value": "Data Validation"

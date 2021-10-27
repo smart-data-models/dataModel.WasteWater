@@ -18,7 +18,7 @@
         "type": {
           "type": "string",
           "enum": [
-            "WasteWaterSimulationResults"
+            "WasteWaterSimulationResult"
           ],
           "description": "Property. NGSI-LD Entity Type. It has to be a WasteWaterSimulationResults."
         },
