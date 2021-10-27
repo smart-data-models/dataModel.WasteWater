@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "schemaVersion": "0.0.1",
-  "modelTags": "",
+  "modelTags": "FIWARE4WATER",
   "$id": "https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterSimulationResults/schema.json",
-  "title": "WasteWaterTreatment - WasteWaterTreatmentResults",
+  "title": "Smart Data Models - WasteWaterSimulationResults",
   "description": "This entity contains an harmonised description of a WasteWaterSimulationResults made for the Wastewater treatment domain. The entity contains properties that are parameters which have been predicted or forecasted by models through a simulation.",
   "type": "object",
   "allOf": [
@@ -15,50 +15,34 @@
     },
     {
       "properties": {
-        "type": "string",
-        "enum": [
-          "WasteWaterSimulationResults"
-        ],
-        "description": "Property.NGSI-LD Entity Type. It has to be a WasteWaterSimulationResults."
-      },
-      "airflow": {
-        "type": "number",
-        "description": "Property. Model: https://schema.org/Number. Units: 'm/s'. Estimation of airflow from a blower generated through aeration of a given wastewater entity, by a simulation/data-driven model."
-      },
-      "targetURI": {
-        "anyOf": [
-          {
-            "type": "string",
-            "minLength": 1,
-            "maxLength": 256,
-            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-            "description": "Property. Identifier format of any NGSI entity"
-          },
-          {
-            "type": "string",
-            "format": "uri",
-            "description": "Property. Identifier format of any NGSI entity"
-          }
-        ],
-        "description": "Relationship. Model: https://schema.org/URL. The id of the entity to which the simulated parameter is associated with."
-      },
-      "power": {
-        "type": "number",
-        "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Estimation of power consumed by a blower for the aeration process to a given wastewater entity, by a simulation/data-driven model."
-      },
-      "nh4": {
-        "type": "number",
-        "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Estimation of ammonia concentration at a given wastewater entity, by a simulation/data-driven model."
-      },
-      "no3": {
-        "type": "number",
-        "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Estimation of nitrate concentration at a given wastewater entity, by a simulation/data-driven model."
+        "type": {
+          "type": "string",
+          "enum": [
+            "WasteWaterSimulationResults"
+          ],
+          "description": "Property. NGSI-LD Entity Type. It has to be a WasteWaterSimulationResults."
+        },
+        "airflow": {
+          "type": "number",
+          "description": "Property. Model: https://schema.org/Number. Units: 'm/s'. Estimation of airflow from a blower generated through aeration of a given wastewater entity, by a simulation/data-driven model."
+        },
+        "power": {
+          "type": "number",
+          "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Estimation of power consumed by a blower for the aeration process to a given wastewater entity, by a simulation/data-driven model."
+        },
+        "nh4": {
+          "type": "number",
+          "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Estimation of ammonia concentration at a given wastewater entity, by a simulation/data-driven model."
+        },
+        "no3": {
+          "type": "number",
+          "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Estimation of nitrate concentration at a given wastewater entity, by a simulation/data-driven model."
+        }
       }
     }
   ],
   "required": [
     "id",
-    "type",
-    "description"
+    "type"
   ]
 }
