@@ -36,17 +36,21 @@ WasteWaterJunction:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     bod:    
       description: 'Propety. Biological Oxygen Demand concentration measured in the influent or effluent.'    
       type: number    
@@ -55,45 +59,59 @@ WasteWaterJunction:
         units: ' mg/L'    
     cod:    
       description: 'Chemical Oxygen Deman concentration measured in the influent or effluent.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     do:    
       description: 'Dissolved Oxygen concentration measured in wastewater.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     emissionFlow:    
       description: 'Gas emission flow volume measured at a junction prior to being emitted in an off-gas stack.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' m3'    
     endsAt:    
       description: 'A relationship indicating the entity the junction is connected to in the downstream point'    
       format: uri    
-      type: Relationship    
+      type: string    
+      x-ngsi:    
+        type: Relationship    
     flowrate:    
       description: 'Flowrate of wastewater.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' m3/h'    
     id:    
       anyOf: &wastewaterjunction_-_properties_-_owner_-_items_-_anyof    
@@ -106,7 +124,8 @@ WasteWaterJunction:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -258,44 +277,54 @@ WasteWaterJunction:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     nh4:    
       description: 'Ammonium concentration measured in a tank.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     no3:    
       description: 'Nitrate concentration measured in wastewater.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *wastewaterjunction_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     pH:    
       description: 'Water pH level measured.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
     po4:    
       description: 'Ortho-phosphate concentration measured in wastewater.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     redox:    
       description: 'Redox level measured in wastewater.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mV'    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
@@ -307,49 +336,61 @@ WasteWaterJunction:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     startsAt:    
       description: 'A relationship indicating the entity the junction is connected to in the upstream point'    
       format: uri    
-      type: Relationship    
+      type: string    
+      x-ngsi:    
+        type: Relationship    
     temperature:    
       description: 'Wastewater temperature measured.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' Celsius'    
     tic:    
       description: 'Total Inorganic Carbon concentration measured in the influent or effluent.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     tn:    
       description: 'Total Nitrogen concentration measured in wastewater.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     toc:    
       description: 'Total Organic Carbon concentration measured in the influent or effluent.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     tss:    
       description: 'total suspended solids concentration measured in a tank.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     type:    
       description: 'It has to be WasteWaterJunction. NGSI-LD Entity Type'    
       enum:    
         - WasteWaterJunction    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
