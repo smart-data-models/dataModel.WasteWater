@@ -2,11 +2,11 @@ Entität: WasteWaterJunction
 ===========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterJunction/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Dieses Element enthält eine harmonisierte Beschreibung einer generischen Abzweigung, die für den Bereich der Abwasserbehandlung erstellt wurde. Abzweigungen können in bestimmten Abschnitten der Aufbereitungsanlage vorhanden sein. In der Abwasseraufbereitung ist die Abzweigung am nützlichsten, wenn sie ein Standort eines Sensors ist, der eine bestimmte Variable misst.**  
+Globale Beschreibung: **Diese Einheit enthält eine harmonisierte Beschreibung einer generischen Abzweigung für den Bereich der Abwasserbehandlung. Abzweigungen können in bestimmten Abschnitten der Aufbereitungsanlage vorhanden sein. Bei der Abwasserbehandlung ist die Abzweigung am nützlichsten, wenn es sich um einen Standort eines Sensors handelt, der eine bestimmte Variable misst.**  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `bod`: Propety. Konzentration des biologischen Sauerstoffbedarfs, gemessen im Zulauf oder Ablauf.  - `cod`: Chemische Sauerstoffbedarfskonzentration, gemessen im Zulauf oder Ablauf.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `do`: Konzentration des gelösten Sauerstoffs, gemessen im Abwasser.  - `emissionFlow`: Gasemissionsvolumenstrom, der an einer Verbindungsstelle gemessen wird, bevor er in einem Abgaskamin emittiert wird.  - `endsAt`: Eine Beziehung, die die Entität angibt, mit der der Knotenpunkt im nachgelagerten Punkt verbunden ist  - `flowrate`: Durchflussmenge des Abwassers.  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `nh4`: Ammoniumkonzentration, gemessen in einem Tank.  - `no3`: Nitratkonzentration im Abwasser gemessen.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pH`: Der pH-Wert des Wassers wird gemessen.  - `po4`: Ortho-Phosphat-Konzentration im Abwasser gemessen.  - `redox`: Redoxlevel im Abwasser gemessen.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `startsAt`: Eine Beziehung, die die Entität angibt, mit der der Knotenpunkt im vorgelagerten Punkt verbunden ist  - `temperature`: Temperatur des Abwassers gemessen.  - `tic`: Gesamte anorganische Kohlenstoffkonzentration, gemessen im Zulauf oder Ablauf.  - `tn`: Gesamt-Stickstoffkonzentration, gemessen im Abwasser.  - `toc`: Konzentration des gesamten organischen Kohlenstoffs, gemessen im Zulauf oder Ablauf.  - `tss`: Konzentration der gesamten suspendierten Feststoffe, die in einem Tank gemessen wird.  - `type`: Es muss WasteWaterJunction sein. NGSI-LD Entity Typ    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `bod`: Propety. Konzentration des biologischen Sauerstoffbedarfs, gemessen im Zulauf oder Ablauf.  - `cod`: Chemische Sauerstoffbedarfskonzentration, gemessen im Zulauf oder Ablauf.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `do`: Im Abwasser gemessene Konzentration des gelösten Sauerstoffs.  - `emissionFlow`: Gasemissionsvolumenstrom, der an einer Verbindungsstelle gemessen wird, bevor er in einen Abgaskamin abgegeben wird.  - `endsAt`: Eine Beziehung, die die Entität angibt, mit der der Knotenpunkt im nachgelagerten Punkt verbunden ist  - `flowrate`: Durchflussmenge des Abwassers.  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `nh4`: In einem Tank gemessene Ammoniumkonzentration.  - `no3`: Gemessene Nitratkonzentration in Abwässern.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pH`: Der pH-Wert des Wassers wird gemessen.  - `po4`: Im Abwasser gemessene Ortho-Phosphat-Konzentration.  - `redox`: Im Abwasser gemessener Redoxwert.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der vollständig qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `startsAt`: Eine Beziehung, die angibt, mit welchem Unternehmen der Knotenpunkt im vorgelagerten Punkt verbunden ist  - `temperature`: Messung der Abwassertemperatur.  - `tic`: Anorganische Gesamtkohlenstoffkonzentration, gemessen im Zulauf oder Ablauf.  - `tn`: Im Abwasser gemessene Gesamtstickstoffkonzentration.  - `toc`: Konzentration des gesamten organischen Kohlenstoffs, gemessen im Zu- oder Ablauf.  - `tss`: die in einem Tank gemessene Gesamtkonzentration an suspendierten Feststoffen.  - `type`: Es muss WasteWaterJunction sein. NGSI-LD Entitätsart    
 Erforderliche Eigenschaften  
 - `description`  - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -36,17 +36,21 @@ WasteWaterJunction:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     bod:    
       description: 'Propety. Biological Oxygen Demand concentration measured in the influent or effluent.'    
       type: number    
@@ -55,45 +59,59 @@ WasteWaterJunction:
         units: ' mg/L'    
     cod:    
       description: 'Chemical Oxygen Deman concentration measured in the influent or effluent.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     do:    
       description: 'Dissolved Oxygen concentration measured in wastewater.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     emissionFlow:    
       description: 'Gas emission flow volume measured at a junction prior to being emitted in an off-gas stack.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' m3'    
     endsAt:    
       description: 'A relationship indicating the entity the junction is connected to in the downstream point'    
       format: uri    
-      type: Relationship    
+      type: string    
+      x-ngsi:    
+        type: Relationship    
     flowrate:    
       description: 'Flowrate of wastewater.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' m3/h'    
     id:    
       anyOf: &wastewaterjunction_-_properties_-_owner_-_items_-_anyof    
@@ -106,7 +124,8 @@ WasteWaterJunction:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -258,44 +277,54 @@ WasteWaterJunction:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     nh4:    
       description: 'Ammonium concentration measured in a tank.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     no3:    
       description: 'Nitrate concentration measured in wastewater.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *wastewaterjunction_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     pH:    
       description: 'Water pH level measured.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
     po4:    
       description: 'Ortho-phosphate concentration measured in wastewater.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     redox:    
       description: 'Redox level measured in wastewater.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mV'    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
@@ -307,49 +336,61 @@ WasteWaterJunction:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     startsAt:    
       description: 'A relationship indicating the entity the junction is connected to in the upstream point'    
       format: uri    
-      type: Relationship    
+      type: string    
+      x-ngsi:    
+        type: Relationship    
     temperature:    
       description: 'Wastewater temperature measured.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' Celsius'    
     tic:    
       description: 'Total Inorganic Carbon concentration measured in the influent or effluent.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     tn:    
       description: 'Total Nitrogen concentration measured in wastewater.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     toc:    
       description: 'Total Organic Carbon concentration measured in the influent or effluent.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     tss:    
       description: 'total suspended solids concentration measured in a tank.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     type:    
       description: 'It has to be WasteWaterJunction. NGSI-LD Entity Type'    
       enum:    
         - WasteWaterJunction    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
@@ -359,7 +400,7 @@ WasteWaterJunction:
 </details>    
 ## Beispiel-Nutzlasten  
 #### WasteWaterJunction NGSI-v2 key-values Beispiel  
-Hier ist ein Beispiel für eine WasteWaterJunction im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine WasteWaterJunction im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
@@ -382,7 +423,7 @@ WasteWaterJunction:
 }  
 ```  
 #### WasteWaterJunction NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für eine WasteWaterJunction im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine WasteWaterJunction im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
@@ -450,7 +491,7 @@ WasteWaterJunction:
 }  
 ```  
 #### WasteWaterJunction NGSI-LD key-values Beispiel  
-Hier ist ein Beispiel für eine WasteWaterJunction im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine WasteWaterJunction im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "@context": "https://smartdatamodels.org/context.jsonld",  
@@ -474,7 +515,7 @@ WasteWaterJunction:
 }  
 ```  
 #### WasteWaterJunction NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für eine WasteWaterJunction im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine WasteWaterJunction im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 [  
   {  
