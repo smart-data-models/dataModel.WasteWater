@@ -380,7 +380,7 @@ WasteWaterTank:
 }  
 ```  
 #### WasteWaterTank NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für einen WasteWaterTank im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen WasteWaterTank im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
