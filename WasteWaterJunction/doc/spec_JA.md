@@ -6,10 +6,10 @@
 
 ## プロパティのリスト  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `bod`: プロパティー。流入水または流出水で測定された生物学的酸素要求量濃度。  - `cod`: 流入水または流出水で測定される化学的酸素濃度。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `do`: 排水中の溶存酸素濃度を測定。  - `emissionFlow`: オフガス・スタックで放出される前のジャンクションで測定されるガス放出流量。  - `endsAt`: ジャンクションが下流点で接続されているエンティティを示す関係性  - `flowrate`: 廃水の流量。  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `nh4`: 水槽内のアンモニウム濃度測定  - `no3`: 排水中の硝酸塩濃度を測定。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pH`: 水のpH値を測定。  - `po4`: 排水中のオルソリン酸濃度を測定。  - `redox`: 排水中の酸化還元度を測定。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startsAt`: ジャンクションが上流のポイントで接続されているエンティティを示すリレーションシップ  - `temperature`: 排水の温度を測定。  - `tic`: 流入水または流出水で測定された全無機炭素濃度。  - `tn`: 排水中の全窒素濃度を測定。  - `toc`: 流入水または流出水で測定された全有機炭素濃度。  - `tss`: 槽内で測定した全浮遊物質濃度。  - `type`: WasteWaterJunctionでなければならない。NGSI-LD エンティティタイプ    
+- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `bod`: 流入水または流出水で測定された生物学的酸素要求量濃度。  - `cod`: 流入水または流出水で測定された化学的酸素要求量濃度。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `do`: 排水中の溶存酸素濃度を測定。  - `emissionFlow`: オフガス・スタックで放出される前のジャンクションで測定されるガス放出流量。  - `endsAt`: ジャンクションが下流点で接続されているエンティティを示す関係性  - `flowrate`: 廃水の流量。  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `nh4`: 水槽内のアンモニウム濃度測定  - `no3`: 排水中の硝酸塩濃度を測定。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pH`: 水のpH値を測定。  - `po4`: 排水中のオルソリン酸濃度を測定。  - `pressure`: 特定の場所で測定された圧力。廃水タンクへの送風機による空気の流れに最も適している  - `redox`: 排水中の酸化還元度を測定。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startsAt`: ジャンクションが上流のポイントで接続されているエンティティを示すリレーションシップ  - `temperature`: 排水の温度を測定。  - `tic`: 流入水または流出水で測定された全無機炭素濃度。  - `tn`: 排水中の全窒素濃度を測定。  - `toc`: 流入水または流出水で測定された全有機炭素濃度。  - `tss`: 槽内で測定した全浮遊物質濃度。  - `type`: WasteWaterJunctionでなければならない。NGSI-LD エンティティタイプ    
 必須項目  
 - `description`  - `id`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+アルファベット順（クリックすると詳細が表示されます）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WasteWaterJunction:    
@@ -52,13 +52,14 @@ WasteWaterJunction:
         model: https://schema.org/Text    
         type: Property    
     bod:    
-      description: 'Propety. Biological Oxygen Demand concentration measured in the influent or effluent.'    
+      description: 'Biological Oxygen Demand concentration measured in the influent or effluent.'    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     cod:    
-      description: 'Chemical Oxygen Deman concentration measured in the influent or effluent.'    
+      description: 'Chemical Oxygen Demand concentration measured in the influent or effluent.'    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
@@ -319,6 +320,13 @@ WasteWaterJunction:
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' mg/L'    
+    pressure:    
+      description: 'Pressure measured at given location. Most relevant for airflow as provided by blowers to wastewater tanks'    
+      type: number    
+      x-ngsi:    
+        model: ' https://schema.org/Number'    
+        type: Property    
+        units: ' kPa'    
     redox:    
       description: 'Redox level measured in wastewater.'    
       type: number    
@@ -396,10 +404,16 @@ WasteWaterJunction:
     - type    
     - description    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterJunction/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterJunction/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
 ## ペイロードの例  
-#### WasteWaterJunction NGSI-v2キーバリュー例  
+#### WasteWaterJunction NGSI-v2のキーバリューの例  
 ここではWasteWaterJunctionをJSON-LD形式でkey-valuesにした例を紹介します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
