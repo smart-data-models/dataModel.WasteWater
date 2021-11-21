@@ -1,96 +1,100 @@
 {
-    "$schema": "http://json-schema.org/schema#",
-    "modelTags": "",
-    "$id": "https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterTank/schema.json",
-    "$schemaVersion": "0.0.2",
-    "title": "WasteWaterTreatment - Waste Water Tank",
-    "description": "This entity contains an harmonised description of a generic Tank made for the Wastewater treatment domain. For a given type of tank, all possible variables that can be measures are listed as properties. In the description property, the type of tank (anaerobic, pre-dinitrification, nitrification etc.)can be defined.",
-    "type": "object",
-    "allOf": [
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+  "$schema": "http://json-schema.org/schema#",
+  "modelTags": "",
+  "$id": "https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterTank/schema.json",
+  "$schemaVersion": "0.1.0",
+  "title": "WasteWaterTreatment - Waste Water Tank",
+  "description": "This entity contains an harmonised description of a generic Tank made for the Wastewater treatment domain. For a given type of tank, all possible variables that can be measures are listed as properties. In the description property, the type of tank (anaerobic, pre-dinitrification, nitrification etc.)can be defined.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "WasteWaterTank"
+          ],
+          "description": "Property. NGSI-LD Entity Type. It has to be WasteWaterTank"
         },
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        "tss": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/tss"
         },
-        {
-            "properties": {
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "WasteWaterTank"
-                    ],
-                    "description": "Property. NGSI-LD Entity Type. It has to be WasteWaterTank"
-                },
-                "tss": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/tss"
-                },
-                "nh4": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/nh4"
-                },
-                "no3": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/no3"
-                },
-                "do": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/do"
-                },
-                "redox": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/redox"
-                },
-                "sludgeLevel": {
-                    "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'metre'. Sludge Level measured in a secondary settler tank"
-                },
-                "tn": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/tn"
-                },
-                "temperature": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/temperature"
-                },
-                "pH": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/pH"
-                },
-                "power": {
-                    "properties": {
-                        "measured": {
-                            "type": "number",
-                            "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Power measured by a device."
-                        },
-                        "estimated": {
-                            "type": "number",
-                            "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Power estimated by a model."
-                        }
-                    }
-                },
-                "airflow": {
-                    "properties": {
-                        "measured": {
-                            "type": "number",
-                            "description": "Property. Model: https://schema.org/Number. Units: 'm/s'. Airflow measured by a device."
-                        },
-                        "estimated": {
-                            "type": "number",
-                            "description": "Property. Model: https://schema.org/Number. Units: 'm/s'. Airflow estimated by a model."
-                        }
-                    }
-                },
-                "startsAt": {
-                    "type": "string",
-                    "format": "uri",
-                    "description": "Relationship. A relationship indicating the entity the tank is connected to in the upstream point"
-                },
-                "endsAt": {
-                    "type": "string",
-                    "format": "uri",
-                    "description": "Relationship. A relationship indicating the entity the tank is connected to in the downstream point"
-                }
+        "nh4": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/nh4"
+        },
+        "no3": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/no3"
+        },
+        "do": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/do"
+        },
+        "redox": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/redox"
+        },
+        "sludgeLevel": {
+          "type": "number",
+          "description": "Property. Model: https://schema.org/Number. Units: 'metre'. Sludge Level measured in a secondary settler tank"
+        },
+        "tn": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/tn"
+        },
+        "temperature": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/temperature"
+        },
+        "pH": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/pH"
+        },
+        "power": {
+          "type": "object",
+          "description": "Property. Object defining the actual and estimated power consumption",
+          "properties": {
+            "measured": {
+              "type": "number",
+              "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Power measured by a device."
+            },
+            "estimated": {
+              "type": "number",
+              "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Power estimated by a model."
             }
+          }
+        },
+        "airflow": {
+          "type": "object",
+          "description": "Property. Object defining the actual and estimated airflow",
+          "properties": {
+            "measured": {
+              "type": "number",
+              "description": "Property. Model: https://schema.org/Number. Units: 'm/s'. Airflow measured by a device."
+            },
+            "estimated": {
+              "type": "number",
+              "description": "Property. Model: https://schema.org/Number. Units: 'm/s'. Airflow estimated by a model."
+            }
+          }
+        },
+        "startsAt": {
+          "type": "string",
+          "format": "uri",
+          "description": "Relationship. A relationship indicating the entity the tank is connected to in the upstream point"
+        },
+        "endsAt": {
+          "type": "string",
+          "format": "uri",
+          "description": "Relationship. A relationship indicating the entity the tank is connected to in the downstream point"
         }
-    ],
-    "required": [
-        "id",
-        "type",
-        "name",
-        "description"
-    ]
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "name",
+    "description"
+  ]
 }
