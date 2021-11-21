@@ -6,7 +6,7 @@ Entity: WasteWaterTank
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `do`: Dissolved Oxygen concentration measured in wastewater.  - `endsAt`: A relationship indicating the entity the tank is connected to in the downstream point  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `nh4`: Ammonium concentration measured in a tank.  - `no3`: Nitrate concentration measured in wastewater.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH`: Water pH level measured.  - `redox`: Redox level measured in wastewater.  - `seeAlso`: list of uri pointing to additional resources about the item  - `sludgeLevel`: Sludge Level measured in a secondary settler tank  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `startsAt`: A relationship indicating the entity the tank is connected to in the upstream point  - `temperature`: Wastewater temperature measured.  - `tn`: Total Nitrogen concentration measured in wastewater.  - `tss`: total suspended solids concentration measured in a tank.  - `type`: NGSI-LD Entity Type. It has to be WasteWaterTank    
+- `address`: The mailing address  - `airflow`: Object defining the actual and estimated airflow  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `do`: Dissolved Oxygen concentration measured in wastewater.  - `endsAt`: A relationship indicating the entity the tank is connected to in the downstream point  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `nh4`: Ammonium concentration measured in a tank.  - `no3`: Nitrate concentration measured in wastewater.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH`: Water pH level measured.  - `power`: Object defining the actual and estimated power consumption  - `redox`: Redox level measured in wastewater.  - `seeAlso`: list of uri pointing to additional resources about the item  - `sludgeLevel`: Sludge Level measured in a secondary settler tank  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `startsAt`: A relationship indicating the entity the tank is connected to in the upstream point  - `temperature`: Wastewater temperature measured.  - `tn`: Total Nitrogen concentration measured in wastewater.  - `tss`: total suspended solids concentration measured in a tank.  - `type`: NGSI-LD Entity Type. It has to be WasteWaterTank    
 Required properties  
 - `description`  - `id`  - `name`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
@@ -39,6 +39,18 @@ WasteWaterTank:
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
+    airflow:    
+      description: 'Object defining the actual and estimated airflow'    
+      properties:    
+        estimated:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''m/s''. Airflow estimated by a model.'    
+          type: number    
+        measured:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''m/s''. Airflow measured by a device.'    
+          type: number    
+      type: object    
+      x-ngsi:    
         type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
@@ -285,6 +297,18 @@ WasteWaterTank:
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
+    power:    
+      description: 'Object defining the actual and estimated power consumption'    
+      properties:    
+        estimated:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''kW''. Power estimated by a model.'    
+          type: number    
+        measured:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''kW''. Power measured by a device.'    
+          type: number    
+      type: object    
+      x-ngsi:    
+        type: Property    
     redox:    
       description: 'Redox level measured in wastewater.'    
       type: number    
@@ -356,6 +380,12 @@ WasteWaterTank:
     - name    
     - description    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterTank/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterTank/schema.json    
+  x-model-tags: ""    
+  x-version: 0.1.0    
 ```  
 </details>    
 ## Example payloads    
