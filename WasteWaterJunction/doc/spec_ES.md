@@ -6,7 +6,7 @@ Entidad: WasteWaterJunction
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `bod`: Propio. Concentración de demanda biológica de oxígeno medida en el afluente o el efluente.  - `cod`: Concentración química de Oxígeno Deman medida en el afluente o efluente.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `do`: Concentración de oxígeno disuelto medida en las aguas residuales.  - `emissionFlow`: Volumen de flujo de emisión de gas medido en un cruce antes de ser emitido en una chimenea de gases.  - `endsAt`: Una relación que indica la entidad a la que está conectada la unión en el punto posterior  - `flowrate`: Caudal de aguas residuales.  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `nh4`: Concentración de amonio medida en un tanque.  - `no3`: Concentración de nitratos medida en las aguas residuales.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pH`: Medición del nivel de pH del agua.  - `po4`: Concentración de ortofosfato medida en las aguas residuales.  - `redox`: Nivel de redox medido en las aguas residuales.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `startsAt`: Una relación que indica la entidad a la que está conectada la unión en el punto anterior  - `temperature`: Medición de la temperatura de las aguas residuales.  - `tic`: Concentración de carbono inorgánico total medida en el afluente o el efluente.  - `tn`: Concentración de nitrógeno total medida en las aguas residuales.  - `toc`: Concentración de carbono orgánico total medida en el afluente o el efluente.  - `tss`: concentración total de sólidos en suspensión medida en un tanque.  - `type`: Tiene que ser WasteWaterJunction. Tipo de entidad NGSI-LD    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `bod`: Concentración de demanda biológica de oxígeno medida en el afluente o el efluente.  - `cod`: Concentración de demanda química de oxígeno medida en el afluente o el efluente.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `do`: Concentración de oxígeno disuelto medida en las aguas residuales.  - `emissionFlow`: Volumen de flujo de emisión de gas medido en un cruce antes de ser emitido en una chimenea de gases.  - `endsAt`: Una relación que indica la entidad a la que está conectada la unión en el punto posterior  - `flowrate`: Caudal de aguas residuales.  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `nh4`: Concentración de amonio medida en un tanque.  - `no3`: Concentración de nitratos medida en las aguas residuales.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pH`: Medición del nivel de pH del agua.  - `po4`: Concentración de ortofosfato medida en las aguas residuales.  - `pressure`: Presión medida en un lugar determinado. Más relevante para el flujo de aire proporcionado por los sopladores a los depósitos de aguas residuales  - `redox`: Nivel de redox medido en las aguas residuales.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `startsAt`: Una relación que indica la entidad a la que está conectada la unión en el punto anterior  - `temperature`: Medición de la temperatura de las aguas residuales.  - `tic`: Concentración de carbono inorgánico total medida en el afluente o el efluente.  - `tn`: Concentración de nitrógeno total medida en las aguas residuales.  - `toc`: Concentración de carbono orgánico total medida en el afluente o el efluente.  - `tss`: concentración total de sólidos en suspensión medida en un tanque.  - `type`: Tiene que ser WasteWaterJunction. Tipo de entidad NGSI-LD    
 Propiedades requeridas  
 - `description`  - `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
@@ -52,13 +52,14 @@ WasteWaterJunction:
         model: https://schema.org/Text    
         type: Property    
     bod:    
-      description: 'Propety. Biological Oxygen Demand concentration measured in the influent or effluent.'    
+      description: 'Biological Oxygen Demand concentration measured in the influent or effluent.'    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     cod:    
-      description: 'Chemical Oxygen Deman concentration measured in the influent or effluent.'    
+      description: 'Chemical Oxygen Demand concentration measured in the influent or effluent.'    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
@@ -319,6 +320,13 @@ WasteWaterJunction:
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' mg/L'    
+    pressure:    
+      description: 'Pressure measured at given location. Most relevant for airflow as provided by blowers to wastewater tanks'    
+      type: number    
+      x-ngsi:    
+        model: ' https://schema.org/Number'    
+        type: Property    
+        units: ' kPa'    
     redox:    
       description: 'Redox level measured in wastewater.'    
       type: number    
@@ -396,6 +404,12 @@ WasteWaterJunction:
     - type    
     - description    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterJunction/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterJunction/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
 ## Ejemplo de carga útil  
