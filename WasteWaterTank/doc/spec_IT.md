@@ -6,7 +6,7 @@ Entità: WasteWaterTank
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `do`: Concentrazione di ossigeno disciolto misurata nelle acque reflue.  - `endsAt`: Una relazione che indica l'entità a cui il serbatoio è collegato nel punto a valle  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `nh4`: Concentrazione di ammonio misurata in un serbatoio.  - `no3`: Concentrazione di nitrati misurata nelle acque reflue.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `pH`: Livello di pH dell'acqua misurato.  - `redox`: Livello di Redox misurato nelle acque reflue.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `sludgeLevel`: Livello del fango misurato in una vasca di decantazione secondaria  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `startsAt`: Una relazione che indica l'entità a cui il serbatoio è collegato nel punto a monte  - `temperature`: Temperatura delle acque reflue misurata.  - `tn`: Concentrazione di azoto totale misurata nelle acque reflue.  - `tss`: concentrazione totale di solidi sospesi misurata in un serbatoio.  - `type`: Tipo di entità NGSI-LD. Deve essere WasteWaterTank    
+- `address`: L'indirizzo postale  - `airflow`: Oggetto che definisce il flusso d'aria reale e stimato  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `do`: Concentrazione di ossigeno disciolto misurata nelle acque reflue.  - `endsAt`: Una relazione che indica l'entità a cui il serbatoio è collegato nel punto a valle  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `nh4`: Concentrazione di ammonio misurata in un serbatoio.  - `no3`: Concentrazione di nitrati misurata nelle acque reflue.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `pH`: Livello di pH dell'acqua misurato.  - `power`: Oggetto che definisce il consumo effettivo e stimato di energia  - `redox`: Livello di Redox misurato nelle acque reflue.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `sludgeLevel`: Livello del fango misurato in una vasca di decantazione secondaria  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `startsAt`: Una relazione che indica l'entità a cui il serbatoio è collegato nel punto a monte  - `temperature`: Temperatura delle acque reflue misurata.  - `tn`: Concentrazione di azoto totale misurata nelle acque reflue.  - `tss`: concentrazione totale di solidi sospesi misurata in un serbatoio.  - `type`: Tipo di entità NGSI-LD. Deve essere WasteWaterTank    
 Proprietà richieste  
 - `description`  - `id`  - `name`  - `type`  ## Descrizione del modello di dati delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
@@ -39,6 +39,18 @@ WasteWaterTank:
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
+    airflow:    
+      description: 'Object defining the actual and estimated airflow'    
+      properties:    
+        estimated:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''m/s''. Airflow estimated by a model.'    
+          type: number    
+        measured:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''m/s''. Airflow measured by a device.'    
+          type: number    
+      type: object    
+      x-ngsi:    
         type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
@@ -285,6 +297,18 @@ WasteWaterTank:
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
+    power:    
+      description: 'Object defining the actual and estimated power consumption'    
+      properties:    
+        estimated:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''kW''. Power estimated by a model.'    
+          type: number    
+        measured:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''kW''. Power measured by a device.'    
+          type: number    
+      type: object    
+      x-ngsi:    
+        type: Property    
     redox:    
       description: 'Redox level measured in wastewater.'    
       type: number    
@@ -356,6 +380,12 @@ WasteWaterTank:
     - name    
     - description    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterTank/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterTank/schema.json    
+  x-model-tags: ""    
+  x-version: 0.1.0    
 ```  
 </details>    
 ## Esempio di payloads  
