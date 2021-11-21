@@ -6,7 +6,7 @@ Entität: WasteWaterJunction
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `bod`: Propety. Konzentration des biologischen Sauerstoffbedarfs, gemessen im Zulauf oder Ablauf.  - `cod`: Chemische Sauerstoffbedarfskonzentration, gemessen im Zulauf oder Ablauf.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `do`: Im Abwasser gemessene Konzentration des gelösten Sauerstoffs.  - `emissionFlow`: Gasemissionsvolumenstrom, der an einer Verbindungsstelle gemessen wird, bevor er in einen Abgaskamin abgegeben wird.  - `endsAt`: Eine Beziehung, die die Entität angibt, mit der der Knotenpunkt im nachgelagerten Punkt verbunden ist  - `flowrate`: Durchflussmenge des Abwassers.  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `nh4`: In einem Tank gemessene Ammoniumkonzentration.  - `no3`: Gemessene Nitratkonzentration in Abwässern.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pH`: Der pH-Wert des Wassers wird gemessen.  - `po4`: Im Abwasser gemessene Ortho-Phosphat-Konzentration.  - `redox`: Im Abwasser gemessener Redoxwert.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der vollständig qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `startsAt`: Eine Beziehung, die angibt, mit welchem Unternehmen der Knotenpunkt im vorgelagerten Punkt verbunden ist  - `temperature`: Messung der Abwassertemperatur.  - `tic`: Anorganische Gesamtkohlenstoffkonzentration, gemessen im Zulauf oder Ablauf.  - `tn`: Im Abwasser gemessene Gesamtstickstoffkonzentration.  - `toc`: Konzentration des gesamten organischen Kohlenstoffs, gemessen im Zu- oder Ablauf.  - `tss`: die in einem Tank gemessene Gesamtkonzentration an suspendierten Feststoffen.  - `type`: Es muss WasteWaterJunction sein. NGSI-LD Entitätsart    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `bod`: Konzentration des biologischen Sauerstoffbedarfs, gemessen im Zulauf oder Ablauf.  - `cod`: Konzentration des chemischen Sauerstoffbedarfs, gemessen im Zulauf oder Ablauf.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `do`: Im Abwasser gemessene Konzentration des gelösten Sauerstoffs.  - `emissionFlow`: Gasemissionsvolumenstrom, der an einer Verbindungsstelle gemessen wird, bevor er in einen Abgaskamin abgegeben wird.  - `endsAt`: Eine Beziehung, die die Entität angibt, mit der der Knotenpunkt im nachgelagerten Punkt verbunden ist  - `flowrate`: Durchflussmenge des Abwassers.  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `nh4`: In einem Tank gemessene Ammoniumkonzentration.  - `no3`: Gemessene Nitratkonzentration in Abwässern.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pH`: Der pH-Wert des Wassers wird gemessen.  - `po4`: Im Abwasser gemessene Ortho-Phosphat-Konzentration.  - `pressure`: An einem bestimmten Ort gemessener Druck. Am wichtigsten für den Luftstrom, der von Gebläsen für Abwassertanks bereitgestellt wird  - `redox`: Im Abwasser gemessener Redoxwert.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `startsAt`: Eine Beziehung, die angibt, mit welchem Unternehmen der Knotenpunkt im vorgelagerten Punkt verbunden ist  - `temperature`: Messung der Abwassertemperatur.  - `tic`: Anorganische Gesamtkohlenstoffkonzentration, gemessen im Zulauf oder Ablauf.  - `tn`: Im Abwasser gemessene Gesamtstickstoffkonzentration.  - `toc`: Konzentration des gesamten organischen Kohlenstoffs, gemessen im Zu- oder Ablauf.  - `tss`: die in einem Tank gemessene Gesamtkonzentration an suspendierten Feststoffen.  - `type`: Es muss WasteWaterJunction sein. NGSI-LD Entitätsart    
 Erforderliche Eigenschaften  
 - `description`  - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -52,13 +52,14 @@ WasteWaterJunction:
         model: https://schema.org/Text    
         type: Property    
     bod:    
-      description: 'Propety. Biological Oxygen Demand concentration measured in the influent or effluent.'    
+      description: 'Biological Oxygen Demand concentration measured in the influent or effluent.'    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' mg/L'    
     cod:    
-      description: 'Chemical Oxygen Deman concentration measured in the influent or effluent.'    
+      description: 'Chemical Oxygen Demand concentration measured in the influent or effluent.'    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
@@ -319,6 +320,13 @@ WasteWaterJunction:
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' mg/L'    
+    pressure:    
+      description: 'Pressure measured at given location. Most relevant for airflow as provided by blowers to wastewater tanks'    
+      type: number    
+      x-ngsi:    
+        model: ' https://schema.org/Number'    
+        type: Property    
+        units: ' kPa'    
     redox:    
       description: 'Redox level measured in wastewater.'    
       type: number    
@@ -396,6 +404,12 @@ WasteWaterJunction:
     - type    
     - description    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterJunction/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterJunction/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
 ## Beispiel-Nutzlasten  
@@ -423,7 +437,7 @@ WasteWaterJunction:
 }  
 ```  
 #### WasteWaterJunction NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für eine WasteWaterJunction im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine WasteWaterJunction im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
