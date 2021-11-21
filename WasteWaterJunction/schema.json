@@ -53,7 +53,7 @@
                 },
                 "bod": {
                     "type": "number",
-                    "description": "Propety. Model: https://schema.org/Number. Units: 'mg/L'. Biological Oxygen Demand concentration measured in the influent or effluent."
+                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Biological Oxygen Demand concentration measured in the influent or effluent."
                 },
                 "cod": {
                     "type": "number",
