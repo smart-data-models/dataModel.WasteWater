@@ -38,10 +38,11 @@ WasteWaterJunction:
         model: https://schema.org/Text
         type: Property
     bod:
-      description: 'Propety. Biological Oxygen Demand concentration measured in the influent or effluent.'
+      description: 'Biological Oxygen Demand concentration measured in the influent or effluent.'
       type: number
       x-ngsi:
         model: ' https://schema.org/Number'
+        type: Property
         units: ' mg/L'
     cod:
       description: 'Chemical Oxygen Demand concentration measured in the influent or effluent.'
