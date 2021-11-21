@@ -6,10 +6,10 @@
 
 ## プロパティのリスト  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `do`: 排水中の溶存酸素濃度を測定。  - `endsAt`: 下流のポイントでタンクが接続されているエンティティを示すリレーションシップ  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `nh4`: 水槽内のアンモニウム濃度測定  - `no3`: 排水中の硝酸塩濃度を測定。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pH`: 水のpH値を測定。  - `redox`: 排水中の酸化還元度を測定。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `sludgeLevel`: 二次沈殿槽で測定したスラッジレベル  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startsAt`: 上流点でタンクが接続されているエンティティを示す関係性  - `temperature`: 排水の温度を測定。  - `tn`: 排水中の全窒素濃度を測定。  - `tss`: 槽内で測定した全浮遊物質濃度。  - `type`: NGSI-LD エンティティタイプ。これはWasteWaterTankでなければならない。    
+- `address`: 郵送先住所  - `airflow`: 実際のエアフローと推定エアフローを定義するオブジェクト  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `do`: 排水中の溶存酸素濃度を測定。  - `endsAt`: 下流のポイントでタンクが接続されているエンティティを示すリレーションシップ  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `nh4`: 水槽内のアンモニウム濃度測定  - `no3`: 排水中の硝酸塩濃度を測定。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pH`: 水のpH値を測定。  - `power`: 実際の消費電力と推定消費電力を定義するオブジェクト  - `redox`: 排水中の酸化還元度を測定。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `sludgeLevel`: 二次沈殿槽で測定したスラッジレベル  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startsAt`: 上流点でタンクが接続されているエンティティを示す関係性  - `temperature`: 排水の温度を測定。  - `tn`: 排水中の全窒素濃度を測定。  - `tss`: 槽内で測定した全浮遊物質濃度。  - `type`: NGSI-LD エンティティタイプ。これはWasteWaterTankでなければならない。    
 必須項目  
 - `description`  - `id`  - `name`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+アルファベット順（クリックすると詳細が表示されます）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WasteWaterTank:    
@@ -39,6 +39,18 @@ WasteWaterTank:
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
+    airflow:    
+      description: 'Object defining the actual and estimated airflow'    
+      properties:    
+        estimated:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''m/s''. Airflow estimated by a model.'    
+          type: number    
+        measured:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''m/s''. Airflow measured by a device.'    
+          type: number    
+      type: object    
+      x-ngsi:    
         type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
@@ -285,6 +297,18 @@ WasteWaterTank:
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
+    power:    
+      description: 'Object defining the actual and estimated power consumption'    
+      properties:    
+        estimated:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''kW''. Power estimated by a model.'    
+          type: number    
+        measured:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''kW''. Power measured by a device.'    
+          type: number    
+      type: object    
+      x-ngsi:    
+        type: Property    
     redox:    
       description: 'Redox level measured in wastewater.'    
       type: number    
@@ -356,6 +380,12 @@ WasteWaterTank:
     - name    
     - description    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterTank/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterTank/schema.json    
+  x-model-tags: ""    
+  x-version: 0.1.0    
 ```  
 </details>    
 ## ペイロードの例  
