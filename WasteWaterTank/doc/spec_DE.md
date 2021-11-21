@@ -6,7 +6,7 @@ Entität: WasteWaterTank
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `do`: Im Abwasser gemessene Konzentration des gelösten Sauerstoffs.  - `endsAt`: eine Beziehung, die angibt, mit welchem Unternehmen der Tank im nachgelagerten Punkt verbunden ist  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `nh4`: In einem Tank gemessene Ammoniumkonzentration.  - `no3`: Gemessene Nitratkonzentration in Abwässern.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pH`: Der pH-Wert des Wassers wird gemessen.  - `redox`: Im Abwasser gemessener Redoxwert.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `sludgeLevel`: Schlammspiegel gemessen in einem Nachklärbecken  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `startsAt`: eine Beziehung, die angibt, mit welchem Unternehmen der Tank im vorgelagerten Punkt verbunden ist  - `temperature`: Messung der Abwassertemperatur.  - `tn`: Im Abwasser gemessene Gesamtstickstoffkonzentration.  - `tss`: die in einem Tank gemessene Gesamtkonzentration an suspendierten Feststoffen.  - `type`: NGSI-LD Entitätstyp. Es muss WasteWaterTank sein.    
+- `address`: Die Postanschrift  - `airflow`: Objekt zur Definition des tatsächlichen und geschätzten Luftstroms  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `do`: Im Abwasser gemessene Konzentration des gelösten Sauerstoffs.  - `endsAt`: eine Beziehung, die angibt, mit welchem Unternehmen der Tank im nachgelagerten Punkt verbunden ist  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `nh4`: In einem Tank gemessene Ammoniumkonzentration.  - `no3`: Gemessene Nitratkonzentration in Abwässern.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pH`: Der pH-Wert des Wassers wird gemessen.  - `power`: Objekt, das den tatsächlichen und geschätzten Stromverbrauch definiert  - `redox`: Im Abwasser gemessener Redoxwert.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `sludgeLevel`: Schlammspiegel gemessen in einem Nachklärbecken  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `startsAt`: eine Beziehung, die angibt, mit welchem Unternehmen der Tank im vorgelagerten Punkt verbunden ist  - `temperature`: Messung der Abwassertemperatur.  - `tn`: Im Abwasser gemessene Gesamtstickstoffkonzentration.  - `tss`: die in einem Tank gemessene Gesamtkonzentration an suspendierten Feststoffen.  - `type`: NGSI-LD Entitätstyp. Es muss WasteWaterTank sein.    
 Erforderliche Eigenschaften  
 - `description`  - `id`  - `name`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -39,6 +39,18 @@ WasteWaterTank:
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
+    airflow:    
+      description: 'Object defining the actual and estimated airflow'    
+      properties:    
+        estimated:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''m/s''. Airflow estimated by a model.'    
+          type: number    
+        measured:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''m/s''. Airflow measured by a device.'    
+          type: number    
+      type: object    
+      x-ngsi:    
         type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
@@ -285,6 +297,18 @@ WasteWaterTank:
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
+    power:    
+      description: 'Object defining the actual and estimated power consumption'    
+      properties:    
+        estimated:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''kW''. Power estimated by a model.'    
+          type: number    
+        measured:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''kW''. Power measured by a device.'    
+          type: number    
+      type: object    
+      x-ngsi:    
+        type: Property    
     redox:    
       description: 'Redox level measured in wastewater.'    
       type: number    
@@ -356,6 +380,12 @@ WasteWaterTank:
     - name    
     - description    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterTank/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterTank/schema.json    
+  x-model-tags: ""    
+  x-version: 0.1.0    
 ```  
 </details>    
 ## Beispiel-Nutzlasten  
@@ -380,7 +410,7 @@ WasteWaterTank:
 }  
 ```  
 #### WasteWaterTank NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für einen WasteWaterTank im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen WasteWaterTank im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
