@@ -163,36 +163,6 @@
         },
         {
             "@type": "Telemetry",
-            "name": "location_Point",
-            "schema": "point"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_LineString",
-            "schema": "lineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Polygon",
-            "schema": "polygon"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPoint",
-            "schema": "multiPoint"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiLineString",
-            "schema": "multiLineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPolygon",
-            "schema": "multiPolygon"
-        },
-        {
-            "@type": "Telemetry",
             "name": "owner",
             "schema": {
                 "@type": "Array",
@@ -232,6 +202,68 @@
                     "schema": "string"
                 }
             ]
+        },
+        {
+            "@type": "object",
+            "name": "airflow",
+            "comment": "Object defining the actual and estimated airflow",
+            "displayName": "airflow",
+            "fields": [
+                {
+                    "name": "estimated",
+                    "schema": "long"
+                },
+                {
+                    "name": "measured",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "power",
+            "comment": "Object defining the actual and estimated power consumption",
+            "displayName": "power",
+            "fields": [
+                {
+                    "name": "estimated",
+                    "schema": "long"
+                },
+                {
+                    "name": "measured",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
         }
     ]
 }
