@@ -6,7 +6,7 @@ Entidad: WasteWaterTank
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `do`: Concentración de oxígeno disuelto medida en las aguas residuales.  - `endsAt`: Una relación que indica la entidad a la que está conectado el depósito en el punto posterior  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `nh4`: Concentración de amonio medida en un tanque.  - `no3`: Concentración de nitratos medida en las aguas residuales.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pH`: Medición del nivel de pH del agua.  - `redox`: Nivel de redox medido en las aguas residuales.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sludgeLevel`: Nivel de lodos medido en un tanque secundario de sedimentación  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `startsAt`: Una relación que indica la entidad a la que está conectado el depósito en el punto anterior  - `temperature`: Medición de la temperatura de las aguas residuales.  - `tn`: Concentración de nitrógeno total medida en las aguas residuales.  - `tss`: concentración total de sólidos en suspensión medida en un tanque.  - `type`: Tipo de entidad NGSI-LD. Tiene que ser WasteWaterTank    
+- `address`: La dirección postal  - `airflow`: Objeto que define el flujo de aire real y estimado  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `do`: Concentración de oxígeno disuelto medida en las aguas residuales.  - `endsAt`: Una relación que indica la entidad a la que está conectado el depósito en el punto posterior  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `nh4`: Concentración de amonio medida en un tanque.  - `no3`: Concentración de nitratos medida en las aguas residuales.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pH`: Medición del nivel de pH del agua.  - `power`: Objeto que define el consumo de energía real y estimado  - `redox`: Nivel de redox medido en las aguas residuales.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sludgeLevel`: Nivel de lodos medido en un tanque secundario de sedimentación  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `startsAt`: Una relación que indica la entidad a la que está conectado el depósito en el punto anterior  - `temperature`: Medición de la temperatura de las aguas residuales.  - `tn`: Concentración de nitrógeno total medida en las aguas residuales.  - `tss`: concentración total de sólidos en suspensión medida en un tanque.  - `type`: Tipo de entidad NGSI-LD. Tiene que ser WasteWaterTank    
 Propiedades requeridas  
 - `description`  - `id`  - `name`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
@@ -39,6 +39,18 @@ WasteWaterTank:
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
+    airflow:    
+      description: 'Object defining the actual and estimated airflow'    
+      properties:    
+        estimated:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''m/s''. Airflow estimated by a model.'    
+          type: number    
+        measured:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''m/s''. Airflow measured by a device.'    
+          type: number    
+      type: object    
+      x-ngsi:    
         type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
@@ -285,6 +297,18 @@ WasteWaterTank:
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
+    power:    
+      description: 'Object defining the actual and estimated power consumption'    
+      properties:    
+        estimated:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''kW''. Power estimated by a model.'    
+          type: number    
+        measured:    
+          description: 'Property. Model: https://schema.org/Number. Units: ''kW''. Power measured by a device.'    
+          type: number    
+      type: object    
+      x-ngsi:    
+        type: Property    
     redox:    
       description: 'Redox level measured in wastewater.'    
       type: number    
@@ -356,6 +380,12 @@ WasteWaterTank:
     - name    
     - description    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterTank/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterTank/schema.json    
+  x-model-tags: ""    
+  x-version: 0.1.0    
 ```  
 </details>    
 ## Ejemplo de carga útil  
