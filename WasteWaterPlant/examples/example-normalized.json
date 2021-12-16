@@ -1,0 +1,100 @@
+{
+  "id": "uri:ngsi-ld:1234:A43R",
+  "type": "WasteWaterPlant",
+  "no3": {
+    "type": "Number",
+    "value": 10
+  },
+  "bod": {
+    "type": "Number",
+    "value": 250
+  },
+  "inFlow": {
+    "type": "Number",
+    "value": 5
+  },
+  "toc": {
+    "type": "Number",
+    "value": 0.7
+  },
+  "nh4": {
+    "type": "Number",
+    "value": 50
+  },
+  "redox": {
+    "type": "Number",
+    "value": 25
+  },
+  "do": {
+    "type": "Number",
+    "value": 4
+  },
+  "treatmentPlantID": {
+    "type": "Number",
+    "value": 7
+  },
+  "outFlow": {
+    "type": "Number",
+    "value": 6.7
+  },
+  "tss": {
+    "type": "Number",
+    "value": 2
+  },
+  "treatmentPlantCapacity": {
+    "type": "Number",
+    "value": 10
+  },
+  "tic": {
+    "type": "Number",
+    "value": 2
+  },
+  "tn": {
+    "type": "Number",
+    "value": 9
+  },
+  "po4": {
+    "type": "Number",
+    "value": 6
+  },
+  "cod": {
+    "type": "Number",
+    "value": 25
+  },
+  "treatmentPlantName": {
+    "type": "Number",
+    "value": "A"
+  },
+  "treatmentPlantCode": {
+    "type": "Number",
+    "value": "2"
+  },
+  "observationDateTime": {
+    "type": "DateTime",
+    "value": "2021-03-11T15:51:02+05:30"
+  },
+  "pHTSA": {
+    "type": "StructuredValue",
+    "value": {
+      "avgOverTime": 8,
+      "maxOverTime": 10,
+      "instValue": 6,
+      "minOverTime": 6
+    }
+  },
+  "municipalityInfo": {
+    "type": "StructuredValue",
+    "value": {
+      "district": "Bangalore Urban",
+      "ulbName": "BMC",
+      "cityId": "23",
+      "wardId": "23",
+      "stateName": "Karnataka",
+      "cityName": "Bangalore",
+      "zoneName": "South",
+      "wardName": "Bangalore Urban",
+      "zoneId": "2",
+      "wardNum": 4
+    }
+  }
+}
