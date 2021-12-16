@@ -36,47 +36,63 @@ OffGasStack:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     ch4:    
       description: 'CH4 gas emissions from an off-gas stack entity.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' ppm'    
     co2:    
       description: 'CO2 gas emissions from an off-gas stack entity.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' ppm'    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     endsAt:    
       description: 'A relationship indicating the entity the Off Gas Stack is connected to in the downstream point.'    
       format: uri    
-      type: Relationship    
+      type: string    
+      x-ngsi:    
+        type: Relationship    
     id:    
       anyOf: &offgasstack_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -88,7 +104,8 @@ OffGasStack:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -240,28 +257,35 @@ OffGasStack:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     n2o:    
       description: 'N2O gas emissions from an off-gas stack entity.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' ppm'    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     o2:    
       description: 'O2 gas emissions from an off-gas stack entity.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: ' ppm'    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *offgasstack_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -272,19 +296,26 @@ OffGasStack:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     startsAt:    
       description: 'A relationship indicating the entity the Off Gas Stack is connected to in the upstream point.'    
       format: uri    
-      type: Relationship    
+      type: string    
+      x-ngsi:    
+        type: Relationship    
     type:    
       description: 'NGSI-LD Entity Type. it has to be OffGasStack'    
       enum:    
         - OffGasStack    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
@@ -407,3 +438,4 @@ OffGasStack:
   }  
 }  
 ```  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units

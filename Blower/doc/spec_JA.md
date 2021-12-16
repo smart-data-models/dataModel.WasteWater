@@ -1,15 +1,15 @@
-Entität: Gebläse  
-================  
-[Offene Lizenz](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/Blower/LICENSE.md)  
-[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Diese Entität enthält eine harmonisierte Beschreibung eines Gebläses für den Bereich der Abwasserbehandlung. Die Entität stellt ein Gebläse dar, das für die Belüftung im Abwasseraufbereitungsprozess verwendet wird. Wichtige Parameter werden gemessen, um die Menge des Luftstroms zu regulieren und zu messen, der dem Belüftungsbecken im Bioreaktor zugeführt wird. Der Energieverbrauch eines Gebläses ist ebenfalls eine wichtige Information für die Echtzeitsteuerung und -optimierung der Kläranlage.**  
+エンティティブロアー  
+==========  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/Blower/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述。**このエンティティは、廃水処理ドメイン用に作られた送風機の調和された記述を含む。このエンティティは、廃水処理プロセスにおける曝気の目的で使用される送風機を表す。バイオリアクター内の曝気槽に供給される気流の量を調整・測定するために、重要なパラメータが測定される。送風機のエネルギー消費量は、廃水処理プラントのリアルタイム制御と最適化のための重要な情報でもあります。  
 
-## Liste der Eigenschaften  
+## プロパティのリスト  
 
-- `address`: Die Postanschrift  - `airflow`: Luftstrom, der von einem Gebläse geblasen wird.  - `airflowEstimation`: Schätzung der Luftströmung durch AI-Soft-Sensor-Simulation.  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `endsAt`: Eine Beziehung, die angibt, mit welchem Unternehmen das Gebläse im nachgelagerten Punkt verbunden ist.  - `energy`: Von einem Gebläse verbrauchte Energie.  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pressure`: Druckmessung im Gebläse.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `startsAt`: Eine Beziehung, die die Einheit angibt, mit der das Gebläse im vorgelagerten Punkt verbunden ist.  - `type`: NGSI-LD Entitätstyp. Es muss Blower sein    
-Erforderliche Eigenschaften  
-- `description`  - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
-Alphabetisch sortiert (für Details anklicken)  
+- `address`: 郵送先住所  - `airflow`: 送風機によって吹き出される空気の流れ。  - `airflowEstimation`: AIソフトセンサーシミュレーションによる気流の推定。  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `endsAt`: 下流のポイントでブロワーが接続されているエンティティを示す関係。  - `energy`: 送風機で消費されるエネルギー。  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pressure`: 送風機の圧力測定。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startsAt`: 上流点でブロワーが接続されているエンティティを示す関係。  - `type`: NGSI-LD エンティティタイプ。ブロワーでなければならない    
+必須項目  
+- `description`  - `id`  - `type`  ## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Blower:    
@@ -323,9 +323,9 @@ Blower:
   type: object    
 ```  
 </details>    
-## Beispiel-Nutzlasten  
-#### Gebläse NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen Blower im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+## ペイロードの例  
+#### Blower NGSI-v2 キーバリューの例  
+JSON-LD形式でkey-valuesとしてBlowerを表現した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:Blower:Blower2",  
@@ -337,8 +337,8 @@ Blower:
   "pressure": 84.06  
 }  
 ```  
-#### Gebläse NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für einen Blower im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### 送風機 NGSI-v2 正規化例  
+正常化されたJSON-LD形式のBlowerの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:Blower:Blower2",  
@@ -365,8 +365,8 @@ Blower:
   }  
 }  
 ```  
-#### Gebläse NGSI-LD Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen Blower im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+#### Blower NGSI-LDのキーバリューの例  
+JSON-LD形式でkey-valuesとしてBlowerを表現した例です。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "@context": "https://smartdatamodels.org/context.jsonld",  
@@ -379,8 +379,8 @@ Blower:
   "pressure": 84.06  
 }  
 ```  
-#### Gebläse NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für einen Blower im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### 送風機 NGSI-LDの正規化例  
+正常化されたJSON-LD形式のBlowerの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "@context": "https://smartdatamodels.org/context.jsonld",  
@@ -408,4 +408,4 @@ Blower:
   }  
 }  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。

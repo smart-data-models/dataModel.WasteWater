@@ -1,19 +1,19 @@
-Entidad: WasteWaterTank  
-=======================  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterTank/LICENSE.md)  
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **Esta entidad contiene una descripción armonizada de un Depósito genérico realizado para el ámbito del tratamiento de aguas residuales. Para un determinado tipo de tanque, se enumeran como propiedades todas las posibles variables que pueden ser medidas. En la propiedad de descripción se puede definir el tipo de tanque (anaerobio, predinitrificación, nitrificación, etc.)**.  
+Entità: WasteWaterJunction  
+==========================  
+[Licenza aperta](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterJunction/LICENSE.md)  
+[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descrizione globale: **Questa entità contiene una descrizione armonizzata di una giunzione generica fatta per il dominio del trattamento delle acque reflue. Le giunzioni potrebbero essere presenti in alcune sezioni dell'impianto di trattamento. Ai fini del trattamento delle acque reflue, la giunzione è più utile se è una posizione di un sensore che misura una variabile specifica.**  
 
-## Lista de propiedades  
+## Elenco delle proprietà  
 
-- `address`: La dirección postal  - `airflow`: Objeto que define el flujo de aire real y estimado  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `do`: Concentración de oxígeno disuelto medida en las aguas residuales.  - `endsAt`: Una relación que indica la entidad a la que está conectado el depósito en el punto posterior  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `nh4`: Concentración de amonio medida en un tanque.  - `no3`: Concentración de nitratos medida en las aguas residuales.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pH`: Medición del nivel de pH del agua.  - `power`: Objeto que define el consumo de energía real y estimado  - `redox`: Nivel de redox medido en las aguas residuales.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sludgeLevel`: Nivel de lodos medido en un tanque secundario de sedimentación  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `startsAt`: Una relación que indica la entidad a la que está conectado el depósito en el punto anterior  - `temperature`: Medición de la temperatura de las aguas residuales.  - `tn`: Concentración de nitrógeno total medida en las aguas residuales.  - `tss`: concentración total de sólidos en suspensión medida en un tanque.  - `type`: Tipo de entidad NGSI-LD. Tiene que ser WasteWaterTank    
-Propiedades requeridas  
-- `description`  - `id`  - `name`  - `type`  ## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `bod`: Concentrazione della domanda biologica di ossigeno misurata nell'affluente o nell'effluente.  - `cod`: Concentrazione della domanda chimica di ossigeno misurata nell'affluente o nell'effluente.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `do`: Concentrazione di ossigeno disciolto misurata nelle acque reflue.  - `emissionFlow`: Volume di flusso delle emissioni di gas misurato in una giunzione prima di essere emesso in un camino di scarico.  - `endsAt`: Una relazione che indica l'entità a cui la giunzione è collegata nel punto a valle  - `flowrate`: Portata delle acque reflue.  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `nh4`: Concentrazione di ammonio misurata in un serbatoio.  - `no3`: Concentrazione di nitrati misurata nelle acque reflue.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `pH`: Livello di pH dell'acqua misurato.  - `po4`: Concentrazione di ortofosfato misurata nelle acque reflue.  - `pressure`: Pressione misurata in una data posizione. Più rilevante per il flusso d'aria fornito dalle soffianti ai serbatoi delle acque reflue  - `redox`: Livello di Redox misurato nelle acque reflue.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `startsAt`: Una relazione che indica l'entità a cui la giunzione è collegata nel punto a monte  - `temperature`: Temperatura delle acque reflue misurata.  - `tic`: Concentrazione di carbonio inorganico totale misurata nell'affluente o nell'effluente.  - `tn`: Concentrazione di azoto totale misurata nelle acque reflue.  - `toc`: Concentrazione di carbonio organico totale misurata nell'affluente o nell'effluente.  - `tss`: concentrazione totale di solidi sospesi misurata in un serbatoio.  - `type`: Deve essere WasteWaterJunction. Tipo di entità NGSI-LD    
+Proprietà richieste  
+- `description`  - `id`  - `type`  ## Descrizione del modello di dati delle proprietà  
+Ordinati in ordine alfabetico (clicca per i dettagli)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
-WasteWaterTank:    
-  description: 'This entity contains an harmonised description of a generic Tank made for the Wastewater treatment domain. For a given type of tank, all possible variables that can be measures are listed as properties. In the description property, the type of tank (anaerobic, pre-dinitrification, nitrification etc.)can be defined.'    
+WasteWaterJunction:    
+  description: 'This entity contains an harmonised description of a generic Junction made for the Wastewater treatment domain. Junctions could be in place in certain sections of thetreatment plant. In wastewater treatment purposes, the junction is most useful if it is a locationof a sensor that measures a specific variable.'    
   properties:    
     address:    
       description: 'The mailing address'    
@@ -40,18 +40,6 @@ WasteWaterTank:
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
-    airflow:    
-      description: 'Object defining the actual and estimated airflow'    
-      properties:    
-        estimated:    
-          description: 'Property. Model: https://schema.org/Number. Units: ''m/s''. Airflow estimated by a model.'    
-          type: number    
-        measured:    
-          description: 'Property. Model: https://schema.org/Number. Units: ''m/s''. Airflow measured by a device.'    
-          type: number    
-      type: object    
-      x-ngsi:    
-        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
       type: string    
@@ -63,6 +51,20 @@ WasteWaterTank:
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
+    bod:    
+      description: 'Biological Oxygen Demand concentration measured in the influent or effluent.'    
+      type: number    
+      x-ngsi:    
+        model: ' https://schema.org/Number'    
+        type: Property    
+        units: ' mg/L'    
+    cod:    
+      description: 'Chemical Oxygen Demand concentration measured in the influent or effluent.'    
+      type: number    
+      x-ngsi:    
+        model: ' https://schema.org/Number'    
+        type: Property    
+        units: ' mg/L'    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
       type: string    
@@ -92,14 +94,28 @@ WasteWaterTank:
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' mg/L'    
+    emissionFlow:    
+      description: 'Gas emission flow volume measured at a junction prior to being emitted in an off-gas stack.'    
+      type: number    
+      x-ngsi:    
+        model: ' https://schema.org/Number'    
+        type: Property    
+        units: ' m3'    
     endsAt:    
-      description: 'A relationship indicating the entity the tank is connected to in the downstream point'    
+      description: 'A relationship indicating the entity the junction is connected to in the downstream point'    
       format: uri    
       type: string    
       x-ngsi:    
         type: Relationship    
+    flowrate:    
+      description: 'Flowrate of wastewater.'    
+      type: number    
+      x-ngsi:    
+        model: ' https://schema.org/Number'    
+        type: Property    
+        units: ' m3/h'    
     id:    
-      anyOf: &wastewatertank_-_properties_-_owner_-_items_-_anyof    
+      anyOf: &wastewaterjunction_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
           maxLength: 256    
           minLength: 1    
@@ -286,7 +302,7 @@ WasteWaterTank:
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
-        anyOf: *wastewatertank_-_properties_-_owner_-_items_-_anyof    
+        anyOf: *wastewaterjunction_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
       type: array    
       x-ngsi:    
@@ -297,18 +313,20 @@ WasteWaterTank:
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
-    power:    
-      description: 'Object defining the actual and estimated power consumption'    
-      properties:    
-        estimated:    
-          description: 'Property. Model: https://schema.org/Number. Units: ''kW''. Power estimated by a model.'    
-          type: number    
-        measured:    
-          description: 'Property. Model: https://schema.org/Number. Units: ''kW''. Power measured by a device.'    
-          type: number    
-      type: object    
+    po4:    
+      description: 'Ortho-phosphate concentration measured in wastewater.'    
+      type: number    
       x-ngsi:    
+        model: ' https://schema.org/Number'    
         type: Property    
+        units: ' mg/L'    
+    pressure:    
+      description: 'Pressure measured at given location. Most relevant for airflow as provided by blowers to wastewater tanks'    
+      type: number    
+      x-ngsi:    
+        model: ' https://schema.org/Number'    
+        type: Property    
+        units: ' kPa'    
     redox:    
       description: 'Redox level measured in wastewater.'    
       type: number    
@@ -328,20 +346,13 @@ WasteWaterTank:
           type: string    
       x-ngsi:    
         type: Property    
-    sludgeLevel:    
-      description: 'Sludge Level measured in a secondary settler tank'    
-      type: number    
-      x-ngsi:    
-        model: ' https://schema.org/Number'    
-        type: Property    
-        units: ' metre'    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
       type: string    
       x-ngsi:    
         type: Property    
     startsAt:    
-      description: 'A relationship indicating the entity the tank is connected to in the upstream point'    
+      description: 'A relationship indicating the entity the junction is connected to in the upstream point'    
       format: uri    
       type: string    
       x-ngsi:    
@@ -353,8 +364,22 @@ WasteWaterTank:
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' Celsius'    
+    tic:    
+      description: 'Total Inorganic Carbon concentration measured in the influent or effluent.'    
+      type: number    
+      x-ngsi:    
+        model: ' https://schema.org/Number'    
+        type: Property    
+        units: ' mg/L'    
     tn:    
       description: 'Total Nitrogen concentration measured in wastewater.'    
+      type: number    
+      x-ngsi:    
+        model: ' https://schema.org/Number'    
+        type: Property    
+        units: ' mg/L'    
+    toc:    
+      description: 'Total Organic Carbon concentration measured in the influent or effluent.'    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
@@ -368,68 +393,66 @@ WasteWaterTank:
         type: Property    
         units: ' mg/L'    
     type:    
-      description: 'NGSI-LD Entity Type. It has to be WasteWaterTank'    
+      description: 'It has to be WasteWaterJunction. NGSI-LD Entity Type'    
       enum:    
-        - WasteWaterTank    
+        - WasteWaterJunction    
       type: string    
       x-ngsi:    
         type: Property    
   required:    
     - id    
     - type    
-    - name    
     - description    
   type: object    
   x-derived-from: ""    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
-  x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterTank/LICENSE.md    
-  x-model-schema: https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterTank/schema.json    
+  x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterJunction/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterJunction/schema.json    
   x-model-tags: ""    
-  x-version: 0.1.0    
+  x-version: 0.0.1    
 ```  
 </details>    
-## Ejemplo de carga útil  
-#### WasteWaterTank NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de un WasteWaterTank en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+## Esempio di payloads  
+#### WasteWaterJunction NGSI-v2 valori chiave Esempio  
+Ecco un esempio di una WasteWaterJunction in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
-  "type": "WasteWaterTank",  
-  "name": "Aerobic Tank 2",  
-  "description": "Aerobic tank in treatment lane 2.",  
-  "tss": 3500,  
-  "nh4": 1.3,  
+  "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
+  "type": "WasteWaterJunction",  
+  "name": "Junction 2",  
+  "description": "A junction in the treatment lane representing a sampling location for the effluent wastewater.",  
+  "nh4": 0.5,  
   "no3": 5.2,  
   "do": 1.2,  
   "redox": 250,  
-  "sludgeLevel": 0.8,  
+  "tn": 7.18,  
+  "toc": 16.28,  
+  "po4": 0.29,  
+  "bod": 2.44,  
+  "cod": 36.6,  
+  "flowrate": 27650,  
   "temperature": 16,  
   "pH": 7.8,  
-  "startsAt": "urn:ngsi-ld:WasteWaterTank:facultativeTank2",  
-  "endsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
+  "startsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
 }  
 ```  
-#### WasteWaterTank NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de un WasteWaterTank en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### WasteWaterJunction NGSI-v2 normalizzato Esempio  
+Ecco un esempio di una WasteWaterJunction in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
-  "type": "WasteWaterTank",  
+  "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
+  "type": "WasteWaterJunction",  
   "name": {  
     "type": "Text",  
-    "value": "Aerobic Tank 2"  
+    "value": "Junction 2"  
   },  
   "description": {  
     "type": "Text",  
-    "value": "Aerobic tank in treatment lane 2."  
-  },  
-  "tss": {  
-    "type": "Number",  
-    "value": 3500  
+    "value": "A junction in the treatment lane representing a sampling location for the effluent wastewater."  
   },  
   "nh4": {  
     "type": "Number",  
-    "value": 1.3  
+    "value": 0.5  
   },  
   "no3": {  
     "type": "Number",  
@@ -443,9 +466,29 @@ WasteWaterTank:
     "type": "Number",  
     "value": 250  
   },  
-  "sludgeLevel": {  
+  "tn": {  
     "type": "Number",  
-    "value": 0.8  
+    "value": 7.18  
+  },  
+  "toc": {  
+    "type": "Number",  
+    "value": 16.28  
+  },  
+  "po4": {  
+    "type": "Number",  
+    "value": 0.29  
+  },  
+  "bod": {  
+    "type": "Number",  
+    "value": 2.44  
+  },  
+  "cod": {  
+    "type": "Number",  
+    "value": 36.6  
+  },  
+  "flowrate": {  
+    "type": "Number",  
+    "value": 27650  
   },  
   "temperature": {  
     "type": "Number",  
@@ -456,91 +499,104 @@ WasteWaterTank:
     "value": 7.8  
   },  
   "startsAt": {  
-    "type": "Relationship",  
-    "value": "urn:ngsi-ld:WasteWaterTank:facultativeTank2"  
-  },  
-  "endsAt": {  
     "type": "Relationship",  
     "value": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
   }  
 }  
 ```  
-#### WasteWaterTank NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un WasteWaterTank en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### WasteWaterJunction Valori chiave NGSI-LD Esempio  
+Ecco un esempio di una WasteWaterJunction in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "@context": "https://smartdatamodels.org/context.jsonld",  
-  "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
-  "type": "WasteWaterTank",  
-  "name": "Aerobic Tank 2",  
-  "description": "Aerobic tank in treatment lane 2.",  
-  "tss": 3500,  
-  "nh4": 1.3,  
+  "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
+  "type": "WasteWaterJunction",  
+  "name": "Junction 2",  
+  "description": "A junction in the treatment lane representing a sampling location for the effluent wastewater.",  
+  "nh4": 0.5,  
   "no3": 5.2,  
   "do": 1.2,  
   "redox": 250,  
-  "sludgeLevel": 0.8,  
+  "tn": 7.18,  
+  "toc": 16.28,  
+  "po4": 0.29,  
+  "bod": 2.44,  
+  "cod": 36.6,  
+  "flowrate": 27650,  
   "temperature": 16,  
   "pH": 7.8,  
-  "startsAt": "urn:ngsi-ld:WasteWaterTank:facultativeTank2",  
-  "endsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
+  "startsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
 }  
 ```  
-#### WasteWaterTank NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de un WasteWaterTank en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### WasteWaterJunction NGSI-LD normalizzato Esempio  
+Ecco un esempio di una WasteWaterJunction in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
-{  
-  "@context": "https://smartdatamodels.org/context.jsonld",  
-  "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
-  "type": "WasteWaterTank",  
-  "name": {  
-    "type": "Property",  
-    "value": "Aerobic Tank 2"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Aerobic tank in treatment lane 2."  
-  },  
-  "tss": {  
-    "type": "Property",  
-    "value": 3500  
-  },  
-  "nh4": {  
-    "type": "Property",  
-    "value": 1.3  
-  },  
-  "no3": {  
-    "type": "Property",  
-    "value": 5.2  
-  },  
-  "do": {  
-    "type": "Property",  
-    "value": 1.2  
-  },  
-  "redox": {  
-    "type": "Property",  
-    "value": 250  
-  },  
-  "sludgeLevel": {  
-    "type": "Property",  
-    "value": 0.8  
-  },  
-  "temperature": {  
-    "type": "Property",  
-    "value": 16  
-  },  
-  "pH": {  
-    "type": "Property",  
-    "value": 7.8  
-  },  
-  "startsAt": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:WasteWaterTank:facultativeTank2"  
-  },  
-  "endsAt": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
+[  
+  {  
+    "@context": "https://smartdatamodels.org/context.jsonld",  
+    "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
+    "type": "WasteWaterJunction",  
+    "name": {  
+      "type": "Property",  
+      "value": "Junction 2"  
+    },  
+    "description": {  
+      "type": "Property",  
+      "value": "A junction in the treatment lane representing a sampling location for the effluent wastewater."  
+    },  
+    "nh4": {  
+      "type": "Property",  
+      "value": 0.5  
+    },  
+    "no3": {  
+      "type": "Property",  
+      "value": 5.2  
+    },  
+    "do": {  
+      "type": "Property",  
+      "value": 1.2  
+    },  
+    "redox": {  
+      "type": "Property",  
+      "value": 250  
+    },  
+    "tn": {  
+      "type": "Property",  
+      "value": 7.18  
+    },  
+    "toc": {  
+      "type": "Property",  
+      "value": 16.28  
+    },  
+    "po4": {  
+      "type": "Property",  
+      "value": 0.29  
+    },  
+    "bod": {  
+      "type": "Property",  
+      "value": 2.44  
+    },  
+    "cod": {  
+      "type": "Property",  
+      "value": 36.6  
+    },  
+    "flowrate": {  
+      "type": "Property",  
+      "value": 27650  
+    },  
+    "temperature": {  
+      "type": "Property",  
+      "value": 16  
+    },  
+    "pH": {  
+      "type": "Property",  
+      "value": 7.8  
+    },  
+    "startsAt": {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
+    }  
   }  
-}  
+]  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza

@@ -1,10 +1,10 @@
 {
-    "@id": "dtmi:com:ngsi-ld:WasteWaterTank;0",
+    "@id": "dtmi:com:ngsi-ld:WasteWaterJunction;0",
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
-    "comment": "WasteWaterTreatment - Waste Water Tank adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/WasteWaterTank/schema.json",
-    "description": "This entity contains an harmonised description of a generic Tank made for the Wastewater treatment domain. For a given type of tank, all possible variables that can be measures are listed as properties. In the description property, the type of tank (anaerobic, pre-dinitrification, nitrification etc.)can be defined.",
-    "displayName": "WasteWaterTank",
+    "comment": "WasteWaterTreatment - Junction adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/WasteWaterJunction/schema.json",
+    "description": "This entity contains an harmonised description of a generic Junction made for the Wastewater treatment domain. Junctions could be in place in certain sections of thetreatment plant. In wastewater treatment purposes, the junction is most useful if it is a locationof a sensor that measures a specific variable.",
+    "displayName": "WasteWaterJunction",
     "contents": [
         {
             "name": "alternateName",
@@ -21,6 +21,22 @@
             "@type": "Property",
             "schema": "string",
             "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "bod",
+            "writable": true,
+            "displayName": "bod",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Biological Oxygen Demand concentration measured in the influent or effluent."
+        },
+        {
+            "name": "cod",
+            "writable": true,
+            "displayName": "cod",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Chemical Oxygen Demand concentration measured in the influent or effluent."
         },
         {
             "name": "dataProvider",
@@ -63,11 +79,27 @@
             "comment": "Dissolved Oxygen concentration measured in wastewater."
         },
         {
+            "name": "emissionFlow",
+            "writable": true,
+            "displayName": "emissionFlow",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gas emission flow volume measured at a junction prior to being emitted in an off-gas stack."
+        },
+        {
             "name": "endsAt",
             "writable": true,
             "displayName": "endsAt",
             "@type": "Relationship",
-            "comment": "A relationship indicating the entity the tank is connected to in the downstream point"
+            "comment": "A relationship indicating the entity the junction is connected to in the downstream point"
+        },
+        {
+            "name": "flowrate",
+            "writable": true,
+            "displayName": "flowrate",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flowrate of wastewater."
         },
         {
             "name": "name",
@@ -102,6 +134,22 @@
             "comment": "Water pH level measured."
         },
         {
+            "name": "po4",
+            "writable": true,
+            "displayName": "po4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Ortho-phosphate concentration measured in wastewater."
+        },
+        {
+            "name": "pressure",
+            "writable": true,
+            "displayName": "pressure",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Pressure measured at given location. Most relevant for airflow as provided by blowers to wastewater tanks"
+        },
+        {
             "name": "redox",
             "writable": true,
             "displayName": "redox",
@@ -113,14 +161,6 @@
             "name": "seeAlso",
             "writable": true,
             "displayName": "seeAlso"
-        },
-        {
-            "name": "sludgeLevel",
-            "writable": true,
-            "displayName": "sludgeLevel",
-            "@type": "Property",
-            "schema": "long",
-            "comment": "Sludge Level measured in a secondary settler tank"
         },
         {
             "name": "source",
@@ -135,7 +175,7 @@
             "writable": true,
             "displayName": "startsAt",
             "@type": "Relationship",
-            "comment": "A relationship indicating the entity the tank is connected to in the upstream point"
+            "comment": "A relationship indicating the entity the junction is connected to in the upstream point"
         },
         {
             "name": "temperature",
@@ -146,12 +186,28 @@
             "comment": "Wastewater temperature measured."
         },
         {
+            "name": "tic",
+            "writable": true,
+            "displayName": "tic",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total Inorganic Carbon concentration measured in the influent or effluent."
+        },
+        {
             "name": "tn",
             "writable": true,
             "displayName": "tn",
             "@type": "Property",
             "schema": "long",
             "comment": "Total Nitrogen concentration measured in wastewater."
+        },
+        {
+            "name": "toc",
+            "writable": true,
+            "displayName": "toc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total Organic Carbon concentration measured in the influent or effluent."
         },
         {
             "name": "tss",
@@ -200,38 +256,6 @@
                 {
                     "name": "streetAddress",
                     "schema": "string"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "airflow",
-            "comment": "Object defining the actual and estimated airflow",
-            "displayName": "airflow",
-            "fields": [
-                {
-                    "name": "estimated",
-                    "schema": "long"
-                },
-                {
-                    "name": "measured",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "power",
-            "comment": "Object defining the actual and estimated power consumption",
-            "displayName": "power",
-            "fields": [
-                {
-                    "name": "estimated",
-                    "schema": "long"
-                },
-                {
-                    "name": "measured",
-                    "schema": "long"
                 }
             ]
         },

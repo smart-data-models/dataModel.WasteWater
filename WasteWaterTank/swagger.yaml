@@ -11,7 +11,7 @@ info:
   description:  |
     This entity contains an harmonised description of a generic Tank made for the Wastewater treatment domain. For a given type of tank, all possible variables that can be measures are listed as properties. In the description property, the type of tank (anaerobic, pre-dinitrification, nitrification etc.)can be defined.
   title: WasteWaterTank
-  version: "1.0.0"
+  version: "0.1.0"
 openapi: "3.0.0"
 
 paths: 

@@ -1,19 +1,19 @@
-Entität: Gebläse  
-================  
-[Offene Lizenz](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/Blower/LICENSE.md)  
-[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Diese Entität enthält eine harmonisierte Beschreibung eines Gebläses für den Bereich der Abwasserbehandlung. Die Entität stellt ein Gebläse dar, das für die Belüftung im Abwasseraufbereitungsprozess verwendet wird. Wichtige Parameter werden gemessen, um die Menge des Luftstroms zu regulieren und zu messen, der dem Belüftungsbecken im Bioreaktor zugeführt wird. Der Energieverbrauch eines Gebläses ist ebenfalls eine wichtige Information für die Echtzeitsteuerung und -optimierung der Kläranlage.**  
+Entità: OffGasStack  
+===================  
+[Licenza aperta](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/OffGasStack/LICENSE.md)  
+[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descrizione globale: **Questa entità contiene una descrizione armonizzata di un generico Off-gas Stack fatto per il dominio del trattamento delle acque reflue. Questa entità rappresenta le pile che sono presenti in alcuni impianti di trattamento delle acque reflue dove vengono emesse le emissioni, gas serra inclusi.**  
 
-## Liste der Eigenschaften  
+## Elenco delle proprietà  
 
-- `address`: Die Postanschrift  - `airflow`: Luftstrom, der von einem Gebläse geblasen wird.  - `airflowEstimation`: Schätzung der Luftströmung durch AI-Soft-Sensor-Simulation.  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `endsAt`: Eine Beziehung, die angibt, mit welchem Unternehmen das Gebläse im nachgelagerten Punkt verbunden ist.  - `energy`: Von einem Gebläse verbrauchte Energie.  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pressure`: Druckmessung im Gebläse.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `startsAt`: Eine Beziehung, die die Einheit angibt, mit der das Gebläse im vorgelagerten Punkt verbunden ist.  - `type`: NGSI-LD Entitätstyp. Es muss Blower sein    
-Erforderliche Eigenschaften  
-- `description`  - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
-Alphabetisch sortiert (für Details anklicken)  
+- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `ch4`: Emissioni di gas CH4 da un'entità fuori dal camino.  - `co2`: Emissioni di gas CO2 da un'entità fuori dal camino.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `endsAt`: Una relazione che indica l'entità a cui la pila Off Gas è collegata nel punto a valle.  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n2o`: Emissioni di gas N2O da un'entità fuori dal camino.  - `name`: Il nome di questo articolo.  - `o2`: Emissioni di gas O2 da un'entità fuori dal camino.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `startsAt`: Una relazione che indica l'entità a cui la pila Off Gas è collegata nel punto a monte.  - `type`: NGSI-LD Entity Type. deve essere OffGasStack    
+Proprietà richieste  
+- `description`  - `id`  - `type`  ## Descrizione del modello di dati delle proprietà  
+Ordinati in ordine alfabetico (clicca per i dettagli)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
-Blower:    
-  description: 'This entity contains an harmonised description of a Blower made for the Wastewater treatment domain. The entity represents a Blower that are used for aeration purposes in the wastewater treatment process. Important parameters are measured to regulate and measure the amount of airflow is being provided to the aeration tank in the bioreactor. Energy consumption of a blower is also important information for real-time control and optimisation of the wastewater treatment plant.'    
+OffGasStack:    
+  description: 'This entity contains a harmonised description of a generic Off-gas Stack made for the Wastewater treatment domain. This entity represents stacks that are present in some wastewater treatment plants where the emissions, greenhouse gases included, are emitted.'    
   properties:    
     address:    
       description: 'The mailing address'    
@@ -40,20 +40,6 @@ Blower:
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
-    airflow:    
-      description: 'Airflow blown by a blower.'    
-      type: number    
-      x-ngsi:    
-        model: ' https://schema.org/Number'    
-        type: Property    
-        units: ' m/s'    
-    airflowEstimation:    
-      description: 'Airflow estimation by AI soft sensor simulation.'    
-      type: number    
-      x-ngsi:    
-        model: ' https://schema.org/Number'    
-        type: Property    
-        units: ' m/s'    
     alternateName:    
       description: 'An alternative name for this item'    
       type: string    
@@ -65,6 +51,20 @@ Blower:
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
+    ch4:    
+      description: 'CH4 gas emissions from an off-gas stack entity.'    
+      type: number    
+      x-ngsi:    
+        model: ' https://schema.org/Number'    
+        type: Property    
+        units: ' ppm'    
+    co2:    
+      description: 'CO2 gas emissions from an off-gas stack entity.'    
+      type: number    
+      x-ngsi:    
+        model: ' https://schema.org/Number'    
+        type: Property    
+        units: ' ppm'    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
       type: string    
@@ -88,20 +88,13 @@ Blower:
       x-ngsi:    
         type: Property    
     endsAt:    
-      description: 'A relationship indicating the entity the blower is connected to in the downstream point.'    
+      description: 'A relationship indicating the entity the Off Gas Stack is connected to in the downstream point.'    
       format: uri    
       type: string    
       x-ngsi:    
         type: Relationship    
-    energy:    
-      description: 'Energy consumed by a blower.'    
-      type: number    
-      x-ngsi:    
-        model: ' https://schema.org/Number'    
-        type: Property    
-        units: ' kW'    
     id:    
-      anyOf: &blower_-_properties_-_owner_-_items_-_anyof    
+      anyOf: &offgasstack_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
           maxLength: 256    
           minLength: 1    
@@ -266,26 +259,33 @@ Blower:
           type: object    
       x-ngsi:    
         type: Geoproperty    
+    n2o:    
+      description: 'N2O gas emissions from an off-gas stack entity.'    
+      type: number    
+      x-ngsi:    
+        model: ' https://schema.org/Number'    
+        type: Property    
+        units: ' ppm'    
     name:    
       description: 'The name of this item.'    
       type: string    
       x-ngsi:    
         type: Property    
-    owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
-      items:    
-        anyOf: *blower_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
-      type: array    
-      x-ngsi:    
-        type: Property    
-    pressure:    
-      description: 'Pressure measurement in the blower.'    
+    o2:    
+      description: 'O2 gas emissions from an off-gas stack entity.'    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
-        units: ' kPa'    
+        units: ' ppm'    
+    owner:    
+      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      items:    
+        anyOf: *offgasstack_-_properties_-_owner_-_items_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
+      type: array    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -304,15 +304,15 @@ Blower:
       x-ngsi:    
         type: Property    
     startsAt:    
-      description: 'A relationship indicating the entity the blower is connected to in the upstream point.'    
+      description: 'A relationship indicating the entity the Off Gas Stack is connected to in the upstream point.'    
       format: uri    
       type: string    
       x-ngsi:    
         type: Relationship    
     type:    
-      description: 'NGSI-LD Entity Type. It has to be Blower'    
+      description: 'NGSI-LD Entity Type. it has to be OffGasStack'    
       enum:    
-        - Blower    
+        - OffGasStack    
       type: string    
       x-ngsi:    
         type: Property    
@@ -323,89 +323,119 @@ Blower:
   type: object    
 ```  
 </details>    
-## Beispiel-Nutzlasten  
-#### Gebläse NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen Blower im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+## Esempio di payloads  
+#### OffGasStack NGSI-v2 valori chiave Esempio  
+Ecco un esempio di un OffGasStack in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:Blower:Blower2",  
-  "type": "Blower",  
-  "name": "Blower 2",  
-  "description": "Blower 2 providing aeration for wastewater treatment process.",  
-  "airflow": 368.75,  
-  "energy": 229.89,  
-  "pressure": 84.06  
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+  "type": "OffGasStack",  
+  "name": "Off Gas Stack 2",  
+  "description": "Off gas stack from treatment lane 2.",  
+  "n2o": 380,  
+  "co2": 1.8,  
+  "ch4": 35,  
+  "o2": 18.6,  
+  "startsAt": "urn:ngsi-ld:WasteWaterJunction:junction3",  
+  "endsAt": "urn:ngsi-ld:WasteWaterJunction:junction4"  
 }  
 ```  
-#### Gebläse NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für einen Blower im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### OffGasStack NGSI-v2 normalizzato Esempio  
+Ecco un esempio di un OffGasStack in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:Blower:Blower2",  
-  "type": "Blower",  
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+  "type": "OffGasStack",  
   "name": {  
     "type": "Text",  
-    "value": "Blower 2"  
+    "value": "Off Gas Stack 2"  
   },  
   "description": {  
     "type": "Text",  
-    "value": "Blower 2 providing aeration for wastewater treatment process."  
+    "value": "Off gas stack from treatment lane 2."  
   },  
-  "airflow": {  
+  "n2o": {  
     "type": "Number",  
-    "value": 368.75  
+    "value": 380  
   },  
-  "energy": {  
+  "co2": {  
     "type": "Number",  
-    "value": 229.89  
+    "value": 1.8  
   },  
-  "pressure": {  
+  "ch4": {  
     "type": "Number",  
-    "value": 84.06  
+    "value": 35  
+  },  
+  "o2": {  
+    "type": "Number",  
+    "value": 18.6  
+  },  
+  "startsAt": {  
+    "type": "Relationship",  
+    "value": "urn:ngsi-ld:WasteWaterJunction:junction3"  
+  },  
+  "endsAt": {  
+    "type": "Relationship",  
+    "value": "urn:ngsi-ld:WasteWaterJunction:junction4"  
   }  
 }  
 ```  
-#### Gebläse NGSI-LD Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen Blower im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+#### OffGasStack NGSI-LD valori chiave Esempio  
+Ecco un esempio di un OffGasStack in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "@context": "https://smartdatamodels.org/context.jsonld",  
-  "id": "urn:ngsi-ld:Blower:Blower2",  
-  "type": "Blower",  
-  "name": "Blower 2",  
-  "description": "Blower 2 providing aeration for wastewater treatment process.",  
-  "airflow": 368.75,  
-  "energy": 229.89,  
-  "pressure": 84.06  
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+  "type": "OffGasStack",  
+  "name": "Off Gas Stack 2",  
+  "description": "Off gas stack from treatment lane 2.",  
+  "n2o": 380,  
+  "co2": 1.8,  
+  "ch4": 35,  
+  "o2": 18.6,  
+  "startsAt": "urn:ngsi-ld:WasteWaterJunction:junction3",  
+  "endsAt": "urn:ngsi-ld:WasteWaterJunction:junction4"  
 }  
 ```  
-#### Gebläse NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für einen Blower im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### OffGasStack NGSI-LD normalizzato Esempio  
+Ecco un esempio di un OffGasStack in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
-  "@context": "https://smartdatamodels.org/context.jsonld",  
-  "id": "urn:ngsi-ld:Blower:Blower2",  
-  "type": "Blower",  
+  "@context": "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+  "type": "OffGasStack",  
   "name": {  
     "type": "Property",  
-    "value": "Blower 2"  
+    "value": "Off Gas Stack 2"  
   },  
   "description": {  
     "type": "Property",  
-    "value": "Blower 2 providing aeration for wastewater treatment process."  
+    "value": "Off gas stack from treatment lane 2."  
   },  
-  "airflow": {  
+  "n2o": {  
     "type": "Property",  
-    "value": 368.75  
+    "value": 380  
   },  
-  "energy": {  
+  "co2": {  
     "type": "Property",  
-    "value": 229.89  
+    "value": 1.8  
   },  
-  "pressure": {  
+  "ch4": {  
     "type": "Property",  
-    "value": 84.06  
+    "value": 35  
+  },  
+  "o2": {  
+    "type": "Property",  
+    "value": 18.6  
+  },  
+  "startsAt": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:WasteWaterJunction:junction3"  
+  },  
+  "endsAt": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:WasteWaterJunction:junction4"  
   }  
 }  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza

@@ -1,15 +1,15 @@
-Entität: Gebläse  
-================  
-[Offene Lizenz](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/Blower/LICENSE.md)  
-[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Diese Entität enthält eine harmonisierte Beschreibung eines Gebläses für den Bereich der Abwasserbehandlung. Die Entität stellt ein Gebläse dar, das für die Belüftung im Abwasseraufbereitungsprozess verwendet wird. Wichtige Parameter werden gemessen, um die Menge des Luftstroms zu regulieren und zu messen, der dem Belüftungsbecken im Bioreaktor zugeführt wird. Der Energieverbrauch eines Gebläses ist ebenfalls eine wichtige Information für die Echtzeitsteuerung und -optimierung der Kläranlage.**  
+Entità: Soffiatore  
+==================  
+[Licenza aperta](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/Blower/LICENSE.md)  
+[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descrizione globale: **Questa entità contiene una descrizione armonizzata di una soffiante fatta per il dominio del trattamento delle acque reflue. L'entità rappresenta una soffiante che viene utilizzata per l'aerazione nel processo di trattamento delle acque reflue. Vengono misurati parametri importanti per regolare e misurare la quantità di flusso d'aria che viene fornita al serbatoio di aerazione nel bioreattore. Il consumo di energia di una soffiante è anche un'informazione importante per il controllo e l'ottimizzazione in tempo reale dell'impianto di trattamento delle acque reflue.**  
 
-## Liste der Eigenschaften  
+## Elenco delle proprietà  
 
-- `address`: Die Postanschrift  - `airflow`: Luftstrom, der von einem Gebläse geblasen wird.  - `airflowEstimation`: Schätzung der Luftströmung durch AI-Soft-Sensor-Simulation.  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `endsAt`: Eine Beziehung, die angibt, mit welchem Unternehmen das Gebläse im nachgelagerten Punkt verbunden ist.  - `energy`: Von einem Gebläse verbrauchte Energie.  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pressure`: Druckmessung im Gebläse.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `startsAt`: Eine Beziehung, die die Einheit angibt, mit der das Gebläse im vorgelagerten Punkt verbunden ist.  - `type`: NGSI-LD Entitätstyp. Es muss Blower sein    
-Erforderliche Eigenschaften  
-- `description`  - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
-Alphabetisch sortiert (für Details anklicken)  
+- `address`: L'indirizzo postale  - `airflow`: Flusso d'aria soffiato da un ventilatore.  - `airflowEstimation`: Stima del flusso d'aria tramite simulazione AI soft sensor.  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `endsAt`: Una relazione che indica l'entità a cui il soffiatore è collegato nel punto a valle.  - `energy`: Energia consumata da un soffiatore.  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `pressure`: Misurazione della pressione nel soffiatore.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `startsAt`: Una relazione che indica l'entità a cui il soffiatore è collegato nel punto a monte.  - `type`: Tipo di entità NGSI-LD. Deve essere Blower    
+Proprietà richieste  
+- `description`  - `id`  - `type`  ## Descrizione del modello di dati delle proprietà  
+Ordinati in ordine alfabetico (clicca per i dettagli)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Blower:    
@@ -323,9 +323,9 @@ Blower:
   type: object    
 ```  
 </details>    
-## Beispiel-Nutzlasten  
-#### Gebläse NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen Blower im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+## Esempio di payloads  
+#### Soffiatore NGSI-v2 valori chiave Esempio  
+Ecco un esempio di un Blower in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Blower:Blower2",  
@@ -337,8 +337,8 @@ Blower:
   "pressure": 84.06  
 }  
 ```  
-#### Gebläse NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für einen Blower im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### Soffiatore NGSI-v2 normalizzato Esempio  
+Ecco un esempio di un Blower in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Blower:Blower2",  
@@ -365,8 +365,8 @@ Blower:
   }  
 }  
 ```  
-#### Gebläse NGSI-LD Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen Blower im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+#### Soffiatore NGSI-LD valori chiave Esempio  
+Ecco un esempio di un Blower in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "@context": "https://smartdatamodels.org/context.jsonld",  
@@ -379,8 +379,8 @@ Blower:
   "pressure": 84.06  
 }  
 ```  
-#### Gebläse NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für einen Blower im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### Soffiatore NGSI-LD normalizzato Esempio  
+Ecco un esempio di un Blower in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "@context": "https://smartdatamodels.org/context.jsonld",  
@@ -408,4 +408,4 @@ Blower:
   }  
 }  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza

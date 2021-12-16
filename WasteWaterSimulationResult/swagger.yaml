@@ -5,12 +5,12 @@
 
 components:
   schemas: 
-    WasteWaterJunction: 
-      $ref: "https://smart-data-models.github.io/dataModel.WasteWater/WasteWaterJunction/model.yaml#/WasteWaterJunction"
+    WasteWaterSimulationResult: 
+      $ref: "https://smart-data-models.github.io/dataModel.WasteWater/WasteWaterSimulationResult/model.yaml#/WasteWaterSimulationResult"
 info:
   description:  |
-    This entity contains an harmonised description of a generic Junction made for the Wastewater treatment domain. Junctions could be in place in certain sections of thetreatment plant. In wastewater treatment purposes, the junction is most useful if it is a locationof a sensor that measures a specific variable.
-  title: WasteWaterJunction
+    This entity contains an harmonised description of a WasteWaterSimulationResults made for the Wastewater treatment domain. The entity contains properties that are parameters which have been predicted or forecasted by models through a simulation.
+  title: WasteWaterSimulationResult
   version: "0.0.1"
 openapi: "3.0.0"
 
@@ -25,7 +25,7 @@ paths:
           required: true
           schema: 
             enum: 
-              - WasteWaterJunction
+              - WasteWaterSimulationResult
             type: string
       responses: 
         ? "200"
@@ -37,12 +37,12 @@ paths:
                   summary: "Key-Values Pairs"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.WasteWater/WasteWaterJunction/examples/example.json"
+                      $ref: "https://smart-data-models.github.io/dataModel.WasteWater/WasteWaterSimulationResult/examples/example.json"
                 normalized: 
                   summary: "Normalized NGSI-LD"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.WasteWater/WasteWaterJunction/examples/example-normalized.jsonld"
+                      $ref: "https://smart-data-models.github.io/dataModel.WasteWater/WasteWaterSimulationResult/examples/example-normalized.jsonld"
           description: OK
       tags: 
         - ngsi-ld

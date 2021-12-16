@@ -38,13 +38,14 @@ WasteWaterJunction:
         model: https://schema.org/Text
         type: Property
     bod:
-      description: 'Propety. Biological Oxygen Demand concentration measured in the influent or effluent.'
+      description: 'Biological Oxygen Demand concentration measured in the influent or effluent.'
       type: number
       x-ngsi:
         model: ' https://schema.org/Number'
+        type: Property
         units: ' mg/L'
     cod:
-      description: 'Chemical Oxygen Deman concentration measured in the influent or effluent.'
+      description: 'Chemical Oxygen Demand concentration measured in the influent or effluent.'
       type: number
       x-ngsi:
         model: ' https://schema.org/Number'
@@ -305,6 +306,13 @@ WasteWaterJunction:
         model: ' https://schema.org/Number'
         type: Property
         units: ' mg/L'
+    pressure:
+      description: 'Pressure measured at given location. Most relevant for airflow as provided by blowers to wastewater tanks'
+      type: number
+      x-ngsi:
+        model: ' https://schema.org/Number'
+        type: Property
+        units: ' kPa'
     redox:
       description: 'Redox level measured in wastewater.'
       type: number
@@ -382,3 +390,9 @@ WasteWaterJunction:
     - type
     - description
   type: object
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterJunction/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterJunction/schema.json
+  x-model-tags: ""
+  x-version: 0.0.1

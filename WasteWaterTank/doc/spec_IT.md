@@ -1,15 +1,15 @@
-Entidad: WasteWaterTank  
-=======================  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterTank/LICENSE.md)  
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **Esta entidad contiene una descripción armonizada de un Depósito genérico realizado para el ámbito del tratamiento de aguas residuales. Para un determinado tipo de tanque, se enumeran como propiedades todas las posibles variables que pueden ser medidas. En la propiedad de descripción se puede definir el tipo de tanque (anaerobio, predinitrificación, nitrificación, etc.)**.  
+Entità: WasteWaterTank  
+======================  
+[Licenza aperta](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterTank/LICENSE.md)  
+[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descrizione globale: **Questa entità contiene una descrizione armonizzata di un generico serbatoio realizzato per il dominio del trattamento delle acque reflue. Per un dato tipo di serbatoio, tutte le possibili variabili che possono essere misurate sono elencate come proprietà. Nella proprietà description può essere definito il tipo di serbatoio (anaerobico, pre-dinitrificazione, nitrificazione, ecc.  
 
-## Lista de propiedades  
+## Elenco delle proprietà  
 
-- `address`: La dirección postal  - `airflow`: Objeto que define el flujo de aire real y estimado  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `do`: Concentración de oxígeno disuelto medida en las aguas residuales.  - `endsAt`: Una relación que indica la entidad a la que está conectado el depósito en el punto posterior  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `nh4`: Concentración de amonio medida en un tanque.  - `no3`: Concentración de nitratos medida en las aguas residuales.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pH`: Medición del nivel de pH del agua.  - `power`: Objeto que define el consumo de energía real y estimado  - `redox`: Nivel de redox medido en las aguas residuales.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sludgeLevel`: Nivel de lodos medido en un tanque secundario de sedimentación  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `startsAt`: Una relación que indica la entidad a la que está conectado el depósito en el punto anterior  - `temperature`: Medición de la temperatura de las aguas residuales.  - `tn`: Concentración de nitrógeno total medida en las aguas residuales.  - `tss`: concentración total de sólidos en suspensión medida en un tanque.  - `type`: Tipo de entidad NGSI-LD. Tiene que ser WasteWaterTank    
-Propiedades requeridas  
-- `description`  - `id`  - `name`  - `type`  ## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+- `address`: L'indirizzo postale  - `airflow`: Oggetto che definisce il flusso d'aria reale e stimato  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `do`: Concentrazione di ossigeno disciolto misurata nelle acque reflue.  - `endsAt`: Una relazione che indica l'entità a cui il serbatoio è collegato nel punto a valle  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `nh4`: Concentrazione di ammonio misurata in un serbatoio.  - `no3`: Concentrazione di nitrati misurata nelle acque reflue.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `pH`: Livello di pH dell'acqua misurato.  - `power`: Oggetto che definisce il consumo effettivo e stimato di energia  - `redox`: Livello di Redox misurato nelle acque reflue.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `sludgeLevel`: Livello del fango misurato in una vasca di decantazione secondaria  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `startsAt`: Una relazione che indica l'entità a cui il serbatoio è collegato nel punto a monte  - `temperature`: Temperatura delle acque reflue misurata.  - `tn`: Concentrazione di azoto totale misurata nelle acque reflue.  - `tss`: concentrazione totale di solidi sospesi misurata in un serbatoio.  - `type`: Tipo di entità NGSI-LD. Deve essere WasteWaterTank    
+Proprietà richieste  
+- `description`  - `id`  - `name`  - `type`  ## Descrizione del modello di dati delle proprietà  
+Ordinati in ordine alfabetico (clicca per i dettagli)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WasteWaterTank:    
@@ -388,9 +388,9 @@ WasteWaterTank:
   x-version: 0.1.0    
 ```  
 </details>    
-## Ejemplo de carga útil  
-#### WasteWaterTank NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de un WasteWaterTank en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+## Esempio di payloads  
+#### WasteWaterTank NGSI-v2 valori chiave Esempio  
+Ecco un esempio di un WasteWaterTank in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
@@ -409,8 +409,8 @@ WasteWaterTank:
   "endsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
 }  
 ```  
-#### WasteWaterTank NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de un WasteWaterTank en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### WasteWaterTank NGSI-v2 normalizzato Esempio  
+Ecco un esempio di un WasteWaterTank in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
@@ -465,8 +465,8 @@ WasteWaterTank:
   }  
 }  
 ```  
-#### WasteWaterTank NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un WasteWaterTank en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### WasteWaterTank Valori chiave NGSI-LD Esempio  
+Ecco un esempio di un WasteWaterTank in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "@context": "https://smartdatamodels.org/context.jsonld",  
@@ -486,8 +486,8 @@ WasteWaterTank:
   "endsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
 }  
 ```  
-#### WasteWaterTank NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de un WasteWaterTank en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### WasteWaterTank NGSI-LD normalizzato Esempio  
+Ecco un esempio di un WasteWaterTank in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "@context": "https://smartdatamodels.org/context.jsonld",  
@@ -543,4 +543,4 @@ WasteWaterTank:
   }  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza

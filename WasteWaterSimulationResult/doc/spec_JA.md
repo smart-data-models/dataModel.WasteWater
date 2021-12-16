@@ -1,19 +1,21 @@
-Entität: Gebläse  
-================  
-[Offene Lizenz](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/Blower/LICENSE.md)  
-[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Diese Entität enthält eine harmonisierte Beschreibung eines Gebläses für den Bereich der Abwasserbehandlung. Die Entität stellt ein Gebläse dar, das für die Belüftung im Abwasseraufbereitungsprozess verwendet wird. Wichtige Parameter werden gemessen, um die Menge des Luftstroms zu regulieren und zu messen, der dem Belüftungsbecken im Bioreaktor zugeführt wird. Der Energieverbrauch eines Gebläses ist ebenfalls eine wichtige Information für die Echtzeitsteuerung und -optimierung der Kläranlage.**  
+エンティティWasteWaterSimulationResult  
+================================  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterSimulationResult/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述。**このエンティティは、廃水処理ドメインで作成されたWasteWaterSimulationResultsの調和された記述を含む。このエンティティには、シミュレーションによってモデルが予測または予想したパラメータであるプロパティが含まれる。  
+バージョン: 0.0.1  
 
-## Liste der Eigenschaften  
+## プロパティのリスト  
 
-- `address`: Die Postanschrift  - `airflow`: Luftstrom, der von einem Gebläse geblasen wird.  - `airflowEstimation`: Schätzung der Luftströmung durch AI-Soft-Sensor-Simulation.  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `endsAt`: Eine Beziehung, die angibt, mit welchem Unternehmen das Gebläse im nachgelagerten Punkt verbunden ist.  - `energy`: Von einem Gebläse verbrauchte Energie.  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pressure`: Druckmessung im Gebläse.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `startsAt`: Eine Beziehung, die die Einheit angibt, mit der das Gebläse im vorgelagerten Punkt verbunden ist.  - `type`: NGSI-LD Entitätstyp. Es muss Blower sein    
-Erforderliche Eigenschaften  
-- `description`  - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
-Alphabetisch sortiert (für Details anklicken)  
+- `address`: 郵送先住所  - `airflow`: シミュレーション／データ駆動型モデルによる、所定の排水体の曝気により発生する送風機の風量の推定。  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `nh4`: シミュレーション／データ駆動型モデルによる、任意の排水事業体におけるアンモニア濃度の推定。  - `no3`: シミュレーション／データ駆動型モデルによる、任意の排水事業体における硝酸塩濃度の推定。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `power`: シミュレーション／データ駆動型モデルによる、与えられた排水体に対する曝気プロセスのための送風機で消費される電力の推定。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI-LD エンティティタイプ。これはWasteWaterSimulationResultsでなければならない。    
+必須項目  
+- `id`  - `type`  ## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
-Blower:    
-  description: 'This entity contains an harmonised description of a Blower made for the Wastewater treatment domain. The entity represents a Blower that are used for aeration purposes in the wastewater treatment process. Important parameters are measured to regulate and measure the amount of airflow is being provided to the aeration tank in the bioreactor. Energy consumption of a blower is also important information for real-time control and optimisation of the wastewater treatment plant.'    
+WasteWaterSimulationResult:    
+  description: 'This entity contains an harmonised description of a WasteWaterSimulationResults made for the Wastewater treatment domain. The entity contains properties that are parameters which have been predicted or forecasted by models through a simulation.'    
+  modelTags: FIWARE4WATER    
   properties:    
     address:    
       description: 'The mailing address'    
@@ -41,14 +43,7 @@ Blower:
         model: https://schema.org/address    
         type: Property    
     airflow:    
-      description: 'Airflow blown by a blower.'    
-      type: number    
-      x-ngsi:    
-        model: ' https://schema.org/Number'    
-        type: Property    
-        units: ' m/s'    
-    airflowEstimation:    
-      description: 'Airflow estimation by AI soft sensor simulation.'    
+      description: 'Estimation of airflow from a blower generated through aeration of a given wastewater entity, by a simulation/data-driven model.'    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
@@ -87,21 +82,8 @@ Blower:
       type: string    
       x-ngsi:    
         type: Property    
-    endsAt:    
-      description: 'A relationship indicating the entity the blower is connected to in the downstream point.'    
-      format: uri    
-      type: string    
-      x-ngsi:    
-        type: Relationship    
-    energy:    
-      description: 'Energy consumed by a blower.'    
-      type: number    
-      x-ngsi:    
-        model: ' https://schema.org/Number'    
-        type: Property    
-        units: ' kW'    
     id:    
-      anyOf: &blower_-_properties_-_owner_-_items_-_anyof    
+      anyOf: &wastewatersimulationresult_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
           maxLength: 256    
           minLength: 1    
@@ -271,21 +253,35 @@ Blower:
       type: string    
       x-ngsi:    
         type: Property    
-    owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
-      items:    
-        anyOf: *blower_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
-      type: array    
-      x-ngsi:    
-        type: Property    
-    pressure:    
-      description: 'Pressure measurement in the blower.'    
+    nh4:    
+      description: 'Estimation of ammonia concentration at a given wastewater entity, by a simulation/data-driven model.'    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
-        units: ' kPa'    
+        units: ' mg/L'    
+    no3:    
+      description: 'Estimation of nitrate concentration at a given wastewater entity, by a simulation/data-driven model.'    
+      type: number    
+      x-ngsi:    
+        model: ' https://schema.org/Number'    
+        type: Property    
+        units: ' mg/L'    
+    owner:    
+      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      items:    
+        anyOf: *wastewatersimulationresult_-_properties_-_owner_-_items_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    power:    
+      description: 'Estimation of power consumed by a blower for the aeration process to a given wastewater entity, by a simulation/data-driven model.'    
+      type: number    
+      x-ngsi:    
+        model: ' https://schema.org/Number'    
+        type: Property    
+        units: ' kW'    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -303,109 +299,101 @@ Blower:
       type: string    
       x-ngsi:    
         type: Property    
-    startsAt:    
-      description: 'A relationship indicating the entity the blower is connected to in the upstream point.'    
-      format: uri    
-      type: string    
-      x-ngsi:    
-        type: Relationship    
     type:    
-      description: 'NGSI-LD Entity Type. It has to be Blower'    
+      description: 'NGSI-LD Entity Type. It has to be a WasteWaterSimulationResults.'    
       enum:    
-        - Blower    
+        - WasteWaterSimulationResult    
       type: string    
       x-ngsi:    
         type: Property    
   required:    
     - id    
     - type    
-    - description    
   type: object    
+  version: 0.0.1    
 ```  
 </details>    
-## Beispiel-Nutzlasten  
-#### Gebläse NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen Blower im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+## ペイロードの例  
+#### WasteWaterSimulationResult NGSI-v2 key-valuesの例。  
+ここでは、WasteWaterSimulationResultをkey-valuesとしてJSON-LD形式で表現した例を紹介します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
-  "id": "urn:ngsi-ld:Blower:Blower2",  
-  "type": "Blower",  
-  "name": "Blower 2",  
-  "description": "Blower 2 providing aeration for wastewater treatment process.",  
-  "airflow": 368.75,  
-  "energy": 229.89,  
-  "pressure": 84.06  
+  "id": "urn:ngsi-ld:WasteWaterSimulationResults:dataValidation",  
+  "type": "WasteWaterSimulationResult",  
+  "name": "Data Validation",  
+  "description": "AI-based data validation application. Simulation of NH4 and NO3 parameters in aerobic tank of bioreactor using deep learning models.",  
+  "nh4": 1.83,  
+  "no3": 6.27  
 }  
 ```  
-#### Gebläse NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für einen Blower im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### WasteWaterSimulationResult NGSI-v2の正規化された例。  
+ここでは、正規化された JSON-LD 形式の WasteWaterSimulationResult の例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
-  "id": "urn:ngsi-ld:Blower:Blower2",  
-  "type": "Blower",  
+  "id": "urn:ngsi-ld:WasteWaterSimulationResults:dataValidation",  
+  "type": "WasteWaterSimulationResult",  
   "name": {  
     "type": "Text",  
-    "value": "Blower 2"  
+    "value": "Data Validation"  
   },  
   "description": {  
     "type": "Text",  
-    "value": "Blower 2 providing aeration for wastewater treatment process."  
+    "value": "AI-based data validation application. Simulation of NH4 and NO3 parameters in aerobic tank of bioreactor using deep learning models."  
   },  
-  "airflow": {  
+  "nh4": {  
     "type": "Number",  
-    "value": 368.75  
+    "value": 1.83  
   },  
-  "energy": {  
+  "no3": {  
     "type": "Number",  
-    "value": 229.89  
-  },  
-  "pressure": {  
-    "type": "Number",  
-    "value": 84.06  
+    "value": 6.27  
   }  
 }  
 ```  
-#### Gebläse NGSI-LD Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen Blower im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+#### WasteWaterSimulationResult NGSI-LD key-values Example  
+ここでは、WasteWaterSimulationResultをkey-valuesとしてJSON-LD形式で表現した例を紹介します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
-  "@context": "https://smartdatamodels.org/context.jsonld",  
-  "id": "urn:ngsi-ld:Blower:Blower2",  
-  "type": "Blower",  
-  "name": "Blower 2",  
-  "description": "Blower 2 providing aeration for wastewater treatment process.",  
-  "airflow": 368.75,  
-  "energy": 229.89,  
-  "pressure": 84.06  
+  "@context": "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+  "id": "urn:ngsi-ld:WasteWaterSimulationResults:dataValidation",  
+  "type": "WasteWaterSimulationResult",  
+  "name": "Data Validation",  
+  "description": "AI-based data validation application. Simulation of NH4 and NO3 parameters in aerobic tank of bioreactor using deep learning models.",  
+  "nh4": 1.83,  
+  "no3": 6.27  
 }  
 ```  
-#### Gebläse NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für einen Blower im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### WasteWaterSimulationResult NGSI-LDの正規化例  
+ここでは、正規化された JSON-LD 形式の WasteWaterSimulationResult の例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
-  "@context": "https://smartdatamodels.org/context.jsonld",  
-  "id": "urn:ngsi-ld:Blower:Blower2",  
-  "type": "Blower",  
+  "id": "urn:ngsi-ld:WasteWaterSimulationResults:dataValidation",  
+  "type": "WasteWaterSimulationResult",  
   "name": {  
     "type": "Property",  
-    "value": "Blower 2"  
+    "value": "Data Validation"  
   },  
   "description": {  
     "type": "Property",  
-    "value": "Blower 2 providing aeration for wastewater treatment process."  
+    "value": "AI-based data validation application. Simulation of NH4 and NO3 parameters in aerobic tank of bioreactor using deep learning models."  
   },  
-  "airflow": {  
+  "nh4": {  
     "type": "Property",  
-    "value": 368.75  
+    "value": 1.83,  
+    "providedBy": {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:WasteWaterTank:aerobicTank02"  
+    }  
   },  
-  "energy": {  
+  "no3": {  
     "type": "Property",  
-    "value": 229.89  
+    "value": 6.27,  
+    "providedBy": {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:WasteWaterTank:aerobicTank02"  
+    }  
   },  
-  "pressure": {  
-    "type": "Property",  
-    "value": 84.06  
-  }  
+  "@context": "https://smartdatamodels.org/context.jsonld"  
 }  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。

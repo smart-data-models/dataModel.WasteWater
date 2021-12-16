@@ -1,15 +1,15 @@
-Entidad: WasteWaterTank  
-=======================  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterTank/LICENSE.md)  
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **Esta entidad contiene una descripción armonizada de un Depósito genérico realizado para el ámbito del tratamiento de aguas residuales. Para un determinado tipo de tanque, se enumeran como propiedades todas las posibles variables que pueden ser medidas. En la propiedad de descripción se puede definir el tipo de tanque (anaerobio, predinitrificación, nitrificación, etc.)**.  
+エンティティWasteWaterTank  
+====================  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterTank/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述。**このエンティティには、廃水処理領域で作られた一般的なタンクの調和された記述が含まれる。与えられたタンクのタイプに対して、測定可能なすべての変数がプロパティとしてリストアップされている。説明プロパティでは、タンクのタイプ（嫌気性、前脱窒、硝化など）を定義することができる。  
 
-## Lista de propiedades  
+## プロパティのリスト  
 
-- `address`: La dirección postal  - `airflow`: Objeto que define el flujo de aire real y estimado  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `do`: Concentración de oxígeno disuelto medida en las aguas residuales.  - `endsAt`: Una relación que indica la entidad a la que está conectado el depósito en el punto posterior  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `nh4`: Concentración de amonio medida en un tanque.  - `no3`: Concentración de nitratos medida en las aguas residuales.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pH`: Medición del nivel de pH del agua.  - `power`: Objeto que define el consumo de energía real y estimado  - `redox`: Nivel de redox medido en las aguas residuales.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sludgeLevel`: Nivel de lodos medido en un tanque secundario de sedimentación  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `startsAt`: Una relación que indica la entidad a la que está conectado el depósito en el punto anterior  - `temperature`: Medición de la temperatura de las aguas residuales.  - `tn`: Concentración de nitrógeno total medida en las aguas residuales.  - `tss`: concentración total de sólidos en suspensión medida en un tanque.  - `type`: Tipo de entidad NGSI-LD. Tiene que ser WasteWaterTank    
-Propiedades requeridas  
-- `description`  - `id`  - `name`  - `type`  ## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+- `address`: 郵送先住所  - `airflow`: 実際のエアフローと推定エアフローを定義するオブジェクト  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `do`: 排水中の溶存酸素濃度を測定。  - `endsAt`: 下流のポイントでタンクが接続されているエンティティを示すリレーションシップ  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `nh4`: 水槽内のアンモニウム濃度測定  - `no3`: 排水中の硝酸塩濃度を測定。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pH`: 水のpH値を測定。  - `power`: 実際の消費電力と推定消費電力を定義するオブジェクト  - `redox`: 排水中の酸化還元度を測定。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `sludgeLevel`: 二次沈殿槽で測定したスラッジレベル  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startsAt`: 上流点でタンクが接続されているエンティティを示す関係性  - `temperature`: 排水の温度を測定。  - `tn`: 排水中の全窒素濃度を測定。  - `tss`: 槽内で測定した全浮遊物質濃度。  - `type`: NGSI-LD エンティティタイプ。これはWasteWaterTankでなければならない。    
+必須項目  
+- `description`  - `id`  - `name`  - `type`  ## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WasteWaterTank:    
@@ -388,9 +388,9 @@ WasteWaterTank:
   x-version: 0.1.0    
 ```  
 </details>    
-## Ejemplo de carga útil  
-#### WasteWaterTank NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de un WasteWaterTank en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+## ペイロードの例  
+#### WasteWaterTank NGSI-v2 キーバリューの例  
+ここではWasteWaterTankをkey-valuesとしてJSON-LD形式で表現した例を紹介します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
@@ -409,8 +409,8 @@ WasteWaterTank:
   "endsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
 }  
 ```  
-#### WasteWaterTank NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de un WasteWaterTank en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### WasteWaterTank NGSI-v2で正規化された例。  
+ここでは、正規化されたJSON-LD形式のWasteWaterTankの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
@@ -465,8 +465,8 @@ WasteWaterTank:
   }  
 }  
 ```  
-#### WasteWaterTank NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un WasteWaterTank en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### WasteWaterTank NGSI-LDのキーバリューの例。  
+ここではWasteWaterTankをkey-valuesとしてJSON-LD形式で表現した例を紹介します。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "@context": "https://smartdatamodels.org/context.jsonld",  
@@ -486,8 +486,8 @@ WasteWaterTank:
   "endsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
 }  
 ```  
-#### WasteWaterTank NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de un WasteWaterTank en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### WasteWaterTank NGSI-LDの正規化例  
+ここでは、正規化されたJSON-LD形式のWasteWaterTankの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "@context": "https://smartdatamodels.org/context.jsonld",  
@@ -543,4 +543,4 @@ WasteWaterTank:
   }  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。

@@ -26,6 +26,18 @@ WasteWaterTank:
       x-ngsi:
         model: https://schema.org/address
         type: Property
+    airflow:
+      description: 'Object defining the actual and estimated airflow'
+      properties:
+        estimated:
+          description: 'Property. Model: https://schema.org/Number. Units: ''m/s''. Airflow estimated by a model.'
+          type: number
+        measured:
+          description: 'Property. Model: https://schema.org/Number. Units: ''m/s''. Airflow measured by a device.'
+          type: number
+      type: object
+      x-ngsi:
+        type: Property
     alternateName:
       description: 'An alternative name for this item'
       type: string
@@ -271,6 +283,18 @@ WasteWaterTank:
       x-ngsi:
         model: ' https://schema.org/Number'
         type: Property
+    power:
+      description: 'Object defining the actual and estimated power consumption'
+      properties:
+        estimated:
+          description: 'Property. Model: https://schema.org/Number. Units: ''kW''. Power estimated by a model.'
+          type: number
+        measured:
+          description: 'Property. Model: https://schema.org/Number. Units: ''kW''. Power measured by a device.'
+          type: number
+      type: object
+      x-ngsi:
+        type: Property
     redox:
       description: 'Redox level measured in wastewater.'
       type: number
@@ -342,3 +366,9 @@ WasteWaterTank:
     - name
     - description
   type: object
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterTank/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterTank/schema.json
+  x-model-tags: ""
+  x-version: 0.1.0

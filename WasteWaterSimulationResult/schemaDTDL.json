@@ -1,11 +1,19 @@
 {
-    "@id": "dtmi:com:ngsi-ld:WasteWaterTank;0",
+    "@id": "dtmi:com:ngsi-ld:WasteWaterSimulationResult;0",
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
-    "comment": "WasteWaterTreatment - Waste Water Tank adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/WasteWaterTank/schema.json",
-    "description": "This entity contains an harmonised description of a generic Tank made for the Wastewater treatment domain. For a given type of tank, all possible variables that can be measures are listed as properties. In the description property, the type of tank (anaerobic, pre-dinitrification, nitrification etc.)can be defined.",
-    "displayName": "WasteWaterTank",
+    "comment": "Smart Data Models - WasteWaterSimulationResults adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/WasteWaterSimulationResult/schema.json",
+    "description": "This entity contains an harmonised description of a WasteWaterSimulationResults made for the Wastewater treatment domain. The entity contains properties that are parameters which have been predicted or forecasted by models through a simulation.",
+    "displayName": "WasteWaterSimulationResult",
     "contents": [
+        {
+            "name": "airflow",
+            "writable": true,
+            "displayName": "airflow",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Estimation of airflow from a blower generated through aeration of a given wastewater entity, by a simulation/data-driven model."
+        },
         {
             "name": "alternateName",
             "writable": true,
@@ -55,21 +63,6 @@
             "comment": "A description of this item"
         },
         {
-            "name": "do",
-            "writable": true,
-            "displayName": "do",
-            "@type": "Property",
-            "schema": "long",
-            "comment": "Dissolved Oxygen concentration measured in wastewater."
-        },
-        {
-            "name": "endsAt",
-            "writable": true,
-            "displayName": "endsAt",
-            "@type": "Relationship",
-            "comment": "A relationship indicating the entity the tank is connected to in the downstream point"
-        },
-        {
             "name": "name",
             "writable": true,
             "displayName": "name",
@@ -83,7 +76,7 @@
             "displayName": "nh4",
             "@type": "Property",
             "schema": "long",
-            "comment": "Ammonium concentration measured in a tank."
+            "comment": "Estimation of ammonia concentration at a given wastewater entity, by a simulation/data-driven model."
         },
         {
             "name": "no3",
@@ -91,36 +84,20 @@
             "displayName": "no3",
             "@type": "Property",
             "schema": "long",
-            "comment": "Nitrate concentration measured in wastewater."
+            "comment": "Estimation of nitrate concentration at a given wastewater entity, by a simulation/data-driven model."
         },
         {
-            "name": "pH",
+            "name": "power",
             "writable": true,
-            "displayName": "pH",
+            "displayName": "power",
             "@type": "Property",
             "schema": "long",
-            "comment": "Water pH level measured."
-        },
-        {
-            "name": "redox",
-            "writable": true,
-            "displayName": "redox",
-            "@type": "Property",
-            "schema": "long",
-            "comment": "Redox level measured in wastewater."
+            "comment": "Estimation of power consumed by a blower for the aeration process to a given wastewater entity, by a simulation/data-driven model."
         },
         {
             "name": "seeAlso",
             "writable": true,
             "displayName": "seeAlso"
-        },
-        {
-            "name": "sludgeLevel",
-            "writable": true,
-            "displayName": "sludgeLevel",
-            "@type": "Property",
-            "schema": "long",
-            "comment": "Sludge Level measured in a secondary settler tank"
         },
         {
             "name": "source",
@@ -129,37 +106,6 @@
             "@type": "Property",
             "schema": "string",
             "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
-        },
-        {
-            "name": "startsAt",
-            "writable": true,
-            "displayName": "startsAt",
-            "@type": "Relationship",
-            "comment": "A relationship indicating the entity the tank is connected to in the upstream point"
-        },
-        {
-            "name": "temperature",
-            "writable": true,
-            "displayName": "temperature",
-            "@type": "Property",
-            "schema": "long",
-            "comment": "Wastewater temperature measured."
-        },
-        {
-            "name": "tn",
-            "writable": true,
-            "displayName": "tn",
-            "@type": "Property",
-            "schema": "long",
-            "comment": "Total Nitrogen concentration measured in wastewater."
-        },
-        {
-            "name": "tss",
-            "writable": true,
-            "displayName": "tss",
-            "@type": "Property",
-            "schema": "long",
-            "comment": "total suspended solids concentration measured in a tank."
         },
         {
             "@type": "Telemetry",
@@ -200,38 +146,6 @@
                 {
                     "name": "streetAddress",
                     "schema": "string"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "airflow",
-            "comment": "Object defining the actual and estimated airflow",
-            "displayName": "airflow",
-            "fields": [
-                {
-                    "name": "estimated",
-                    "schema": "long"
-                },
-                {
-                    "name": "measured",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "power",
-            "comment": "Object defining the actual and estimated power consumption",
-            "displayName": "power",
-            "fields": [
-                {
-                    "name": "estimated",
-                    "schema": "long"
-                },
-                {
-                    "name": "measured",
-                    "schema": "long"
                 }
             ]
         },
