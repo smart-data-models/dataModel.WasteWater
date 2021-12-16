@@ -1,0 +1,367 @@
+{
+    "@id": "dtmi:com:ngsi-ld:WasteWaterPlant;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data models -Waste Water Plant schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/WasteWaterPlant/schema.json",
+    "description": "Data model for waste water treatment plant.",
+    "displayName": "WasteWaterPlant",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "bod",
+            "writable": true,
+            "displayName": "bod",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Biological Oxygen Demand concentration measured in the waste-water treatment plant corresponding to this observation."
+        },
+        {
+            "name": "cod",
+            "writable": true,
+            "displayName": "cod",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Chemical Oxygen Demand concentration measured in the waste-water treatment plant corresponding to this observation."
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "do",
+            "writable": true,
+            "displayName": "do",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Dissolved oxygen measured in the waste-water treatment plant corresponding to this observation."
+        },
+        {
+            "name": "inFlow",
+            "writable": true,
+            "displayName": "inFlow",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "In-flow amount into the treatment plant/reservoir corresponding to this observation."
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "nh4",
+            "writable": true,
+            "displayName": "nh4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Ammonium concentration measured in the waste-water treatment plant corresponding to this observation."
+        },
+        {
+            "name": "no3",
+            "writable": true,
+            "displayName": "no3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nitrate concentration measured in waste-water treatment plant corresponding to this observation."
+        },
+        {
+            "name": "observationDateTime",
+            "writable": true,
+            "displayName": "observationDateTime",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Last reported time of observation."
+        },
+        {
+            "name": "outFlow",
+            "writable": true,
+            "displayName": "outFlow",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Out-flow amount into the treatment plant/reservoir corresponding to this observation."
+        },
+        {
+            "name": "po4",
+            "writable": true,
+            "displayName": "po4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Ortho-phosphate concentration measured in the waste-water treatment plant corresponding to this observation."
+        },
+        {
+            "name": "redox",
+            "writable": true,
+            "displayName": "redox",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Reduction potential or oxidation measured in waste-water treatment plant corresponding to this observation."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "tic",
+            "writable": true,
+            "displayName": "tic",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total Inorganic Carbon concentration measured in the waste-water treatment plant corresponding to this observation."
+        },
+        {
+            "name": "tn",
+            "writable": true,
+            "displayName": "tn",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total Nitrogen concentration measured in waste-water treatment plant corresponding to this observation."
+        },
+        {
+            "name": "toc",
+            "writable": true,
+            "displayName": "toc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total Organic Carbon concentration measured in the waste-water treatment plant corresponding to this observation."
+        },
+        {
+            "name": "treatmentPlantCapacity",
+            "writable": true,
+            "displayName": "treatmentPlantCapacity",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Handling capacity of the waste-water treatment plant corresponding to this observation."
+        },
+        {
+            "name": "treatmentPlantCode",
+            "writable": true,
+            "displayName": "treatmentPlantCode",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Unique code for the waste-water treatment plant corresponding to this observation."
+        },
+        {
+            "name": "treatmentPlantID",
+            "writable": true,
+            "displayName": "treatmentPlantID",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Unique identification number for the waste-water treatment plant corresponding to this observation."
+        },
+        {
+            "name": "treatmentPlantName",
+            "writable": true,
+            "displayName": "treatmentPlantName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of the waste-water treatment plant corresponding to this observation."
+        },
+        {
+            "name": "tss",
+            "writable": true,
+            "displayName": "tss",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total suspended solids concentration measured in a waste-water treatment plant corresponding to this observation."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "municipalityInfo",
+            "comment": "Municipality information corresponding to this observation.",
+            "displayName": "municipalityInfo",
+            "fields": [
+                {
+                    "name": "cityId",
+                    "schema": "string"
+                },
+                {
+                    "name": "cityName",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "stateName",
+                    "schema": "string"
+                },
+                {
+                    "name": "ulbName",
+                    "schema": "string"
+                },
+                {
+                    "name": "wardId",
+                    "schema": "string"
+                },
+                {
+                    "name": "wardName",
+                    "schema": "string"
+                },
+                {
+                    "name": "wardNum",
+                    "schema": "long"
+                },
+                {
+                    "name": "zoneId",
+                    "schema": "string"
+                },
+                {
+                    "name": "zoneName",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "pHTSA",
+            "comment": "Acidity level or basicity level observed in the water. Object defining the temporal processing of the magnitude property during a period. It provides maximum, minimum, instant value and average",
+            "displayName": "pHTSA",
+            "fields": [
+                {
+                    "name": "avgOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "instValue",
+                    "schema": "long"
+                },
+                {
+                    "name": "maxOverTime",
+                    "schema": "long"
+                },
+                {
+                    "name": "minOverTime",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        }
+    ]
+}
