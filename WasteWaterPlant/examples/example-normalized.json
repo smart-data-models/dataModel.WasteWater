@@ -29,7 +29,7 @@
     "type": "Number",
     "value": 4
   },
-  "treatmentPlantID": {
+  "treatmentPlantId": {
     "type": "Number",
     "value": 7
   },

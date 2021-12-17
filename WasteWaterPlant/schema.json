@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "$schemaVersion": "0.0.1",
+  "$schemaVersion": "0.0.2",
   "$id": "https://smart-data-models.github.io/dataModel.WasteWater/WasteWaterPlant/schema.json",
   "title": "Smart Data models -Waste Water Plant schema",
   "modelTags": "IUDX",
@@ -54,7 +54,7 @@
           "type": "number",
           "description": "Property. Model:'https://schema.org/Number'. Dissolved oxygen measured in the waste-water treatment plant corresponding to this observation."
         },
-        "treatmentPlantID": {
+        "treatmentPlantId": {
           "type": "number",
           "description": "Property. Model:'https://schema.org/Number'. Unique identification number for the waste-water treatment plant corresponding to this observation."
         },
@@ -135,11 +135,11 @@
             },
             "cityId": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text'. City ID corresponding to this observation."
+              "description": "Property. Model:'https://schema.org/Text'. City Id corresponding to this observation."
             },
             "wardId": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text'. Ward ID corresponding to this observation."
+              "description": "Property. Model:'https://schema.org/Text'. Ward Id corresponding to this observation."
             },
             "stateName": {
               "type": "string",
@@ -155,7 +155,7 @@
             },
             "zoneId": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text'. Zone ID corresponding to this observation."
+              "description": "Property. Model:'https://schema.org/Text'. Zone Id corresponding to this observation."
             },
             "wardName": {
               "type": "string",
