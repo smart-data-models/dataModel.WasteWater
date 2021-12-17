@@ -253,7 +253,7 @@ WasteWaterPlant:
       description: 'Municipality information corresponding to this observation.'
       properties:
         cityId:
-          description: 'Property. Model:''https://schema.org/Text''. City ID corresponding to this observation.'
+          description: 'Property. Model:''https://schema.org/Text''. City Id corresponding to this observation.'
           type: string
         cityName:
           description: 'Property. Model:''https://schema.org/Text''. City name corresponding to this observation'
@@ -268,7 +268,7 @@ WasteWaterPlant:
           description: 'Property. Model:''https://schema.org/Text''. Name of the Urban Local Body corresponding to this observation.'
           type: string
         wardId:
-          description: 'Property. Model:''https://schema.org/Text''. Ward ID corresponding to this observation.'
+          description: 'Property. Model:''https://schema.org/Text''. Ward Id corresponding to this observation.'
           type: string
         wardName:
           description: 'Property. Model:''https://schema.org/Text''. Ward name corresponding to this observation.'
@@ -277,7 +277,7 @@ WasteWaterPlant:
           description: 'Property. Model:''https://schema.org/Number''. Ward number corresponding to this observation.'
           type: number
         zoneId:
-          description: 'Property. Model:''https://schema.org/Text''. Zone ID corresponding to this observation.'
+          description: 'Property. Model:''https://schema.org/Text''. Zone Id corresponding to this observation.'
           type: string
         zoneName:
           description: 'Property. Model:''https://schema.org/Text''. Zone name corresponding to this observation.'
@@ -402,7 +402,7 @@ WasteWaterPlant:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-    treatmentPlantID:
+    treatmentPlantId:
       description: 'Unique identification number for the waste-water treatment plant corresponding to this observation.'
       type: number
       x-ngsi:
@@ -436,4 +436,4 @@ WasteWaterPlant:
   x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterPlant/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.WasteWater/WasteWaterPlant/schema.json
   x-model-tags: IUDX
-  x-version: 0.0.1
+  x-version: 0.0.2
