@@ -47,7 +47,7 @@
         "toc": "https://smartdatamodels.org/dataModel.WasteWater/toc",
         "treatmentPlantCapacity": "https://smartdatamodels.org/dataModel.WasteWater/treatmentPlantCapacity",
         "treatmentPlantCode": "https://smartdatamodels.org/dataModel.WasteWater/treatmentPlantCode",
-        "treatmentPlantID": "https://smartdatamodels.org/dataModel.WasteWater/treatmentPlantID",
+        "treatmentPlantId": "https://smartdatamodels.org/dataModel.WasteWater/treatmentPlantId",
         "treatmentPlantName": "https://smartdatamodels.org/dataModel.WasteWater/treatmentPlantName",
         "tss": "https://smartdatamodels.org/dataModel.WasteWater/tss",
         "type": "@type"
