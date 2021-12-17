@@ -6,7 +6,7 @@ Entity: WasteWaterPlant
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bod`: Biological Oxygen Demand concentration measured in the waste-water treatment plant corresponding to this observation.  - `cod`: Chemical Oxygen Demand concentration measured in the waste-water treatment plant corresponding to this observation.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `do`: Dissolved oxygen measured in the waste-water treatment plant corresponding to this observation.  - `id`: Unique identifier of the entity  - `inFlow`: In-flow amount into the treatment plant/reservoir corresponding to this observation.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `municipalityInfo`: Municipality information corresponding to this observation.  - `name`: The name of this item.  - `nh4`: Ammonium concentration measured in the waste-water treatment plant corresponding to this observation.  - `no3`: Nitrate concentration measured in waste-water treatment plant corresponding to this observation.  - `observationDateTime`: Last reported time of observation.  - `outFlow`: Out-flow amount into the treatment plant/reservoir corresponding to this observation.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pHTSA`: Acidity level or basicity level observed in the water. Object defining the temporal processing of the magnitude property during a period. It provides maximum, minimum, instant value and average  - `po4`: Ortho-phosphate concentration measured in the waste-water treatment plant corresponding to this observation.  - `redox`: Reduction potential or oxidation measured in waste-water treatment plant corresponding to this observation.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tic`: Total Inorganic Carbon concentration measured in the waste-water treatment plant corresponding to this observation.  - `tn`: Total Nitrogen concentration measured in waste-water treatment plant corresponding to this observation.  - `toc`: Total Organic Carbon concentration measured in the waste-water treatment plant corresponding to this observation.  - `treatmentPlantCapacity`: Handling capacity of the waste-water treatment plant corresponding to this observation.  - `treatmentPlantCode`: Unique code for the waste-water treatment plant corresponding to this observation.  - `treatmentPlantID`: Unique identification number for the waste-water treatment plant corresponding to this observation.  - `treatmentPlantName`: Name of the waste-water treatment plant corresponding to this observation.  - `tss`: Total suspended solids concentration measured in a waste-water treatment plant corresponding to this observation.  - `type`: NGSI entity type. It has to be WasteWaterPlant    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bod`: Biological Oxygen Demand concentration measured in the waste-water treatment plant corresponding to this observation.  - `cod`: Chemical Oxygen Demand concentration measured in the waste-water treatment plant corresponding to this observation.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `do`: Dissolved oxygen measured in the waste-water treatment plant corresponding to this observation.  - `id`: Unique identifier of the entity  - `inFlow`: In-flow amount into the treatment plant/reservoir corresponding to this observation.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `municipalityInfo`: Municipality information corresponding to this observation.  - `name`: The name of this item.  - `nh4`: Ammonium concentration measured in the waste-water treatment plant corresponding to this observation.  - `no3`: Nitrate concentration measured in waste-water treatment plant corresponding to this observation.  - `observationDateTime`: Last reported time of observation.  - `outFlow`: Out-flow amount into the treatment plant/reservoir corresponding to this observation.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pHTSA`: Acidity level or basicity level observed in the water. Object defining the temporal processing of the magnitude property during a period. It provides maximum, minimum, instant value and average  - `po4`: Ortho-phosphate concentration measured in the waste-water treatment plant corresponding to this observation.  - `redox`: Reduction potential or oxidation measured in waste-water treatment plant corresponding to this observation.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tic`: Total Inorganic Carbon concentration measured in the waste-water treatment plant corresponding to this observation.  - `tn`: Total Nitrogen concentration measured in waste-water treatment plant corresponding to this observation.  - `toc`: Total Organic Carbon concentration measured in the waste-water treatment plant corresponding to this observation.  - `treatmentPlantCapacity`: Handling capacity of the waste-water treatment plant corresponding to this observation.  - `treatmentPlantCode`: Unique code for the waste-water treatment plant corresponding to this observation.  - `treatmentPlantId`: Unique identification number for the waste-water treatment plant corresponding to this observation.  - `treatmentPlantName`: Name of the waste-water treatment plant corresponding to this observation.  - `tss`: Total suspended solids concentration measured in a waste-water treatment plant corresponding to this observation.  - `type`: NGSI entity type. It has to be WasteWaterPlant    
 Required properties  
 - `id`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
@@ -267,7 +267,7 @@ WasteWaterPlant:
       description: 'Municipality information corresponding to this observation.'    
       properties:    
         cityId:    
-          description: 'Property. Model:''https://schema.org/Text''. City ID corresponding to this observation.'    
+          description: 'Property. Model:''https://schema.org/Text''. City Id corresponding to this observation.'    
           type: string    
         cityName:    
           description: 'Property. Model:''https://schema.org/Text''. City name corresponding to this observation'    
@@ -282,7 +282,7 @@ WasteWaterPlant:
           description: 'Property. Model:''https://schema.org/Text''. Name of the Urban Local Body corresponding to this observation.'    
           type: string    
         wardId:    
-          description: 'Property. Model:''https://schema.org/Text''. Ward ID corresponding to this observation.'    
+          description: 'Property. Model:''https://schema.org/Text''. Ward Id corresponding to this observation.'    
           type: string    
         wardName:    
           description: 'Property. Model:''https://schema.org/Text''. Ward name corresponding to this observation.'    
@@ -291,7 +291,7 @@ WasteWaterPlant:
           description: 'Property. Model:''https://schema.org/Number''. Ward number corresponding to this observation.'    
           type: number    
         zoneId:    
-          description: 'Property. Model:''https://schema.org/Text''. Zone ID corresponding to this observation.'    
+          description: 'Property. Model:''https://schema.org/Text''. Zone Id corresponding to this observation.'    
           type: string    
         zoneName:    
           description: 'Property. Model:''https://schema.org/Text''. Zone name corresponding to this observation.'    
@@ -416,7 +416,7 @@ WasteWaterPlant:
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
-    treatmentPlantID:    
+    treatmentPlantId:    
       description: 'Unique identification number for the waste-water treatment plant corresponding to this observation.'    
       type: number    
       x-ngsi:    
@@ -450,7 +450,7 @@ WasteWaterPlant:
   x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterPlant/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.WasteWater/WasteWaterPlant/schema.json    
   x-model-tags: IUDX    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Example payloads    
@@ -467,7 +467,7 @@ WasteWaterPlant:
   "nh4": 50,  
   "redox": 25,  
   "do": 4,  
-  "treatmentPlantID": 7,  
+  "treatmentPlantId": 7,  
   "outFlow": 6.7,  
   "tss": 2,  
   "treatmentPlantCapacity": 10,  
@@ -487,13 +487,13 @@ WasteWaterPlant:
   "municipalityInfo": {  
     "district": "Bangalore Urban",  
     "ulbName": "BMC",  
-    "cityID": "23",  
-    "wardID": "23",  
+    "cityId": "23",  
+    "wardId": "23",  
     "stateName": "Karnataka",  
     "cityName": "Bangalore",  
     "zoneName": "South",  
     "wardName": "Bangalore Urban",  
-    "zoneID": "2",  
+    "zoneId": "2",  
     "wardNum": 4  
   }  
 }  
@@ -532,7 +532,7 @@ WasteWaterPlant:
     "type": "Number",  
     "value": 4  
   },  
-  "treatmentPlantID": {  
+  "treatmentPlantId": {  
     "type": "Number",  
     "value": 7  
   },  
@@ -615,7 +615,7 @@ WasteWaterPlant:
   "nh4": 50,  
   "redox": 25,  
   "do": 4,  
-  "treatmentPlantID": 7,  
+  "treatmentPlantId": 7,  
   "outFlow": 6.7,  
   "tss": 2,  
   "treatmentPlantCapacity": 10,  
@@ -681,7 +681,7 @@ WasteWaterPlant:
     "type": "Property",  
     "value": 4  
   },  
-  "treatmentPlantID": {  
+  "treatmentPlantId": {  
     "type": "Property",  
     "value": 7  
   },  
