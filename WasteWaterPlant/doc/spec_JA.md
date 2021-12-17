@@ -6,7 +6,7 @@
 
 ## プロパティのリスト  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `bod`: この観測結果に対応して排水処理施設で測定された生物学的酸素要求量濃度。  - `cod`: この観測に対応する排水処理施設で測定された化学的酸素要求量濃度。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `do`: この観測結果に対応する排水処理施設での溶存酸素の測定結果。  - `id`: エンティティのユニークな識別子  - `inFlow`: この観測値に対応する処理場・貯水池への流入量。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `municipalityInfo`: この観測に対応する自治体の情報  - `name`: このアイテムの名前です。  - `nh4`: この観測結果に対応する排水処理施設でのアンモニウム濃度の測定結果。  - `no3`: この観測結果に対応して、排水処理施設で測定された硝酸塩濃度。  - `observationDateTime`: 最後に報告された観測時刻。  - `outFlow`: この観測に対応する処理場・貯水池への流出量。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pHTSA`: 水中で観測される酸性度または塩基性度のこと。ある期間におけるマグニチュード特性の時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `po4`: この観測結果に対応する排水処理施設でのオルソリン酸濃度の測定結果。  - `redox`: この観測結果に対応して、排水処理施設で測定された還元電位または酸化。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tic`: この観測結果に対応して排水処理施設で測定された全無機炭素濃度。  - `tn`: この観測結果に対応して、排水処理施設で測定された全窒素濃度。  - `toc`: この観測結果に対応して排水処理施設で測定された全有機炭素濃度。  - `treatmentPlantCapacity`: この観測結果に対応する排水処理施設の処理能力。  - `treatmentPlantCode`: この観測データに対応する廃水処理施設の固有コード。  - `treatmentPlantID`: この観測に対応する排水処理施設の固有の識別番号。  - `treatmentPlantName`: この観測に対応する排水処理施設の名称。  - `tss`: この観測結果に対応する排水処理施設で測定された総懸濁物質濃度。  - `type`: NGSIエンティティ・タイプ。それはWasteWaterPlantでなければならない。    
+- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `bod`: この観測結果に対応して排水処理施設で測定された生物学的酸素要求量濃度。  - `cod`: この観測に対応する排水処理施設で測定された化学的酸素要求量濃度。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `do`: この観測結果に対応する排水処理施設での溶存酸素の測定結果。  - `id`: エンティティのユニークな識別子  - `inFlow`: この観測値に対応する処理場・貯水池への流入量。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `municipalityInfo`: この観測に対応する自治体の情報  - `name`: このアイテムの名前です。  - `nh4`: この観測結果に対応する排水処理施設でのアンモニウム濃度の測定結果。  - `no3`: この観測結果に対応して、排水処理施設で測定された硝酸塩濃度。  - `observationDateTime`: 最後に報告された観測時刻。  - `outFlow`: この観測に対応する処理場・貯水池への流出量。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pHTSA`: 水中で観測される酸性度または塩基性度のこと。ある期間におけるマグニチュード特性の時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `po4`: この観測結果に対応する排水処理施設でのオルソリン酸濃度の測定結果。  - `redox`: この観測結果に対応して、排水処理施設で測定された還元電位または酸化。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tic`: この観測結果に対応して排水処理施設で測定された全無機炭素濃度。  - `tn`: この観測結果に対応して、排水処理施設で測定された全窒素濃度。  - `toc`: この観測結果に対応して排水処理施設で測定された全有機炭素濃度。  - `treatmentPlantCapacity`: この観測結果に対応する排水処理施設の処理能力。  - `treatmentPlantCode`: この観測データに対応する廃水処理施設の固有コード。  - `treatmentPlantId`: この観測に対応する排水処理施設の固有の識別番号。  - `treatmentPlantName`: この観測に対応する排水処理施設の名称。  - `tss`: この観測結果に対応する排水処理施設で測定された総懸濁物質濃度。  - `type`: NGSIエンティティ・タイプ。それはWasteWaterPlantでなければならない。    
 必須項目  
 - `id`  - `type`  ## データモデルによるプロパティの記述  
 アルファベット順（クリックすると詳細が表示されます）  
@@ -267,7 +267,7 @@ WasteWaterPlant:
       description: 'Municipality information corresponding to this observation.'    
       properties:    
         cityId:    
-          description: 'Property. Model:''https://schema.org/Text''. City ID corresponding to this observation.'    
+          description: 'Property. Model:''https://schema.org/Text''. City Id corresponding to this observation.'    
           type: string    
         cityName:    
           description: 'Property. Model:''https://schema.org/Text''. City name corresponding to this observation'    
@@ -282,7 +282,7 @@ WasteWaterPlant:
           description: 'Property. Model:''https://schema.org/Text''. Name of the Urban Local Body corresponding to this observation.'    
           type: string    
         wardId:    
-          description: 'Property. Model:''https://schema.org/Text''. Ward ID corresponding to this observation.'    
+          description: 'Property. Model:''https://schema.org/Text''. Ward Id corresponding to this observation.'    
           type: string    
         wardName:    
           description: 'Property. Model:''https://schema.org/Text''. Ward name corresponding to this observation.'    
@@ -291,7 +291,7 @@ WasteWaterPlant:
           description: 'Property. Model:''https://schema.org/Number''. Ward number corresponding to this observation.'    
           type: number    
         zoneId:    
-          description: 'Property. Model:''https://schema.org/Text''. Zone ID corresponding to this observation.'    
+          description: 'Property. Model:''https://schema.org/Text''. Zone Id corresponding to this observation.'    
           type: string    
         zoneName:    
           description: 'Property. Model:''https://schema.org/Text''. Zone name corresponding to this observation.'    
@@ -416,7 +416,7 @@ WasteWaterPlant:
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
-    treatmentPlantID:    
+    treatmentPlantId:    
       description: 'Unique identification number for the waste-water treatment plant corresponding to this observation.'    
       type: number    
       x-ngsi:    
@@ -450,7 +450,7 @@ WasteWaterPlant:
   x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterPlant/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.WasteWater/WasteWaterPlant/schema.json    
   x-model-tags: IUDX    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## ペイロードの例  
@@ -467,7 +467,7 @@ WasteWaterPlant:
   "nh4": 50,  
   "redox": 25,  
   "do": 4,  
-  "treatmentPlantID": 7,  
+  "treatmentPlantId": 7,  
   "outFlow": 6.7,  
   "tss": 2,  
   "treatmentPlantCapacity": 10,  
@@ -487,13 +487,13 @@ WasteWaterPlant:
   "municipalityInfo": {  
     "district": "Bangalore Urban",  
     "ulbName": "BMC",  
-    "cityID": "23",  
-    "wardID": "23",  
+    "cityId": "23",  
+    "wardId": "23",  
     "stateName": "Karnataka",  
     "cityName": "Bangalore",  
     "zoneName": "South",  
     "wardName": "Bangalore Urban",  
-    "zoneID": "2",  
+    "zoneId": "2",  
     "wardNum": 4  
   }  
 }  
@@ -532,7 +532,7 @@ WasteWaterPlant:
     "type": "Number",  
     "value": 4  
   },  
-  "treatmentPlantID": {  
+  "treatmentPlantId": {  
     "type": "Number",  
     "value": 7  
   },  
@@ -615,7 +615,7 @@ WasteWaterPlant:
   "nh4": 50,  
   "redox": 25,  
   "do": 4,  
-  "treatmentPlantID": 7,  
+  "treatmentPlantId": 7,  
   "outFlow": 6.7,  
   "tss": 2,  
   "treatmentPlantCapacity": 10,  
@@ -681,7 +681,7 @@ WasteWaterPlant:
     "type": "Property",  
     "value": 4  
   },  
-  "treatmentPlantID": {  
+  "treatmentPlantId": {  
     "type": "Property",  
     "value": 7  
   },  
