@@ -6,7 +6,7 @@ Entità: WasteWaterPlant
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `bod`: Concentrazione di domanda di ossigeno biologico misurata nell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `cod`: Concentrazione della domanda chimica di ossigeno misurata nell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `do`: L'ossigeno disciolto misurato nell'impianto di trattamento delle acque reflue corrisponde a questa osservazione.  - `id`: Identificatore unico dell'entità  - `inFlow`: Quantità di flusso in entrata nell'impianto di trattamento/serbatoio corrispondente a questa osservazione.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `municipalityInfo`: Informazioni del comune corrispondenti a questa osservazione.  - `name`: Il nome di questo articolo.  - `nh4`: La concentrazione di ammonio misurata nell'impianto di trattamento delle acque reflue corrisponde a questa osservazione.  - `no3`: La concentrazione di nitrati misurata nell'impianto di trattamento delle acque reflue corrisponde a questa osservazione.  - `observationDateTime`: Ultima ora di osservazione riportata.  - `outFlow`: Quantità di flusso in uscita nell'impianto di trattamento/serbatoio corrispondente a questa osservazione.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `pHTSA`: Livello di acidità o basicità osservato nell'acqua. Oggetto che definisce l'elaborazione temporale della proprietà magnitudo durante un periodo. Fornisce il valore massimo, minimo, istantaneo e medio  - `po4`: Concentrazione di ortofosfato misurata nell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `redox`: Potenziale di riduzione o di ossidazione misurato nell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `tic`: Concentrazione di carbonio inorganico totale misurata nell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `tn`: La concentrazione di azoto totale misurata nell'impianto di trattamento delle acque reflue corrisponde a questa osservazione.  - `toc`: Concentrazione di carbonio organico totale misurata nell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `treatmentPlantCapacity`: Capacità di gestione dell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `treatmentPlantCode`: Codice unico per l'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `treatmentPlantID`: Numero unico di identificazione dell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `treatmentPlantName`: Nome dell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `tss`: Concentrazione totale di solidi sospesi misurata in un impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `type`: Tipo di entità NGSI. Deve essere WasteWaterPlant    
+- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `bod`: Concentrazione di domanda di ossigeno biologico misurata nell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `cod`: Concentrazione della domanda chimica di ossigeno misurata nell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `do`: L'ossigeno disciolto misurato nell'impianto di trattamento delle acque reflue corrisponde a questa osservazione.  - `id`: Identificatore unico dell'entità  - `inFlow`: Quantità di flusso in entrata nell'impianto di trattamento/serbatoio corrispondente a questa osservazione.  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `municipalityInfo`: Informazioni del comune corrispondenti a questa osservazione.  - `name`: Il nome di questo articolo.  - `nh4`: La concentrazione di ammonio misurata nell'impianto di trattamento delle acque reflue corrisponde a questa osservazione.  - `no3`: La concentrazione di nitrati misurata nell'impianto di trattamento delle acque reflue corrisponde a questa osservazione.  - `observationDateTime`: Ultima ora di osservazione riportata.  - `outFlow`: Quantità di flusso in uscita nell'impianto di trattamento/serbatoio corrispondente a questa osservazione.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `pHTSA`: Livello di acidità o basicità osservato nell'acqua. Oggetto che definisce l'elaborazione temporale della proprietà magnitudo durante un periodo. Fornisce il valore massimo, minimo, istantaneo e medio  - `po4`: Concentrazione di ortofosfato misurata nell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `redox`: Potenziale di riduzione o di ossidazione misurato nell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `tic`: Concentrazione di carbonio inorganico totale misurata nell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `tn`: La concentrazione di azoto totale misurata nell'impianto di trattamento delle acque reflue corrisponde a questa osservazione.  - `toc`: Concentrazione di carbonio organico totale misurata nell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `treatmentPlantCapacity`: Capacità di gestione dell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `treatmentPlantCode`: Codice unico per l'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `treatmentPlantId`: Numero unico di identificazione dell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `treatmentPlantName`: Nome dell'impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `tss`: Concentrazione totale di solidi sospesi misurata in un impianto di trattamento delle acque reflue corrispondente a questa osservazione.  - `type`: Tipo di entità NGSI. Deve essere WasteWaterPlant    
 Proprietà richieste  
 - `id`  - `type`  ## Descrizione del modello di dati delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
@@ -267,7 +267,7 @@ WasteWaterPlant:
       description: 'Municipality information corresponding to this observation.'    
       properties:    
         cityId:    
-          description: 'Property. Model:''https://schema.org/Text''. City ID corresponding to this observation.'    
+          description: 'Property. Model:''https://schema.org/Text''. City Id corresponding to this observation.'    
           type: string    
         cityName:    
           description: 'Property. Model:''https://schema.org/Text''. City name corresponding to this observation'    
@@ -282,7 +282,7 @@ WasteWaterPlant:
           description: 'Property. Model:''https://schema.org/Text''. Name of the Urban Local Body corresponding to this observation.'    
           type: string    
         wardId:    
-          description: 'Property. Model:''https://schema.org/Text''. Ward ID corresponding to this observation.'    
+          description: 'Property. Model:''https://schema.org/Text''. Ward Id corresponding to this observation.'    
           type: string    
         wardName:    
           description: 'Property. Model:''https://schema.org/Text''. Ward name corresponding to this observation.'    
@@ -291,7 +291,7 @@ WasteWaterPlant:
           description: 'Property. Model:''https://schema.org/Number''. Ward number corresponding to this observation.'    
           type: number    
         zoneId:    
-          description: 'Property. Model:''https://schema.org/Text''. Zone ID corresponding to this observation.'    
+          description: 'Property. Model:''https://schema.org/Text''. Zone Id corresponding to this observation.'    
           type: string    
         zoneName:    
           description: 'Property. Model:''https://schema.org/Text''. Zone name corresponding to this observation.'    
@@ -416,7 +416,7 @@ WasteWaterPlant:
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
-    treatmentPlantID:    
+    treatmentPlantId:    
       description: 'Unique identification number for the waste-water treatment plant corresponding to this observation.'    
       type: number    
       x-ngsi:    
@@ -450,7 +450,7 @@ WasteWaterPlant:
   x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterPlant/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.WasteWater/WasteWaterPlant/schema.json    
   x-model-tags: IUDX    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Esempio di payloads  
@@ -467,7 +467,7 @@ WasteWaterPlant:
   "nh4": 50,  
   "redox": 25,  
   "do": 4,  
-  "treatmentPlantID": 7,  
+  "treatmentPlantId": 7,  
   "outFlow": 6.7,  
   "tss": 2,  
   "treatmentPlantCapacity": 10,  
@@ -487,13 +487,13 @@ WasteWaterPlant:
   "municipalityInfo": {  
     "district": "Bangalore Urban",  
     "ulbName": "BMC",  
-    "cityID": "23",  
-    "wardID": "23",  
+    "cityId": "23",  
+    "wardId": "23",  
     "stateName": "Karnataka",  
     "cityName": "Bangalore",  
     "zoneName": "South",  
     "wardName": "Bangalore Urban",  
-    "zoneID": "2",  
+    "zoneId": "2",  
     "wardNum": 4  
   }  
 }  
@@ -532,7 +532,7 @@ WasteWaterPlant:
     "type": "Number",  
     "value": 4  
   },  
-  "treatmentPlantID": {  
+  "treatmentPlantId": {  
     "type": "Number",  
     "value": 7  
   },  
@@ -615,7 +615,7 @@ WasteWaterPlant:
   "nh4": 50,  
   "redox": 25,  
   "do": 4,  
-  "treatmentPlantID": 7,  
+  "treatmentPlantId": 7,  
   "outFlow": 6.7,  
   "tss": 2,  
   "treatmentPlantCapacity": 10,  
@@ -681,7 +681,7 @@ WasteWaterPlant:
     "type": "Property",  
     "value": 4  
   },  
-  "treatmentPlantID": {  
+  "treatmentPlantId": {  
     "type": "Property",  
     "value": 7  
   },  
