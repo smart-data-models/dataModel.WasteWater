@@ -196,9 +196,9 @@
             "comment": "Unique code for the waste-water treatment plant corresponding to this observation."
         },
         {
-            "name": "treatmentPlantID",
+            "name": "treatmentPlantId",
             "writable": true,
-            "displayName": "treatmentPlantID",
+            "displayName": "treatmentPlantId",
             "@type": "Property",
             "schema": "long",
             "comment": "Unique identification number for the waste-water treatment plant corresponding to this observation."
