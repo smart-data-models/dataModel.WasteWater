@@ -1,107 +1,106 @@
 {
-  "id": "uri:ngsi-ld:1234:A43R",
-  "type": "WasteWaterPlant",
-  "no3": {
-    "type": "Property",
-    "value": 10
-  },
-  "bod": {
-    "type": "Property",
-    "value": 250
-  },
-  "inFlow": {
-    "type": "Property",
-    "value": 5
-  },
-  "toc": {
-    "type": "Property",
-    "value": 0.7
-  },
-  "nh4": {
-    "type": "Property",
-    "value": 50
-  },
-  "redox": {
-    "type": "Property",
-    "value": 25
-  },
-  "do": {
-    "type": "Property",
-    "value": 4
-  },
-  "treatmentPlantId": {
-    "type": "Property",
-    "value": 7
-  },
-  "outFlow": {
-    "type": "Property",
-    "value": 6.7
-  },
-  "tss": {
-    "type": "Property",
-    "value": 2
-  },
-  "treatmentPlantCapacity": {
-    "type": "Property",
-    "value": 10
-  },
-  "tic": {
-    "type": "Property",
-    "value": 2
-  },
-  "tn": {
-    "type": "Property",
-    "value": 9
-  },
-  "po4": {
-    "type": "Property",
-    "value": 6
-  },
-  "cod": {
-    "type": "Property",
-    "value": 25
-  },
-  "treatmentPlantName": {
-    "type": "Property",
-    "value": "A"
-  },
-  "treatmentPlantCode": {
-    "type": "Property",
-    "value": "2"
-  },
-  "observationDateTime": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2021-03-11T15:51:02+05:30"
-    }
-  },
-  "pHTSA": {
-    "type": "Property",
-    "value": {
-      "avgOverTime": 8,
-      "maxOverTime": 10,
-      "instValue": 6,
-      "minOverTime": 6
-    }
-  },
-  "municipalityInfo": {
-    "type": "Property",
-    "value": {
-      "district": "Bangalore Urban",
-      "ulbName": "BMC",
-      "cityId": "23",
-      "wardId": "23",
-      "stateName": "Karnataka",
-      "cityName": "Bangalore",
-      "zoneName": "South",
-      "wardName": "Bangalore Urban",
-      "zoneId": "2",
-      "wardNum": 4
-    }
-  },
-  "@context": [
-    "iudx:WasteWaterMgmt",
-    "https://smartdatamodels.org/context.jsonld"
-  ]
+    "id": "uri:ngsi-ld:1234:A43R",
+    "type": "WasteWaterPlant",
+    "bod": {
+        "type": "Property",
+        "value": 250
+    },
+    "cod": {
+        "type": "Property",
+        "value": 25
+    },
+    "do": {
+        "type": "Property",
+        "value": 4
+    },
+    "inFlow": {
+        "type": "Property",
+        "value": 5
+    },
+    "municipalityInfo": {
+        "type": "Property",
+        "value": {
+            "district": "Bangalore Urban",
+            "ulbName": "BMC",
+            "cityId": "23",
+            "wardId": "23",
+            "stateName": "Karnataka",
+            "cityName": "Bangalore",
+            "zoneName": "South",
+            "wardName": "Bangalore Urban",
+            "zoneId": "2",
+            "wardNum": 4
+        }
+    },
+    "nh4": {
+        "type": "Property",
+        "value": 50
+    },
+    "no3": {
+        "type": "Property",
+        "value": 10
+    },
+    "observationDateTime": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2021-03-11T15:51:02+05:30"
+        }
+    },
+    "outFlow": {
+        "type": "Property",
+        "value": 6.7
+    },
+    "pHTSA": {
+        "type": "Property",
+        "value": {
+            "avgOverTime": 8,
+            "maxOverTime": 10,
+            "instValue": 6,
+            "minOverTime": 6
+        }
+    },
+    "po4": {
+        "type": "Property",
+        "value": 6
+    },
+    "redox": {
+        "type": "Property",
+        "value": 25
+    },
+    "tic": {
+        "type": "Property",
+        "value": 2
+    },
+    "tn": {
+        "type": "Property",
+        "value": 9
+    },
+    "toc": {
+        "type": "Property",
+        "value": 0.7
+    },
+    "treatmentPlantCapacity": {
+        "type": "Property",
+        "value": 10
+    },
+    "treatmentPlantCode": {
+        "type": "Property",
+        "value": "2"
+    },
+    "treatmentPlantId": {
+        "type": "Property",
+        "value": 7
+    },
+    "treatmentPlantName": {
+        "type": "Property",
+        "value": "A"
+    },
+    "tss": {
+        "type": "Property",
+        "value": 2
+    },
+    "@context": [
+        "iudx:WasteWaterMgmt"
+    ]
 }
