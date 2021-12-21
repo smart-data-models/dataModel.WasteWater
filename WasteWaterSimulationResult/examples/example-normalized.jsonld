@@ -25,5 +25,5 @@
       "object": "urn:ngsi-ld:WasteWaterTank:aerobicTank02"
     }
   },
-  "@context": "https://smartdatamodels.org/context.jsonld"
+  "@context": ["https://smartdatamodels.org/context.jsonld"]
 }

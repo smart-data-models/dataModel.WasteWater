@@ -37,5 +37,5 @@
     "zoneId": "2",
     "wardNum": 4
   },
-    "@context": "iudx:WasteWaterMgmt"
+    "@context": ["iudx:WasteWaterMgmt"]
 }

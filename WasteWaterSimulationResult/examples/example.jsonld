@@ -1,5 +1,5 @@
 {
-  "@context": "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+  "@context": ["https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],
   "id": "urn:ngsi-ld:WasteWaterSimulationResults:dataValidation",
   "type": "WasteWaterSimulationResult",
   "name": "Data Validation",

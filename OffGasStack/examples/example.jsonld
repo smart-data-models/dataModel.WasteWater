@@ -1,5 +1,5 @@
 {
-  "@context": "https://smartdatamodels.org/context.jsonld",
+  "@context": ["https://smartdatamodels.org/context.jsonld"],
   "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",
   "type": "OffGasStack",
   "name": "Off Gas Stack 2",

@@ -1,5 +1,5 @@
 {
-  "@context": "https://smartdatamodels.org/context.jsonld",
+  "@context": ["https://smartdatamodels.org/context.jsonld"],
   "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",
   "type": "WasteWaterTank",
   "name": "Aerobic Tank 2",
