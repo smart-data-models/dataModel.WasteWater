@@ -1,9 +1,9 @@
 description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
 contributors:
--
- name: Siddharth
- surname: Seshan
- mail: siddharth.seshan@kwrwater.nl
- organization: KWR Water Research Institute
- project: Fiware4Water
- comments:
+- name: Siddharth
+  surname: Seshan
+  mail: siddharth.seshan@kwrwater.nl
+  organization: KWR Water Research Institute
+  project: Fiware4Water
+  comments: 
+  year: 2022
