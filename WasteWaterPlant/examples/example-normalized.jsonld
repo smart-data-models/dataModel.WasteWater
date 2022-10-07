@@ -101,6 +101,7 @@
         "value": 2
     },
     "@context": [
-        "iudx:WasteWaterMgmt"
+        "iudx:WasteWaterMgmt",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"
     ]
 }
