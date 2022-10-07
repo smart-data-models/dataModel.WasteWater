@@ -21,5 +21,7 @@
         "type": "Property",
         "value": 84.06
     },
-    "@context": []
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"
+    ]
 }
