@@ -1,15 +1,31 @@
-Entity: OffGasStack  
-===================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: OffGasStack  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/OffGasStack/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **This entity contains a harmonised description of a generic Off-gas Stack made for the Wastewater treatment domain. This entity represents stacks that are present in some wastewater treatment plants where the emissions, greenhouse gases included, are emitted.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `ch4`: CH4 gas emissions from an off-gas stack entity.  - `co2`: CO2 gas emissions from an off-gas stack entity.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `endsAt`: A relationship indicating the entity the Off Gas Stack is connected to in the downstream point.  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n2o`: N2O gas emissions from an off-gas stack entity.  - `name`: The name of this item.  - `o2`: O2 gas emissions from an off-gas stack entity.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `startsAt`: A relationship indicating the entity the Off Gas Stack is connected to in the upstream point.  - `type`: NGSI-LD Entity Type. it has to be OffGasStack    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `ch4[number]`: CH4 gas emissions from an off-gas stack entity.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `co2[number]`: CO2 gas emissions from an off-gas stack entity.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `endsAt[string]`: A relationship indicating the entity the Off Gas Stack is connected to in the downstream point.  - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `n2o[number]`: N2O gas emissions from an off-gas stack entity.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `name[string]`: The name of this item.  - `o2[number]`: O2 gas emissions from an off-gas stack entity.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `startsAt[string]`: A relationship indicating the entity the Off Gas Stack is connected to in the upstream point.  - `type[string]`: NGSI-LD Entity Type. it has to be OffGasStack  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `description`  - `id`  - `type`  ## Data Model description of properties  
+- `description`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 OffGasStack:    
@@ -321,11 +337,22 @@ OffGasStack:
     - type    
     - description    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/OffGasStack/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/OffGasStack/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### OffGasStack NGSI-v2 key-values Example    
 Here is an example of a OffGasStack in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
@@ -340,8 +367,10 @@ OffGasStack:
   "endsAt": "urn:ngsi-ld:WasteWaterJunction:junction4"  
 }  
 ```  
+</details>  
 #### OffGasStack NGSI-v2 normalized Example    
 Here is an example of a OffGasStack in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
@@ -380,62 +409,79 @@ OffGasStack:
   }  
 }  
 ```  
+</details>  
 #### OffGasStack NGSI-LD key-values Example    
 Here is an example of a OffGasStack in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": "https://smartdatamodels.org/context.jsonld",  
-  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
-  "type": "OffGasStack",  
-  "name": "Off Gas Stack 2",  
-  "description": "Off gas stack from treatment lane 2.",  
-  "n2o": 380,  
-  "co2": 1.8,  
-  "ch4": 35,  
-  "o2": 18.6,  
-  "startsAt": "urn:ngsi-ld:WasteWaterJunction:junction3",  
-  "endsAt": "urn:ngsi-ld:WasteWaterJunction:junction4"  
+    "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+    "type": "OffGasStack",  
+    "ch4": 35,  
+    "co2": 1.8,  
+    "description": "Off gas stack from treatment lane 2.",  
+    "endsAt": "urn:ngsi-ld:WasteWaterJunction:junction4",  
+    "n2o": 380,  
+    "name": "Off Gas Stack 2",  
+    "o2": 18.6,  
+    "startsAt": "urn:ngsi-ld:WasteWaterJunction:junction3",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### OffGasStack NGSI-LD normalized Example    
 Here is an example of a OffGasStack in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
-  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
-  "type": "OffGasStack",  
-  "name": {  
-    "type": "Property",  
-    "value": "Off Gas Stack 2"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Off gas stack from treatment lane 2."  
-  },  
-  "n2o": {  
-    "type": "Property",  
-    "value": 380  
-  },  
-  "co2": {  
-    "type": "Property",  
-    "value": 1.8  
-  },  
-  "ch4": {  
-    "type": "Property",  
-    "value": 35  
-  },  
-  "o2": {  
-    "type": "Property",  
-    "value": 18.6  
-  },  
-  "startsAt": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:WasteWaterJunction:junction3"  
-  },  
-  "endsAt": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:WasteWaterJunction:junction4"  
-  }  
+    "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+    "type": "OffGasStack",  
+    "ch4": {  
+        "type": "Property",  
+        "value": 35  
+    },  
+    "co2": {  
+        "type": "Property",  
+        "value": 1.8  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Off gas stack from treatment lane 2."  
+    },  
+    "endsAt": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:WasteWaterJunction:junction4"  
+    },  
+    "n2o": {  
+        "type": "Property",  
+        "value": 380  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Off Gas Stack 2"  
+    },  
+    "o2": {  
+        "type": "Property",  
+        "value": 18.6  
+    },  
+    "startsAt": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:WasteWaterJunction:junction3"  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"  
+    ]  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
