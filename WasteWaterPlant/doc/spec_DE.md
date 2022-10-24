@@ -1,15 +1,31 @@
-Entität: WasteWaterPlant  
-========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: WasteWaterPlant  
+========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterPlant/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Datenmodell für Kläranlage.**  
+Version: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `bod`: Die in der Kläranlage gemessene Konzentration des biologischen Sauerstoffbedarfs entspricht dieser Beobachtung.  - `cod`: Die in der Kläranlage gemessene Konzentration des chemischen Sauerstoffbedarfs entspricht dieser Beobachtung.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `do`: Der in der Kläranlage gemessene gelöste Sauerstoff entspricht dieser Beobachtung.  - `id`: Eindeutiger Bezeichner der Entität  - `inFlow`: Zuflussmenge in die Kläranlage/das Reservoir entsprechend dieser Beobachtung.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `municipalityInfo`: Informationen der Gemeinde zu dieser Beobachtung.  - `name`: Der Name dieses Artikels.  - `nh4`: Die in der Kläranlage gemessene Ammoniumkonzentration entspricht dieser Beobachtung.  - `no3`: Die in der Kläranlage gemessene Nitratkonzentration entspricht dieser Beobachtung.  - `observationDateTime`: Letzter gemeldeter Zeitpunkt der Beobachtung.  - `outFlow`: Abflussmenge in die Kläranlage/das Reservoir entsprechend dieser Beobachtung.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pHTSA`: Im Wasser beobachteter Säuregrad oder Basizität. Objekt, das die zeitliche Verarbeitung der Größeneigenschaft während einer Periode definiert. Es liefert Maximum, Minimum, Momentanwert und Durchschnitt  - `po4`: Die in der Kläranlage gemessene Ortho-Phosphat-Konzentration entspricht dieser Beobachtung.  - `redox`: Das in der Kläranlage gemessene Reduktions- oder Oxidationspotenzial entspricht dieser Beobachtung.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `tic`: Die in der Kläranlage gemessene Gesamtkonzentration an anorganischem Kohlenstoff entspricht dieser Beobachtung.  - `tn`: Die in der Kläranlage gemessene Gesamtstickstoffkonzentration entspricht dieser Beobachtung.  - `toc`: Die in der Kläranlage gemessene Gesamtkonzentration an organischem Kohlenstoff entspricht dieser Beobachtung.  - `treatmentPlantCapacity`: Die Umschlagskapazität der Kläranlage entspricht dieser Beobachtung.  - `treatmentPlantCode`: Eindeutiger Code für die Kläranlage, die dieser Beobachtung entspricht.  - `treatmentPlantId`: Eindeutige Identifikationsnummer für die Kläranlage, die dieser Beobachtung entspricht.  - `treatmentPlantName`: Name der Kläranlage, die dieser Beobachtung entspricht.  - `tss`: Die in einer Kläranlage gemessene Gesamtkonzentration an suspendierten Feststoffen entspricht dieser Beobachtung.  - `type`: NGSI-Entitätstyp. Es muss WasteWaterPlant sein    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `bod[number]`: Die in der Kläranlage gemessene Konzentration des biologischen Sauerstoffbedarfs entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `cod[number]`: Die in der Kläranlage gemessene Konzentration des chemischen Sauerstoffbedarfs entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `do[number]`: Der in der Kläranlage gemessene gelöste Sauerstoff entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `inFlow[number]`: Zuflussmenge in die Kläranlage/das Reservoir entsprechend dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `municipalityInfo[object]`: Informationen der Gemeinde zu dieser Beobachtung.  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: Der Name dieses Artikels.  - `nh4[number]`: Die in der Kläranlage gemessene Ammoniumkonzentration entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `no3[number]`: Die in der Kläranlage gemessene Nitratkonzentration entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `observationDateTime[string]`: Letzter gemeldeter Zeitpunkt der Beobachtung.  . Model: [https://schema.org/Text](https://schema.org/Text)- `outFlow[number]`: Abflussmenge in die Kläranlage/das Reservoir entsprechend dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pHTSA[object]`: Im Wasser beobachteter Säuregrad oder Basengehalt. Objekt, das die zeitliche Verarbeitung der Größeneigenschaft während einer Periode definiert. Es liefert Maximum, Minimum, Momentanwert und Durchschnitt  . Model: [https://schema.org/Text](https://schema.org/Text)- `po4[number]`: Die in der Kläranlage gemessene Ortho-Phosphat-Konzentration entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `redox[number]`: Das in der Kläranlage gemessene Reduktions- oder Oxidationspotenzial entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `tic[number]`: Die in der Kläranlage gemessene Gesamtkonzentration an anorganischem Kohlenstoff entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `tn[number]`: Die in der Kläranlage gemessene Gesamtstickstoffkonzentration entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `toc[number]`: Die in der Kläranlage gemessene Gesamtkonzentration an organischem Kohlenstoff entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `treatmentPlantCapacity[number]`: Die Umschlagskapazität der Kläranlage entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `treatmentPlantCode[string]`: Eindeutiger Code für die Kläranlage, die dieser Beobachtung entspricht.  . Model: [https://schema.org/Text](https://schema.org/Text)- `treatmentPlantId[number]`: Eindeutige Identifikationsnummer für die Kläranlage, die dieser Beobachtung entspricht.  . Model: [https://schema.org/Number](https://schema.org/Number)- `treatmentPlantName[string]`: Name der Kläranlage, die dieser Beobachtung entspricht.  . Model: [https://schema.org/Text](https://schema.org/Text)- `tss[number]`: Die in einer Kläranlage gemessene Gesamtkonzentration an suspendierten Feststoffen entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Entitätstyp. Es muss WasteWaterPlant sein  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WasteWaterPlant:    
@@ -453,9 +469,14 @@ WasteWaterPlant:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### WasteWaterPlant NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für eine WasteWaterPlant im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "uri:ngsi-ld:1234:A43R",  
@@ -498,8 +519,10 @@ WasteWaterPlant:
   }  
 }  
 ```  
+</details>  
 #### WasteWaterPlant NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für eine WasteWaterPlant im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "uri:ngsi-ld:1234:A43R",  
@@ -602,160 +625,175 @@ WasteWaterPlant:
   }  
 }  
 ```  
+</details>  
 #### WasteWaterPlant NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für eine WasteWaterPlant im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "uri:ngsi-ld:1234:A43R",  
-  "type": "WasteWaterPlant",  
-  "no3": 10,  
-  "bod": 250,  
-  "inFlow": 5,  
-  "toc": 0.7,  
-  "nh4": 50,  
-  "redox": 25,  
-  "do": 4,  
-  "treatmentPlantId": 7,  
-  "outFlow": 6.7,  
-  "tss": 2,  
-  "treatmentPlantCapacity": 10,  
-  "tic": 2,  
-  "tn": 9,  
-  "po4": 6,  
-  "cod": 25,  
-  "treatmentPlantName": "A",  
-  "treatmentPlantCode": "2",  
-  "observationDateTime": "2021-03-11T15:51:02+05:30",  
-  "pHTSA": {  
-    "avgOverTime": 8,  
-    "maxOverTime": 10,  
-    "instValue": 6,  
-    "minOverTime": 6  
-  },  
-  "municipalityInfo": {  
-    "district": "Bangalore Urban",  
-    "ulbName": "BMC",  
-    "cityId": "23",  
-    "wardId": "23",  
-    "stateName": "Karnataka",  
-    "cityName": "Bangalore",  
-    "zoneName": "South",  
-    "wardName": "Bangalore Urban",  
-    "zoneId": "2",  
-    "wardNum": 4  
-  },  
-    "@context": "iudx:WasteWaterMgmt"  
+    "id": "uri:ngsi-ld:1234:A43R",  
+    "type": "WasteWaterPlant",  
+    "bod": 250,  
+    "cod": 25,  
+    "do": 4,  
+    "inFlow": 5,  
+    "municipalityInfo": {  
+        "district": "Bangalore Urban",  
+        "ulbName": "BMC",  
+        "cityId": "23",  
+        "wardId": "23",  
+        "stateName": "Karnataka",  
+        "cityName": "Bangalore",  
+        "zoneName": "South",  
+        "wardName": "Bangalore Urban",  
+        "zoneId": "2",  
+        "wardNum": 4  
+    },  
+    "nh4": 50,  
+    "no3": 10,  
+    "observationDateTime": "2021-03-11T15:51:02+05:30",  
+    "outFlow": 6.7,  
+    "pHTSA": {  
+        "avgOverTime": 8,  
+        "maxOverTime": 10,  
+        "instValue": 6,  
+        "minOverTime": 6  
+    },  
+    "po4": 6,  
+    "redox": 25,  
+    "tic": 2,  
+    "tn": 9,  
+    "toc": 0.7,  
+    "treatmentPlantCapacity": 10,  
+    "treatmentPlantCode": "2",  
+    "treatmentPlantId": 7,  
+    "treatmentPlantName": "A",  
+    "tss": 2,  
+    "@context": [  
+        "iudx:WasteWaterMgmt",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### WasteWaterPlant NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für eine WasteWaterPlant im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine WasteWaterPlant im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "uri:ngsi-ld:1234:A43R",  
-  "type": "WasteWaterPlant",  
-  "no3": {  
-    "type": "Property",  
-    "value": 10  
-  },  
-  "bod": {  
-    "type": "Property",  
-    "value": 250  
-  },  
-  "inFlow": {  
-    "type": "Property",  
-    "value": 5  
-  },  
-  "toc": {  
-    "type": "Property",  
-    "value": 0.7  
-  },  
-  "nh4": {  
-    "type": "Property",  
-    "value": 50  
-  },  
-  "redox": {  
-    "type": "Property",  
-    "value": 25  
-  },  
-  "do": {  
-    "type": "Property",  
-    "value": 4  
-  },  
-  "treatmentPlantId": {  
-    "type": "Property",  
-    "value": 7  
-  },  
-  "outFlow": {  
-    "type": "Property",  
-    "value": 6.7  
-  },  
-  "tss": {  
-    "type": "Property",  
-    "value": 2  
-  },  
-  "treatmentPlantCapacity": {  
-    "type": "Property",  
-    "value": 10  
-  },  
-  "tic": {  
-    "type": "Property",  
-    "value": 2  
-  },  
-  "tn": {  
-    "type": "Property",  
-    "value": 9  
-  },  
-  "po4": {  
-    "type": "Property",  
-    "value": 6  
-  },  
-  "cod": {  
-    "type": "Property",  
-    "value": 25  
-  },  
-  "treatmentPlantName": {  
-    "type": "Property",  
-    "value": "A"  
-  },  
-  "treatmentPlantCode": {  
-    "type": "Property",  
-    "value": "2"  
-  },  
-  "observationDateTime": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-03-11T15:51:02+05:30"  
-    }  
-  },  
-  "pHTSA": {  
-    "type": "Property",  
-    "value": {  
-      "avgOverTime": 8,  
-      "maxOverTime": 10,  
-      "instValue": 6,  
-      "minOverTime": 6  
-    }  
-  },  
-  "municipalityInfo": {  
-    "type": "Property",  
-    "value": {  
-      "district": "Bangalore Urban",  
-      "ulbName": "BMC",  
-      "cityId": "23",  
-      "wardId": "23",  
-      "stateName": "Karnataka",  
-      "cityName": "Bangalore",  
-      "zoneName": "South",  
-      "wardName": "Bangalore Urban",  
-      "zoneId": "2",  
-      "wardNum": 4  
-    }  
-  },  
-  "@context": [  
-    "iudx:WasteWaterMgmt",  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "uri:ngsi-ld:1234:A43R",  
+    "type": "WasteWaterPlant",  
+    "bod": {  
+        "type": "Property",  
+        "value": 250  
+    },  
+    "cod": {  
+        "type": "Property",  
+        "value": 25  
+    },  
+    "do": {  
+        "type": "Property",  
+        "value": 4  
+    },  
+    "inFlow": {  
+        "type": "Property",  
+        "value": 5  
+    },  
+    "municipalityInfo": {  
+        "type": "Property",  
+        "value": {  
+            "district": "Bangalore Urban",  
+            "ulbName": "BMC",  
+            "cityId": "23",  
+            "wardId": "23",  
+            "stateName": "Karnataka",  
+            "cityName": "Bangalore",  
+            "zoneName": "South",  
+            "wardName": "Bangalore Urban",  
+            "zoneId": "2",  
+            "wardNum": 4  
+        }  
+    },  
+    "nh4": {  
+        "type": "Property",  
+        "value": 50  
+    },  
+    "no3": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "observationDateTime": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-03-11T15:51:02+05:30"  
+        }  
+    },  
+    "outFlow": {  
+        "type": "Property",  
+        "value": 6.7  
+    },  
+    "pHTSA": {  
+        "type": "Property",  
+        "value": {  
+            "avgOverTime": 8,  
+            "maxOverTime": 10,  
+            "instValue": 6,  
+            "minOverTime": 6  
+        }  
+    },  
+    "po4": {  
+        "type": "Property",  
+        "value": 6  
+    },  
+    "redox": {  
+        "type": "Property",  
+        "value": 25  
+    },  
+    "tic": {  
+        "type": "Property",  
+        "value": 2  
+    },  
+    "tn": {  
+        "type": "Property",  
+        "value": 9  
+    },  
+    "toc": {  
+        "type": "Property",  
+        "value": 0.7  
+    },  
+    "treatmentPlantCapacity": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "treatmentPlantCode": {  
+        "type": "Property",  
+        "value": "2"  
+    },  
+    "treatmentPlantId": {  
+        "type": "Property",  
+        "value": 7  
+    },  
+    "treatmentPlantName": {  
+        "type": "Property",  
+        "value": "A"  
+    },  
+    "tss": {  
+        "type": "Property",  
+        "value": 2  
+    },  
+    "@context": [  
+        "iudx:WasteWaterMgmt",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
