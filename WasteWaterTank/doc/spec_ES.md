@@ -1,15 +1,31 @@
-Entidad: WasteWaterTank  
-=======================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: WasteWaterTank  
+=======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterTank/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Esta entidad contiene una descripción armonizada de un Depósito genérico realizado para el ámbito del tratamiento de aguas residuales. Para un determinado tipo de tanque, se enumeran como propiedades todas las posibles variables que pueden ser medidas. En la propiedad de descripción se puede definir el tipo de tanque (anaerobio, predinitrificación, nitrificación, etc.)**.  
+versión: 0.1.0  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `airflow`: Objeto que define el flujo de aire real y estimado  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `do`: Concentración de oxígeno disuelto medida en las aguas residuales.  - `endsAt`: Una relación que indica la entidad a la que está conectado el depósito en el punto posterior  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `nh4`: Concentración de amonio medida en un tanque.  - `no3`: Concentración de nitratos medida en las aguas residuales.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pH`: Medición del nivel de pH del agua.  - `power`: Objeto que define el consumo de energía real y estimado  - `redox`: Nivel de redox medido en las aguas residuales.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sludgeLevel`: Nivel de lodos medido en un tanque secundario de sedimentación  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `startsAt`: Una relación que indica la entidad a la que está conectado el depósito en el punto anterior  - `temperature`: Medición de la temperatura de las aguas residuales.  - `tn`: Concentración de nitrógeno total medida en las aguas residuales.  - `tss`: concentración total de sólidos en suspensión medida en un tanque.  - `type`: Tipo de entidad NGSI-LD. Tiene que ser WasteWaterTank    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `airflow[object]`: Objeto que define el flujo de aire real y estimado  - `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `do[number]`: Concentración de oxígeno disuelto medida en las aguas residuales.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `endsAt[string]`: Una relación que indica la entidad a la que está conectado el depósito en el punto posterior  - `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name[string]`: El nombre de este artículo.  - `nh4[number]`: Concentración de amonio medida en un tanque.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `no3[number]`: Concentración de nitratos medida en las aguas residuales.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pH[number]`: Medición del nivel de pH del agua.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `power[object]`: Objeto que define el consumo de energía real y estimado  - `redox[number]`: Nivel de redox medido en las aguas residuales.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sludgeLevel[number]`: Nivel de lodos medido en un tanque secundario de sedimentación  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `startsAt[string]`: Una relación que indica la entidad a la que está conectado el depósito en el punto anterior  - `temperature[number]`: Medición de la temperatura de las aguas residuales.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `tn[number]`: Concentración de nitrógeno total medida en las aguas residuales.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `tss[number]`: concentración total de sólidos en suspensión medida en un tanque.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `type[string]`: Tipo de entidad NGSI-LD. Tiene que ser WasteWaterTank  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `description`  - `id`  - `name`  - `type`  ## Descripción del modelo de datos de las propiedades  
+- `description`  - `id`  - `name`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WasteWaterTank:    
@@ -388,9 +404,14 @@ WasteWaterTank:
   x-version: 0.1.0    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### WasteWaterTank NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un WasteWaterTank en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
@@ -409,8 +430,10 @@ WasteWaterTank:
   "endsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
 }  
 ```  
+</details>  
 #### WasteWaterTank NGSI-v2 normalizado Ejemplo  
 Este es un ejemplo de un WasteWaterTank en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
@@ -465,82 +488,98 @@ WasteWaterTank:
   }  
 }  
 ```  
+</details>  
 #### WasteWaterTank NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un WasteWaterTank en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": "https://smartdatamodels.org/context.jsonld",  
-  "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
-  "type": "WasteWaterTank",  
-  "name": "Aerobic Tank 2",  
-  "description": "Aerobic tank in treatment lane 2.",  
-  "tss": 3500,  
-  "nh4": 1.3,  
-  "no3": 5.2,  
-  "do": 1.2,  
-  "redox": 250,  
-  "sludgeLevel": 0.8,  
-  "temperature": 16,  
-  "pH": 7.8,  
-  "startsAt": "urn:ngsi-ld:WasteWaterTank:facultativeTank2",  
-  "endsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
+    "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
+    "type": "WasteWaterTank",  
+    "description": "Aerobic tank in treatment lane 2.",  
+    "do": 1.2,  
+    "endsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a",  
+    "name": "Aerobic Tank 2",  
+    "nh4": 1.3,  
+    "no3": 5.2,  
+    "pH": 7.8,  
+    "redox": 250,  
+    "sludgeLevel": 0.8,  
+    "startsAt": "urn:ngsi-ld:WasteWaterTank:facultativeTank2",  
+    "temperature": 16,  
+    "tss": 3500,  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### WasteWaterTank NGSI-LD normalizado Ejemplo  
 Este es un ejemplo de un WasteWaterTank en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": "https://smartdatamodels.org/context.jsonld",  
-  "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
-  "type": "WasteWaterTank",  
-  "name": {  
-    "type": "Property",  
-    "value": "Aerobic Tank 2"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Aerobic tank in treatment lane 2."  
-  },  
-  "tss": {  
-    "type": "Property",  
-    "value": 3500  
-  },  
-  "nh4": {  
-    "type": "Property",  
-    "value": 1.3  
-  },  
-  "no3": {  
-    "type": "Property",  
-    "value": 5.2  
-  },  
-  "do": {  
-    "type": "Property",  
-    "value": 1.2  
-  },  
-  "redox": {  
-    "type": "Property",  
-    "value": 250  
-  },  
-  "sludgeLevel": {  
-    "type": "Property",  
-    "value": 0.8  
-  },  
-  "temperature": {  
-    "type": "Property",  
-    "value": 16  
-  },  
-  "pH": {  
-    "type": "Property",  
-    "value": 7.8  
-  },  
-  "startsAt": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:WasteWaterTank:facultativeTank2"  
-  },  
-  "endsAt": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
-  }  
+    "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",  
+    "type": "WasteWaterTank",  
+    "description": {  
+        "type": "Property",  
+        "value": "Aerobic tank in treatment lane 2."  
+    },  
+    "do": {  
+        "type": "Property",  
+        "value": 1.2  
+    },  
+    "endsAt": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Aerobic Tank 2"  
+    },  
+    "nh4": {  
+        "type": "Property",  
+        "value": 1.3  
+    },  
+    "no3": {  
+        "type": "Property",  
+        "value": 5.2  
+    },  
+    "pH": {  
+        "type": "Property",  
+        "value": 7.8  
+    },  
+    "redox": {  
+        "type": "Property",  
+        "value": 250  
+    },  
+    "sludgeLevel": {  
+        "type": "Property",  
+        "value": 0.8  
+    },  
+    "startsAt": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:WasteWaterTank:facultativeTank2"  
+    },  
+    "temperature": {  
+        "type": "Property",  
+        "value": 16  
+    },  
+    "tss": {  
+        "type": "Property",  
+        "value": 3500  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"  
+    ]  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
