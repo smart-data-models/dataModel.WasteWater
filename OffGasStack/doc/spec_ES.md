@@ -1,15 +1,31 @@
-Entidad: OffGasStack  
-====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: OffGasStack  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/OffGasStack/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Esta entidad contiene una descripción armonizada de una chimenea genérica de gases de escape realizada para el ámbito del tratamiento de aguas residuales. Esta entidad representa las chimeneas presentes en algunas plantas de tratamiento de aguas residuales en las que se emiten los gases de efecto invernadero.  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `ch4`: Emisiones de gas CH4 de una entidad de la chimenea de gases.  - `co2`: Emisiones de gases de CO2 de una entidad fuera de la chimenea.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `endsAt`: Una relación que indica la entidad a la que está conectada la pila de gas apagada en el punto posterior.  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n2o`: Emisiones de gas N2O de una entidad de la chimenea de gases.  - `name`: El nombre de este artículo.  - `o2`: Emisiones de gas O2 de una entidad de la chimenea de gases.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `startsAt`: Una relación que indica la entidad a la que está conectada la pila de gas apagada en el punto anterior.  - `type`: Tipo de entidad NGSI-LD. Tiene que ser OffGasStack    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `ch4[number]`: Emisiones de gas CH4 de una entidad de la chimenea de gases.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `co2[number]`: Emisiones de gases de CO2 de una entidad fuera de la chimenea.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `endsAt[string]`: Una relación que indica la entidad a la que está conectada la pila de gas apagada en el punto posterior.  - `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `n2o[number]`: Emisiones de gas N2O de una entidad de la chimenea de gases.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `name[string]`: El nombre de este artículo.  - `o2[number]`: Emisiones de gas O2 de una entidad de la chimenea de gases.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `startsAt[string]`: Una relación que indica la entidad a la que está conectada la pila de gas apagada en el punto anterior.  - `type[string]`: Tipo de entidad NGSI-LD. Tiene que ser OffGasStack  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `description`  - `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
+- `description`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 OffGasStack:    
@@ -321,11 +337,22 @@ OffGasStack:
     - type    
     - description    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/OffGasStack/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/OffGasStack/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### OffGasStack NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un OffGasStack en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
@@ -340,8 +367,10 @@ OffGasStack:
   "endsAt": "urn:ngsi-ld:WasteWaterJunction:junction4"  
 }  
 ```  
+</details>  
 #### OffGasStack NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de un OffGasStack en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+Aquí hay un ejemplo de un OffGasStack en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
@@ -380,62 +409,79 @@ OffGasStack:
   }  
 }  
 ```  
+</details>  
 #### OffGasStack NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un OffGasStack en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": "https://smartdatamodels.org/context.jsonld",  
-  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
-  "type": "OffGasStack",  
-  "name": "Off Gas Stack 2",  
-  "description": "Off gas stack from treatment lane 2.",  
-  "n2o": 380,  
-  "co2": 1.8,  
-  "ch4": 35,  
-  "o2": 18.6,  
-  "startsAt": "urn:ngsi-ld:WasteWaterJunction:junction3",  
-  "endsAt": "urn:ngsi-ld:WasteWaterJunction:junction4"  
+    "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+    "type": "OffGasStack",  
+    "ch4": 35,  
+    "co2": 1.8,  
+    "description": "Off gas stack from treatment lane 2.",  
+    "endsAt": "urn:ngsi-ld:WasteWaterJunction:junction4",  
+    "n2o": 380,  
+    "name": "Off Gas Stack 2",  
+    "o2": 18.6,  
+    "startsAt": "urn:ngsi-ld:WasteWaterJunction:junction3",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### OffGasStack NGSI-LD normalizado Ejemplo  
 Este es un ejemplo de un OffGasStack en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
-  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
-  "type": "OffGasStack",  
-  "name": {  
-    "type": "Property",  
-    "value": "Off Gas Stack 2"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Off gas stack from treatment lane 2."  
-  },  
-  "n2o": {  
-    "type": "Property",  
-    "value": 380  
-  },  
-  "co2": {  
-    "type": "Property",  
-    "value": 1.8  
-  },  
-  "ch4": {  
-    "type": "Property",  
-    "value": 35  
-  },  
-  "o2": {  
-    "type": "Property",  
-    "value": 18.6  
-  },  
-  "startsAt": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:WasteWaterJunction:junction3"  
-  },  
-  "endsAt": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:WasteWaterJunction:junction4"  
-  }  
+    "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",  
+    "type": "OffGasStack",  
+    "ch4": {  
+        "type": "Property",  
+        "value": 35  
+    },  
+    "co2": {  
+        "type": "Property",  
+        "value": 1.8  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Off gas stack from treatment lane 2."  
+    },  
+    "endsAt": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:WasteWaterJunction:junction4"  
+    },  
+    "n2o": {  
+        "type": "Property",  
+        "value": 380  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Off Gas Stack 2"  
+    },  
+    "o2": {  
+        "type": "Property",  
+        "value": 18.6  
+    },  
+    "startsAt": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:WasteWaterJunction:junction3"  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"  
+    ]  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
