@@ -1,15 +1,31 @@
-エンティティWasteWaterJunction  
-========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティWasteWaterJunction  
+========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterJunction/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティは、廃水処理ドメインのために作られた一般的なジャンクションの調和された記述を含んでいます。ジャンクションは、処理プラントの特定のセクションに設置することができる。廃水処理の目的では、ジャンクションは特定の変数を測定するセンサーの位置である場合に最も有用である。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**このエンティティは、廃水処理領域のために作られた一般的な接合部の調和された記述を含んでいる。ジャンクションは処理プラントの特定のセクションに設置される可能性がある。排水処理目的では、ジャンクションは、特定の変数を測定するセンサーの場所である場合、最も有用である。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `bod`: 流入水または流出水で測定された生物学的酸素要求量濃度。  - `cod`: 流入水または流出水で測定された化学的酸素要求量濃度。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `do`: 排水中の溶存酸素濃度を測定。  - `emissionFlow`: オフガス・スタックで放出される前のジャンクションで測定されるガス放出流量。  - `endsAt`: ジャンクションが下流点で接続されているエンティティを示す関係性  - `flowrate`: 廃水の流量。  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `nh4`: 水槽内のアンモニウム濃度測定  - `no3`: 排水中の硝酸塩濃度を測定。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pH`: 水のpH値を測定。  - `po4`: 排水中のオルソリン酸濃度を測定。  - `pressure`: 特定の場所で測定された圧力。廃水タンクへの送風機による空気の流れに最も適している  - `redox`: 排水中の酸化還元度を測定。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startsAt`: ジャンクションが上流のポイントで接続されているエンティティを示すリレーションシップ  - `temperature`: 排水の温度を測定。  - `tic`: 流入水または流出水で測定された全無機炭素濃度。  - `tn`: 排水中の全窒素濃度を測定。  - `toc`: 流入水または流出水で測定された全有機炭素濃度。  - `tss`: 槽内で測定した全浮遊物質濃度。  - `type`: WasteWaterJunctionでなければならない。NGSI-LD エンティティタイプ    
-必須項目  
-- `description`  - `id`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `bod[number]`: 流入または流出において測定された生物学的酸素要求量濃度。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `cod[number]`: 流入または流出において測定された化学的酸素要求量濃度。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `do[number]`: 排水中の溶存酸素濃度を測定したもの。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `emissionFlow[number]`: オフガススタックで排出される前に、接合部で測定されるガス排出量。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `endsAt[string]`: 下流点での接合部の接続先を示す関係性  - `flowrate[number]`: 排水の流量。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `nh4[number]`: 水槽内のアンモニウム濃度を測定したもの。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `no3[number]`: 排水中の硝酸塩濃度を測定。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `pH[number]`: 水のpH値を測定。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `po4[number]`: 排水中のリン酸塩濃度を測定。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `pressure[number]`: ある位置で測定された圧力。排水タンクへのブロワーによる送風に最も適している。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `redox[number]`: 排水中の酸化還元レベルを測定。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startsAt[string]`: 上流点における接合部の接続先を示す関係性  - `temperature[number]`: 排水の温度を測定。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `tic[number]`: 流入または流出において測定された全無機炭素濃度。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `tn[number]`: 排水中の全窒素濃度を測定したもの。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `toc[number]`: 流入または流出において測定された全有機炭素濃度。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `tss[number]`: タンク内で測定された総浮遊物質濃度。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `type[string]`: WasteWaterJunctionでなければならない。NGSI-LDエンティティタイプ  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `description`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WasteWaterJunction:    
@@ -412,9 +428,14 @@ WasteWaterJunction:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### WasteWaterJunction NGSI-v2のキーバリューの例  
-ここではWasteWaterJunctionをJSON-LD形式でkey-valuesにした例を紹介します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### WasteWaterJunction NGSI-v2 key-value の例。  
+以下は、WasteWaterJunctionをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
@@ -436,8 +457,10 @@ WasteWaterJunction:
   "startsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
 }  
 ```  
+</details>  
 #### WasteWaterJunction NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のWasteWaterJunctionの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、WasteWaterJunctionをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
@@ -504,99 +527,113 @@ WasteWaterJunction:
   }  
 }  
 ```  
-#### WasteWaterJunction NGSI-LDのキーバリューの例  
-ここではWasteWaterJunctionをkey-valuesとしてJSON-LD形式で表現した例を紹介します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### WasteWaterJunction NGSI-LD key-value 例  
+以下はWasteWaterJunctionをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": "https://smartdatamodels.org/context.jsonld",  
-  "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
-  "type": "WasteWaterJunction",  
-  "name": "Junction 2",  
-  "description": "A junction in the treatment lane representing a sampling location for the effluent wastewater.",  
-  "nh4": 0.5,  
-  "no3": 5.2,  
-  "do": 1.2,  
-  "redox": 250,  
-  "tn": 7.18,  
-  "toc": 16.28,  
-  "po4": 0.29,  
-  "bod": 2.44,  
-  "cod": 36.6,  
-  "flowrate": 27650,  
-  "temperature": 16,  
-  "pH": 7.8,  
-  "startsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
-}  
-```  
-#### WasteWaterJunction NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のWasteWaterJunctionの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-```json  
-[  
-  {  
-    "@context": "https://smartdatamodels.org/context.jsonld",  
     "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
     "type": "WasteWaterJunction",  
-    "name": {  
-      "type": "Property",  
-      "value": "Junction 2"  
-    },  
-    "description": {  
-      "type": "Property",  
-      "value": "A junction in the treatment lane representing a sampling location for the effluent wastewater."  
-    },  
-    "nh4": {  
-      "type": "Property",  
-      "value": 0.5  
-    },  
-    "no3": {  
-      "type": "Property",  
-      "value": 5.2  
-    },  
-    "do": {  
-      "type": "Property",  
-      "value": 1.2  
-    },  
-    "redox": {  
-      "type": "Property",  
-      "value": 250  
-    },  
-    "tn": {  
-      "type": "Property",  
-      "value": 7.18  
-    },  
-    "toc": {  
-      "type": "Property",  
-      "value": 16.28  
-    },  
-    "po4": {  
-      "type": "Property",  
-      "value": 0.29  
-    },  
+    "bod": 2.44,  
+    "cod": 36.6,  
+    "description": "A junction in the treatment lane representing a sampling location for the effluent wastewater.",  
+    "do": 1.2,  
+    "flowrate": 27650,  
+    "name": "Junction 2",  
+    "nh4": 0.5,  
+    "no3": 5.2,  
+    "pH": 7.8,  
+    "po4": 0.29,  
+    "redox": 250,  
+    "startsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a",  
+    "temperature": 16,  
+    "tn": 7.18,  
+    "toc": 16.28,  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"  
+    ]  
+}  
+```  
+</details>  
+#### WasteWaterJunction NGSI-LD 正規化例  
+以下は、WasteWaterJunctionをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
+    "type": "WasteWaterJunction",  
     "bod": {  
-      "type": "Property",  
-      "value": 2.44  
+        "type": "Property",  
+        "value": 2.44  
     },  
     "cod": {  
-      "type": "Property",  
-      "value": 36.6  
+        "type": "Property",  
+        "value": 36.6  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "A junction in the treatment lane representing a sampling location for the effluent wastewater."  
+    },  
+    "do": {  
+        "type": "Property",  
+        "value": 1.2  
     },  
     "flowrate": {  
-      "type": "Property",  
-      "value": 27650  
+        "type": "Property",  
+        "value": 27650  
     },  
-    "temperature": {  
-      "type": "Property",  
-      "value": 16  
+    "name": {  
+        "type": "Property",  
+        "value": "Junction 2"  
+    },  
+    "nh4": {  
+        "type": "Property",  
+        "value": 0.5  
+    },  
+    "no3": {  
+        "type": "Property",  
+        "value": 5.2  
     },  
     "pH": {  
-      "type": "Property",  
-      "value": 7.8  
+        "type": "Property",  
+        "value": 7.8  
+    },  
+    "po4": {  
+        "type": "Property",  
+        "value": 0.29  
+    },  
+    "redox": {  
+        "type": "Property",  
+        "value": 250  
     },  
     "startsAt": {  
-      "type": "Relationship",  
-      "object": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
-    }  
-  }  
-]  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
+    },  
+    "temperature": {  
+        "type": "Property",  
+        "value": 16  
+    },  
+    "tn": {  
+        "type": "Property",  
+        "value": 7.18  
+    },  
+    "toc": {  
+        "type": "Property",  
+        "value": 16.28  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"  
+    ]  
+}  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
