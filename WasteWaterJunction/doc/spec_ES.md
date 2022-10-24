@@ -1,15 +1,31 @@
-Entidad: WasteWaterJunction  
-===========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: WasteWaterJunction  
+===========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterJunction/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Esta entidad contiene una descripción armonizada de un empalme genérico realizado para el ámbito del tratamiento de aguas residuales. Los empalmes pueden estar situados en determinadas secciones de la planta de tratamiento. En el ámbito del tratamiento de aguas residuales, el empalme es más útil si se trata de la ubicación de un sensor que mide una variable específica.  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `bod`: Concentración de demanda biológica de oxígeno medida en el afluente o el efluente.  - `cod`: Concentración de demanda química de oxígeno medida en el afluente o el efluente.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `do`: Concentración de oxígeno disuelto medida en las aguas residuales.  - `emissionFlow`: Volumen de flujo de emisión de gas medido en un cruce antes de ser emitido en una chimenea de gases.  - `endsAt`: Una relación que indica la entidad a la que está conectada la unión en el punto posterior  - `flowrate`: Caudal de aguas residuales.  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `nh4`: Concentración de amonio medida en un tanque.  - `no3`: Concentración de nitratos medida en las aguas residuales.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pH`: Medición del nivel de pH del agua.  - `po4`: Concentración de ortofosfato medida en las aguas residuales.  - `pressure`: Presión medida en un lugar determinado. Más relevante para el flujo de aire proporcionado por los sopladores a los depósitos de aguas residuales  - `redox`: Nivel de redox medido en las aguas residuales.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `startsAt`: Una relación que indica la entidad a la que está conectada la unión en el punto anterior  - `temperature`: Medición de la temperatura de las aguas residuales.  - `tic`: Concentración de carbono inorgánico total medida en el afluente o el efluente.  - `tn`: Concentración de nitrógeno total medida en las aguas residuales.  - `toc`: Concentración de carbono orgánico total medida en el afluente o el efluente.  - `tss`: concentración total de sólidos en suspensión medida en un tanque.  - `type`: Tiene que ser WasteWaterJunction. Tipo de entidad NGSI-LD    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `bod[number]`: Concentración de demanda biológica de oxígeno medida en el afluente o el efluente.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `cod[number]`: Concentración de demanda química de oxígeno medida en el afluente o el efluente.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `do[number]`: Concentración de oxígeno disuelto medida en las aguas residuales.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `emissionFlow[number]`: Volumen de flujo de emisión de gas medido en un cruce antes de ser emitido en una chimenea de gases.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `endsAt[string]`: Una relación que indica la entidad a la que está conectada la unión en el punto posterior  - `flowrate[number]`: Caudal de aguas residuales.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name[string]`: El nombre de este artículo.  - `nh4[number]`: Concentración de amonio medida en un tanque.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `no3[number]`: Concentración de nitratos medida en las aguas residuales.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pH[number]`: Medición del nivel de pH del agua.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `po4[number]`: Concentración de ortofosfato medida en las aguas residuales.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `pressure[number]`: Presión medida en un lugar determinado. Más relevante para el flujo de aire proporcionado por los sopladores a los depósitos de aguas residuales  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `redox[number]`: Nivel de redox medido en las aguas residuales.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `startsAt[string]`: Una relación que indica la entidad a la que está conectada la unión en el punto anterior  - `temperature[number]`: Medición de la temperatura de las aguas residuales.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `tic[number]`: Concentración de carbono inorgánico total medida en el afluente o el efluente.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `tn[number]`: Concentración de nitrógeno total medida en las aguas residuales.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `toc[number]`: Concentración de carbono orgánico total medida en el afluente o el efluente.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `tss[number]`: concentración total de sólidos en suspensión medida en un tanque.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `type[string]`: Tiene que ser WasteWaterJunction. Tipo de entidad NGSI-LD  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `description`  - `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
+- `description`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WasteWaterJunction:    
@@ -412,9 +428,14 @@ WasteWaterJunction:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### WasteWaterJunction NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de un WasteWaterJunction en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+Aquí hay un ejemplo de una WasteWaterJunction en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
@@ -436,8 +457,10 @@ WasteWaterJunction:
   "startsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
 }  
 ```  
+</details>  
 #### WasteWaterJunction NGSI-v2 normalizado Ejemplo  
 Este es un ejemplo de una WasteWaterJunction en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
@@ -504,99 +527,113 @@ WasteWaterJunction:
   }  
 }  
 ```  
+</details>  
 #### WasteWaterJunction NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un WasteWaterJunction en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+Aquí hay un ejemplo de una WasteWaterJunction en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": "https://smartdatamodels.org/context.jsonld",  
-  "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
-  "type": "WasteWaterJunction",  
-  "name": "Junction 2",  
-  "description": "A junction in the treatment lane representing a sampling location for the effluent wastewater.",  
-  "nh4": 0.5,  
-  "no3": 5.2,  
-  "do": 1.2,  
-  "redox": 250,  
-  "tn": 7.18,  
-  "toc": 16.28,  
-  "po4": 0.29,  
-  "bod": 2.44,  
-  "cod": 36.6,  
-  "flowrate": 27650,  
-  "temperature": 16,  
-  "pH": 7.8,  
-  "startsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
-}  
-```  
-#### WasteWaterJunction NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de una WasteWaterJunction en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
-```json  
-[  
-  {  
-    "@context": "https://smartdatamodels.org/context.jsonld",  
     "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
     "type": "WasteWaterJunction",  
-    "name": {  
-      "type": "Property",  
-      "value": "Junction 2"  
-    },  
-    "description": {  
-      "type": "Property",  
-      "value": "A junction in the treatment lane representing a sampling location for the effluent wastewater."  
-    },  
-    "nh4": {  
-      "type": "Property",  
-      "value": 0.5  
-    },  
-    "no3": {  
-      "type": "Property",  
-      "value": 5.2  
-    },  
-    "do": {  
-      "type": "Property",  
-      "value": 1.2  
-    },  
-    "redox": {  
-      "type": "Property",  
-      "value": 250  
-    },  
-    "tn": {  
-      "type": "Property",  
-      "value": 7.18  
-    },  
-    "toc": {  
-      "type": "Property",  
-      "value": 16.28  
-    },  
-    "po4": {  
-      "type": "Property",  
-      "value": 0.29  
-    },  
+    "bod": 2.44,  
+    "cod": 36.6,  
+    "description": "A junction in the treatment lane representing a sampling location for the effluent wastewater.",  
+    "do": 1.2,  
+    "flowrate": 27650,  
+    "name": "Junction 2",  
+    "nh4": 0.5,  
+    "no3": 5.2,  
+    "pH": 7.8,  
+    "po4": 0.29,  
+    "redox": 250,  
+    "startsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a",  
+    "temperature": 16,  
+    "tn": 7.18,  
+    "toc": 16.28,  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"  
+    ]  
+}  
+```  
+</details>  
+#### WasteWaterJunction NGSI-LD normalizado Ejemplo  
+Este es un ejemplo de una WasteWaterJunction en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:WasteWaterJunction:junction2",  
+    "type": "WasteWaterJunction",  
     "bod": {  
-      "type": "Property",  
-      "value": 2.44  
+        "type": "Property",  
+        "value": 2.44  
     },  
     "cod": {  
-      "type": "Property",  
-      "value": 36.6  
+        "type": "Property",  
+        "value": 36.6  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "A junction in the treatment lane representing a sampling location for the effluent wastewater."  
+    },  
+    "do": {  
+        "type": "Property",  
+        "value": 1.2  
     },  
     "flowrate": {  
-      "type": "Property",  
-      "value": 27650  
+        "type": "Property",  
+        "value": 27650  
     },  
-    "temperature": {  
-      "type": "Property",  
-      "value": 16  
+    "name": {  
+        "type": "Property",  
+        "value": "Junction 2"  
+    },  
+    "nh4": {  
+        "type": "Property",  
+        "value": 0.5  
+    },  
+    "no3": {  
+        "type": "Property",  
+        "value": 5.2  
     },  
     "pH": {  
-      "type": "Property",  
-      "value": 7.8  
+        "type": "Property",  
+        "value": 7.8  
+    },  
+    "po4": {  
+        "type": "Property",  
+        "value": 0.29  
+    },  
+    "redox": {  
+        "type": "Property",  
+        "value": 250  
     },  
     "startsAt": {  
-      "type": "Relationship",  
-      "object": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
-    }  
-  }  
-]  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"  
+    },  
+    "temperature": {  
+        "type": "Property",  
+        "value": 16  
+    },  
+    "tn": {  
+        "type": "Property",  
+        "value": 7.18  
+    },  
+    "toc": {  
+        "type": "Property",  
+        "value": 16.28  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"  
+    ]  
+}  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
