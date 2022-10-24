@@ -1,15 +1,31 @@
-エンティティWasteWaterPlant  
-=====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ廃棄物処理場  
+============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterPlant/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**廃水処理施設のデータモデル。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**廃水処理プラントのデータモデル。  
+バージョン: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `bod`: この観測結果に対応して排水処理施設で測定された生物学的酸素要求量濃度。  - `cod`: この観測に対応する排水処理施設で測定された化学的酸素要求量濃度。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `do`: この観測結果に対応する排水処理施設での溶存酸素の測定結果。  - `id`: エンティティのユニークな識別子  - `inFlow`: この観測値に対応する処理場・貯水池への流入量。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `municipalityInfo`: この観測に対応する自治体の情報  - `name`: このアイテムの名前です。  - `nh4`: この観測結果に対応する排水処理施設でのアンモニウム濃度の測定結果。  - `no3`: この観測結果に対応して、排水処理施設で測定された硝酸塩濃度。  - `observationDateTime`: 最後に報告された観測時刻。  - `outFlow`: この観測に対応する処理場・貯水池への流出量。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pHTSA`: 水中で観測される酸性度または塩基性度のこと。ある期間におけるマグニチュード特性の時間的な処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  - `po4`: この観測結果に対応する排水処理施設でのオルソリン酸濃度の測定結果。  - `redox`: この観測結果に対応して、排水処理施設で測定された還元電位または酸化。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tic`: この観測結果に対応して排水処理施設で測定された全無機炭素濃度。  - `tn`: この観測結果に対応して、排水処理施設で測定された全窒素濃度。  - `toc`: この観測結果に対応して排水処理施設で測定された全有機炭素濃度。  - `treatmentPlantCapacity`: この観測結果に対応する排水処理施設の処理能力。  - `treatmentPlantCode`: この観測データに対応する廃水処理施設の固有コード。  - `treatmentPlantId`: この観測に対応する排水処理施設の固有の識別番号。  - `treatmentPlantName`: この観測に対応する排水処理施設の名称。  - `tss`: この観測結果に対応する排水処理施設で測定された総懸濁物質濃度。  - `type`: NGSIエンティティ・タイプ。それはWasteWaterPlantでなければならない。    
-必須項目  
-- `id`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `bod[number]`: この観測に対応する排水処理場での生物学的酸素要求量濃度の測定結果。  . Model: [https://schema.org/Number](https://schema.org/Number)- `cod[number]`: この観測に対応した廃水処理場での化学的酸素要求量濃度の測定結果。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `do[number]`: この観測に対応した排水処理場での溶存酸素の測定結果。  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `inFlow[number]`: この観測に対応する処理装置/貯水池への流入量。  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `municipalityInfo[object]`: この観測に対応する市町村情報。  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: このアイテムの名称です。  - `nh4[number]`: この観測に対応する排水処理場でのアンモニウム濃度測定。  . Model: [https://schema.org/Number](https://schema.org/Number)- `no3[number]`: この観測に呼応するように、排水処理場では硝酸塩の濃度が測定されています。  . Model: [https://schema.org/Number](https://schema.org/Number)- `observationDateTime[string]`: 最後に報告された観測時刻。  . Model: [https://schema.org/Text](https://schema.org/Text)- `outFlow[number]`: この観測に対応する処理場/貯水池への流出量。  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pHTSA[object]`: 水中で観測される酸性度または塩基性度。ある期間中のマグニチュード特性の時間的処理を定義するオブジェクト。最大値、最小値、瞬時値、平均値を提供する。  . Model: [https://schema.org/Text](https://schema.org/Text)- `po4[number]`: この観測に対応する排水処理場でのリン酸塩濃度の測定結果。  . Model: [https://schema.org/Number](https://schema.org/Number)- `redox[number]`: この観測に対応して、廃水処理場で測定された還元電位または酸化電位。  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tic[number]`: この観測に対応する排水処理場での全有機炭素濃度の測定結果。  . Model: [https://schema.org/Number](https://schema.org/Number)- `tn[number]`: この観測に対応する廃水処理場の全窒素濃度の測定結果。  . Model: [https://schema.org/Number](https://schema.org/Number)- `toc[number]`: この観測に対応する排水処理場での全有機体炭素濃度の測定結果。  . Model: [https://schema.org/Number](https://schema.org/Number)- `treatmentPlantCapacity[number]`: この観測に対応する廃水処理場の処理能力。  . Model: [https://schema.org/Number](https://schema.org/Number)- `treatmentPlantCode[string]`: この観測に対応する廃水処理場の固有コード。  . Model: [https://schema.org/Text](https://schema.org/Text)- `treatmentPlantId[number]`: この観測に対応する排水処理場の固有の識別番号。  . Model: [https://schema.org/Number](https://schema.org/Number)- `treatmentPlantName[string]`: この観測に対応する排水処理場の名称。  . Model: [https://schema.org/Text](https://schema.org/Text)- `tss[number]`: この観測に対応した廃水処理場での全浮遊物質濃度の測定結果。  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIエンティティタイプ。WasteWaterPlantでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WasteWaterPlant:    
@@ -453,9 +469,14 @@ WasteWaterPlant:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### WasteWaterPlant NGSI-v2 key-values 例  
-JSON-LD形式でキーバリューを持つWasteWaterPlantの例を紹介します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### WasteWaterPlant NGSI-v2 key-value の例。  
+以下はWasteWaterPlantをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "uri:ngsi-ld:1234:A43R",  
@@ -498,8 +519,10 @@ WasteWaterPlant:
   }  
 }  
 ```  
-#### WasteWaterPlant NGSI-v2を正規化した例。  
-ここでは、正規化されたJSON-LD形式のWasteWaterPlantの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキスト・データを返します。  
+</details>  
+#### WasteWaterPlant NGSI-v2 正規化例  
+以下は、WasteWaterPlant を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "uri:ngsi-ld:1234:A43R",  
@@ -602,160 +625,175 @@ WasteWaterPlant:
   }  
 }  
 ```  
-#### WasteWaterPlant NGSI-LDのキーバリューの例。  
-JSON-LD形式でキーバリューを持つWasteWaterPlantの例を示します。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### WasteWaterPlant NGSI-LD キー値例  
+以下はWasteWaterPlantをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "uri:ngsi-ld:1234:A43R",  
-  "type": "WasteWaterPlant",  
-  "no3": 10,  
-  "bod": 250,  
-  "inFlow": 5,  
-  "toc": 0.7,  
-  "nh4": 50,  
-  "redox": 25,  
-  "do": 4,  
-  "treatmentPlantId": 7,  
-  "outFlow": 6.7,  
-  "tss": 2,  
-  "treatmentPlantCapacity": 10,  
-  "tic": 2,  
-  "tn": 9,  
-  "po4": 6,  
-  "cod": 25,  
-  "treatmentPlantName": "A",  
-  "treatmentPlantCode": "2",  
-  "observationDateTime": "2021-03-11T15:51:02+05:30",  
-  "pHTSA": {  
-    "avgOverTime": 8,  
-    "maxOverTime": 10,  
-    "instValue": 6,  
-    "minOverTime": 6  
-  },  
-  "municipalityInfo": {  
-    "district": "Bangalore Urban",  
-    "ulbName": "BMC",  
-    "cityId": "23",  
-    "wardId": "23",  
-    "stateName": "Karnataka",  
-    "cityName": "Bangalore",  
-    "zoneName": "South",  
-    "wardName": "Bangalore Urban",  
-    "zoneId": "2",  
-    "wardNum": 4  
-  },  
-    "@context": "iudx:WasteWaterMgmt"  
+    "id": "uri:ngsi-ld:1234:A43R",  
+    "type": "WasteWaterPlant",  
+    "bod": 250,  
+    "cod": 25,  
+    "do": 4,  
+    "inFlow": 5,  
+    "municipalityInfo": {  
+        "district": "Bangalore Urban",  
+        "ulbName": "BMC",  
+        "cityId": "23",  
+        "wardId": "23",  
+        "stateName": "Karnataka",  
+        "cityName": "Bangalore",  
+        "zoneName": "South",  
+        "wardName": "Bangalore Urban",  
+        "zoneId": "2",  
+        "wardNum": 4  
+    },  
+    "nh4": 50,  
+    "no3": 10,  
+    "observationDateTime": "2021-03-11T15:51:02+05:30",  
+    "outFlow": 6.7,  
+    "pHTSA": {  
+        "avgOverTime": 8,  
+        "maxOverTime": 10,  
+        "instValue": 6,  
+        "minOverTime": 6  
+    },  
+    "po4": 6,  
+    "redox": 25,  
+    "tic": 2,  
+    "tn": 9,  
+    "toc": 0.7,  
+    "treatmentPlantCapacity": 10,  
+    "treatmentPlantCode": "2",  
+    "treatmentPlantId": 7,  
+    "treatmentPlantName": "A",  
+    "tss": 2,  
+    "@context": [  
+        "iudx:WasteWaterMgmt",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"  
+    ]  
 }  
 ```  
-#### WasteWaterPlant NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のWasteWaterPlantの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキスト・データを返します。  
+</details>  
+#### WasteWaterPlant NGSI-LD 正規化例  
+以下は、WasteWaterPlantをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "uri:ngsi-ld:1234:A43R",  
-  "type": "WasteWaterPlant",  
-  "no3": {  
-    "type": "Property",  
-    "value": 10  
-  },  
-  "bod": {  
-    "type": "Property",  
-    "value": 250  
-  },  
-  "inFlow": {  
-    "type": "Property",  
-    "value": 5  
-  },  
-  "toc": {  
-    "type": "Property",  
-    "value": 0.7  
-  },  
-  "nh4": {  
-    "type": "Property",  
-    "value": 50  
-  },  
-  "redox": {  
-    "type": "Property",  
-    "value": 25  
-  },  
-  "do": {  
-    "type": "Property",  
-    "value": 4  
-  },  
-  "treatmentPlantId": {  
-    "type": "Property",  
-    "value": 7  
-  },  
-  "outFlow": {  
-    "type": "Property",  
-    "value": 6.7  
-  },  
-  "tss": {  
-    "type": "Property",  
-    "value": 2  
-  },  
-  "treatmentPlantCapacity": {  
-    "type": "Property",  
-    "value": 10  
-  },  
-  "tic": {  
-    "type": "Property",  
-    "value": 2  
-  },  
-  "tn": {  
-    "type": "Property",  
-    "value": 9  
-  },  
-  "po4": {  
-    "type": "Property",  
-    "value": 6  
-  },  
-  "cod": {  
-    "type": "Property",  
-    "value": 25  
-  },  
-  "treatmentPlantName": {  
-    "type": "Property",  
-    "value": "A"  
-  },  
-  "treatmentPlantCode": {  
-    "type": "Property",  
-    "value": "2"  
-  },  
-  "observationDateTime": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-03-11T15:51:02+05:30"  
-    }  
-  },  
-  "pHTSA": {  
-    "type": "Property",  
-    "value": {  
-      "avgOverTime": 8,  
-      "maxOverTime": 10,  
-      "instValue": 6,  
-      "minOverTime": 6  
-    }  
-  },  
-  "municipalityInfo": {  
-    "type": "Property",  
-    "value": {  
-      "district": "Bangalore Urban",  
-      "ulbName": "BMC",  
-      "cityId": "23",  
-      "wardId": "23",  
-      "stateName": "Karnataka",  
-      "cityName": "Bangalore",  
-      "zoneName": "South",  
-      "wardName": "Bangalore Urban",  
-      "zoneId": "2",  
-      "wardNum": 4  
-    }  
-  },  
-  "@context": [  
-    "iudx:WasteWaterMgmt",  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "uri:ngsi-ld:1234:A43R",  
+    "type": "WasteWaterPlant",  
+    "bod": {  
+        "type": "Property",  
+        "value": 250  
+    },  
+    "cod": {  
+        "type": "Property",  
+        "value": 25  
+    },  
+    "do": {  
+        "type": "Property",  
+        "value": 4  
+    },  
+    "inFlow": {  
+        "type": "Property",  
+        "value": 5  
+    },  
+    "municipalityInfo": {  
+        "type": "Property",  
+        "value": {  
+            "district": "Bangalore Urban",  
+            "ulbName": "BMC",  
+            "cityId": "23",  
+            "wardId": "23",  
+            "stateName": "Karnataka",  
+            "cityName": "Bangalore",  
+            "zoneName": "South",  
+            "wardName": "Bangalore Urban",  
+            "zoneId": "2",  
+            "wardNum": 4  
+        }  
+    },  
+    "nh4": {  
+        "type": "Property",  
+        "value": 50  
+    },  
+    "no3": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "observationDateTime": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-03-11T15:51:02+05:30"  
+        }  
+    },  
+    "outFlow": {  
+        "type": "Property",  
+        "value": 6.7  
+    },  
+    "pHTSA": {  
+        "type": "Property",  
+        "value": {  
+            "avgOverTime": 8,  
+            "maxOverTime": 10,  
+            "instValue": 6,  
+            "minOverTime": 6  
+        }  
+    },  
+    "po4": {  
+        "type": "Property",  
+        "value": 6  
+    },  
+    "redox": {  
+        "type": "Property",  
+        "value": 25  
+    },  
+    "tic": {  
+        "type": "Property",  
+        "value": 2  
+    },  
+    "tn": {  
+        "type": "Property",  
+        "value": 9  
+    },  
+    "toc": {  
+        "type": "Property",  
+        "value": 0.7  
+    },  
+    "treatmentPlantCapacity": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "treatmentPlantCode": {  
+        "type": "Property",  
+        "value": "2"  
+    },  
+    "treatmentPlantId": {  
+        "type": "Property",  
+        "value": 7  
+    },  
+    "treatmentPlantName": {  
+        "type": "Property",  
+        "value": "A"  
+    },  
+    "tss": {  
+        "type": "Property",  
+        "value": 2  
+    },  
+    "@context": [  
+        "iudx:WasteWaterMgmt",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
