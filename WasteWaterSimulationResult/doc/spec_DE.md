@@ -1,21 +1,35 @@
-Entität: WasteWaterSimulationResult  
-===================================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: WasteWaterSimulationResult  
+===================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.WasteWater/blob/master/WasteWaterSimulationResult/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Diese Entität enthält eine harmonisierte Beschreibung von WasteWaterSimulationResults für den Bereich Abwasserbehandlung. Die Entität enthält Eigenschaften, bei denen es sich um Parameter handelt, die von Modellen durch eine Simulation vorhergesagt oder prognostiziert wurden.**  
 Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `airflow`: Schätzung des Luftstroms eines Gebläses, der durch die Belüftung einer bestimmten Abwassereinheit erzeugt wird, mit Hilfe eines simulations- und datengesteuerten Modells.  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `nh4`: Schätzung der Ammoniakkonzentration an einer bestimmten Abwasseranlage mit Hilfe eines simulations- und datengesteuerten Modells.  - `no3`: Schätzung der Nitratkonzentration an einer bestimmten Abwasseranlage mit Hilfe eines simulations- und datengesteuerten Modells.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `power`: Schätzung des Stromverbrauchs eines Gebläses für den Belüftungsprozess einer bestimmten Abwassereinheit mit Hilfe eines simulations- und datengesteuerten Modells.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type`: NGSI-LD Entitätstyp. Es muss ein WasteWaterSimulationResults sein.    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `airflow[number]`: Schätzung des Luftstroms eines Gebläses, der durch die Belüftung einer bestimmten Abwassereinheit erzeugt wird, anhand eines simulations- und datengesteuerten Modells.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `nh4[number]`: Schätzung der Ammoniakkonzentration an einer bestimmten Abwasseranlage mit Hilfe eines simulations- und datengesteuerten Modells.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `no3[number]`: Schätzung der Nitratkonzentration an einer bestimmten Abwasseranlage mit Hilfe eines simulations- und datengesteuerten Modells.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `power[number]`: Schätzung des Stromverbrauchs eines Gebläses für den Belüftungsprozess einer bestimmten Abwassereinheit mit Hilfe eines simulations- und datengesteuerten Modells.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: NGSI-LD Entitätstyp. Es muss ein WasteWaterSimulationResults sein.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WasteWaterSimulationResult:    
   description: 'This entity contains an harmonised description of a WasteWaterSimulationResults made for the Wastewater treatment domain. The entity contains properties that are parameters which have been predicted or forecasted by models through a simulation.'    
-  modelTags: FIWARE4WATER    
   properties:    
     address:    
       description: 'The mailing address'    
@@ -310,12 +324,22 @@ WasteWaterSimulationResult:
     - id    
     - type    
   type: object    
-  version: 0.0.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterSimulationResult/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterSimulationResults/schema.json    
+  x-model-tags: FIWARE4WATER    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### WasteWaterSimulationResult NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für ein WasteWaterSimulationResult im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterSimulationResults:dataValidation",  
@@ -326,8 +350,10 @@ WasteWaterSimulationResult:
   "no3": 6.27  
 }  
 ```  
+</details>  
 #### WasteWaterSimulationResult NGSI-v2 normalized Beispiel  
 Hier ist ein Beispiel für ein WasteWaterSimulationResult im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:WasteWaterSimulationResults:dataValidation",  
@@ -350,50 +376,67 @@ WasteWaterSimulationResult:
   }  
 }  
 ```  
+</details>  
 #### WasteWaterSimulationResult NGSI-LD key-values Beispiel  
-Hier ist ein Beispiel für ein WasteWaterSimulationResult im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein WasteWaterSimulationResult im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
-  "id": "urn:ngsi-ld:WasteWaterSimulationResults:dataValidation",  
-  "type": "WasteWaterSimulationResult",  
-  "name": "Data Validation",  
-  "description": "AI-based data validation application. Simulation of NH4 and NO3 parameters in aerobic tank of bioreactor using deep learning models.",  
-  "nh4": 1.83,  
-  "no3": 6.27  
+    "id": "urn:ngsi-ld:WasteWaterSimulationResults:dataValidation",  
+    "type": "WasteWaterSimulationResult",  
+    "description": "AI-based data validation application. Simulation of NH4 and NO3 parameters in aerobic tank of bioreactor using deep learning models.",  
+    "name": "Data Validation",  
+    "nh4": 1.83,  
+    "no3": 6.27,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### WasteWaterSimulationResult NGSI-LD normalized Beispiel  
 Hier ist ein Beispiel für ein WasteWaterSimulationResult im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:WasteWaterSimulationResults:dataValidation",  
-  "type": "WasteWaterSimulationResult",  
-  "name": {  
-    "type": "Property",  
-    "value": "Data Validation"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "AI-based data validation application. Simulation of NH4 and NO3 parameters in aerobic tank of bioreactor using deep learning models."  
-  },  
-  "nh4": {  
-    "type": "Property",  
-    "value": 1.83,  
-    "providedBy": {  
-      "type": "Relationship",  
-      "object": "urn:ngsi-ld:WasteWaterTank:aerobicTank02"  
-    }  
-  },  
-  "no3": {  
-    "type": "Property",  
-    "value": 6.27,  
-    "providedBy": {  
-      "type": "Relationship",  
-      "object": "urn:ngsi-ld:WasteWaterTank:aerobicTank02"  
-    }  
-  },  
-  "@context": "https://smartdatamodels.org/context.jsonld"  
+    "id": "urn:ngsi-ld:WasteWaterSimulationResults:dataValidation",  
+    "type": "WasteWaterSimulationResult",  
+    "description": {  
+        "type": "Property",  
+        "value": "AI-based data validation application. Simulation of NH4 and NO3 parameters in aerobic tank of bioreactor using deep learning models."  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Data Validation"  
+    },  
+    "nh4": {  
+        "type": "Property",  
+        "value": 1.83,  
+        "providedBy": {  
+            "type": "Relationship",  
+            "object": "urn:ngsi-ld:WasteWaterTank:aerobicTank02"  
+        }  
+    },  
+    "no3": {  
+        "type": "Property",  
+        "value": 6.27,  
+        "providedBy": {  
+            "type": "Relationship",  
+            "object": "urn:ngsi-ld:WasteWaterTank:aerobicTank02"  
+        }  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"  
+    ]  
 }  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
