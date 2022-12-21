@@ -1,0 +1,3 @@
+/* (Beta) Export of data model WasteWaterTank of the subject dataModel.WasteWater for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE WasteWaterTank_type AS ENUM ('WasteWaterTank');
+CREATE TABLE WasteWaterTank (address json, airflow json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, do text, endsAt text, id text, location json, name text, nh4 text, no3 text, owner json, pH text, power json, redox text, seeAlso json, sludgeLevel text, source text, startsAt text, temperature text, tn text, tss text, type WasteWaterTank_type);
