@@ -1,5 +1,11 @@
 {
     "@context": {
+        "Blower": "https://smartdatamodels.org/dataModel.WasteWater/Blower",
+        "OffGasStack": "https://smartdatamodels.org/dataModel.WasteWater/OffGasStack",
+        "WasteWaterJunction": "https://smartdatamodels.org/dataModel.WasteWater/WasteWaterJunction",
+        "WasteWaterPlant": "https://smartdatamodels.org/dataModel.WasteWater/WasteWaterPlant",
+        "WasteWaterSimulationResult": "https://smartdatamodels.org/dataModel.WasteWater/WasteWaterSimulationResult",
+        "WasteWaterTank": "https://smartdatamodels.org/dataModel.WasteWater/WasteWaterTank",
         "address": "https://smartdatamodels.org/address",
         "airflow": "https://smartdatamodels.org/dataModel.WasteWater/airflow",
         "airflowEstimation": "https://smartdatamodels.org/dataModel.WasteWater/airflowEstimation",
