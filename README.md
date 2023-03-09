@@ -7,6 +7,8 @@ The following entity types are available:
 
 - [OffGasStack](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/OffGasStack/README.md). This entity contains a harmonised description of a generic Off-gas Stack made for the Wastewater treatment domain. This entity represents stacks that are present in some wastewater treatment plants where the emissions, greenhouse gases included, are emitted.
 
+- [WaterProcess](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WaterProcess/README.md). The data model is intended to provide information about water process at water purification plant or water treatment plant
+
 - [WasteWaterJunction](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterJunction/README.md). This entity contains an harmonised description of a generic Junction made for the Wastewater treatment domain. Junctions could be in place in certain sections of thetreatment plant. In wastewater treatment purposes, the junction is most useful if it is a locationof a sensor that measures a specific variable.
 
 - [WasteWaterPlant](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterPlant/README.md). Data model for waste water treatment plant.
@@ -18,7 +20,7 @@ The following entity types are available:
 
 
 ### Contributors
-[Link](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/CONTRIBUTORS.yaml) to the 1 current contributors of the data models of this Subject.
+[Link](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/CONTRIBUTORS.yaml) to the 2 current contributors of the data models of this Subject.
 
 
 ### Contribution
