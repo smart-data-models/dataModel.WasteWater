@@ -1,0 +1,34 @@
+{
+  "id": "urn:waterdna:haemil:WaterProcess_01",
+  "type": "WaterProcess",
+  "location": {
+    "type": "geo:sjon",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        127.266663,
+        36.524677
+      ]
+    }
+  },
+  "name": {
+    "type": "Text",
+    "value": "inflow process at water treatment plant 1"
+  },
+  "waterProcessType": {
+    "type": "Text",
+    "value": "inflow"
+  },
+  "tn": {
+    "type": "Number",
+    "value": 73.152
+  },
+  "tp": {
+    "type": "Number",
+    "value": 6.1
+  },
+  "tss": {
+    "type": "Number",
+    "value": 130.9
+  }
+}
