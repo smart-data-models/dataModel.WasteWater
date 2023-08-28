@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://smart-data-models.github.io/dataModel.WasteWater/WasteWater-schema.json",
   "title": "Smart Data Models - Wastewater Treatment base schema",
-  "descriptions": "Common NGSI-LD definitions of a wastewater treatment data models",
+  "description": "Common NGSI-LD definitions of a wastewater treatment data models",
   "type": "object",
   "definitions": {
     "tss": {
