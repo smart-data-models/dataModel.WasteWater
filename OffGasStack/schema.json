@@ -23,29 +23,29 @@
                 },
                 "n2o": {
                     "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'ppm'. N2O gas emissions from an off-gas stack entity."
+                    "description": "Property. Model: https://schema.org/Number. Units: 'ppm'. N2O gas emissions from an off-gas stack entity"
                 },
                 "co2": {
                     "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'ppm'. CO2 gas emissions from an off-gas stack entity."
+                    "description": "Property. Model: https://schema.org/Number. Units: 'ppm'. CO2 gas emissions from an off-gas stack entity"
                 },
                 "ch4": {
                     "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'ppm'. CH4 gas emissions from an off-gas stack entity."
+                    "description": "Property. Model: https://schema.org/Number. Units: 'ppm'. CH4 gas emissions from an off-gas stack entity"
                 },
                 "o2": {
                     "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'ppm'. O2 gas emissions from an off-gas stack entity."
+                    "description": "Property. Model: https://schema.org/Number. Units: 'ppm'. O2 gas emissions from an off-gas stack entity"
                 },
                 "startsAt": {
                     "type": "string",
                     "format": "uri",
-                    "description": "Relationship. A relationship indicating the entity the Off Gas Stack is connected to in the upstream point."
+                    "description": "Relationship. A relationship indicating the entity the Off Gas Stack is connected to in the upstream point"
                 },
                 "endsAt": {
                     "type": "string",
                     "format": "uri",
-                    "description": "Relationship. A relationship indicating the entity the Off Gas Stack is connected to in the downstream point."
+                    "description": "Relationship. A relationship indicating the entity the Off Gas Stack is connected to in the downstream point"
                 }
             }
         }
