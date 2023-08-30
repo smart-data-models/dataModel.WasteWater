@@ -23,29 +23,29 @@
                 },
                 "airflow": {
                     "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'm/s'. Airflow blown by a blower."
+                    "description": "Property. Model: https://schema.org/Number. Units: 'm/s'. Airflow blown by a blower"
                 },
                 "energy": {
                     "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Energy consumed by a blower."
+                    "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Energy consumed by a blower"
                 },
                 "pressure": {
                     "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'kPa'. Pressure measurement in the blower."
+                    "description": "Property. Model: https://schema.org/Number. Units: 'kPa'. Pressure measurement in the blower"
                 },
                 "airflowEstimation": {
                     "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: m/s. Airflow estimation by AI soft sensor simulation."
+                    "description": "Property. Model: https://schema.org/Number. Units: m/s. Airflow estimation by AI soft sensor simulation"
                 },
                 "startsAt": {
                     "type": "string",
                     "format": "uri",
-                    "description": "Relationship. A relationship indicating the entity the blower is connected to in the upstream point."
+                    "description": "Relationship. A relationship indicating the entity the blower is connected to in the upstream point"
                 },
                 "endsAt": {
                     "type": "string",
                     "format": "uri",
-                    "description": "Relationship. A relationship indicating the entity the blower is connected to in the downstream point."
+                    "description": "Relationship. A relationship indicating the entity the blower is connected to in the downstream point"
                 }
             }
         }
