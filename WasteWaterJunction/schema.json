@@ -41,27 +41,27 @@
                 },
                 "toc": {
                     "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Total Organic Carbon concentration measured in the influent or effluent."
+                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Total Organic Carbon concentration measured in the influent or effluent"
                 },
                 "tic": {
                     "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Total Inorganic Carbon concentration measured in the influent or effluent."
+                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Total Inorganic Carbon concentration measured in the influent or effluent"
                 },
                 "po4": {
                     "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Ortho-phosphate concentration measured in wastewater."
+                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Ortho-phosphate concentration measured in wastewater"
                 },
                 "bod": {
                     "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Biological Oxygen Demand concentration measured in the influent or effluent."
+                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Biological Oxygen Demand concentration measured in the influent or effluent"
                 },
                 "cod": {
                     "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Chemical Oxygen Demand concentration measured in the influent or effluent."
+                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Chemical Oxygen Demand concentration measured in the influent or effluent"
                 },
                 "flowrate": {
                     "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'm3/h'. Flowrate of wastewater."
+                    "description": "Property. Model: https://schema.org/Number. Units: 'm3/h'. Flowrate of wastewater"
                 },
                 "temperature": {
                     "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/temperature"
@@ -75,7 +75,7 @@
                 },
                 "emissionFlow": {
                     "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'm3'. Gas emission flow volume measured at a junction prior to being emitted in an off-gas stack."
+                    "description": "Property. Model: https://schema.org/Number. Units: 'm3'. Gas emission flow volume measured at a junction prior to being emitted in an off-gas stack"
                 },
                 "startsAt": {
                     "type": "string",
