@@ -113,11 +113,11 @@
                         },
                         "instValue": {
                             "type": "number",
-                            "description": "Property. Model:'https://schema.org/Number'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity."
+                            "description": "Property. Model:'https://schema.org/Number'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity"
                         },
                         "minOverTime": {
                             "type": "number",
-                            "description": "Property. Model:'https://schema.org/Number'. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value."
+                            "description": "Property. Model:'https://schema.org/Number'. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
                         }
                     }
                 },
@@ -127,23 +127,23 @@
                     "properties": {
                         "district": {
                             "type": "string",
-                            "description": "Property. Model:'https://schema.org/Text'. District name corresponding to this observation."
+                            "description": "Property. Model:'https://schema.org/Text'. District name corresponding to this observation"
                         },
                         "ulbName": {
                             "type": "string",
-                            "description": "Property. Model:'https://schema.org/Text'. Name of the Urban Local Body corresponding to this observation."
+                            "description": "Property. Model:'https://schema.org/Text'. Name of the Urban Local Body corresponding to this observation"
                         },
                         "cityId": {
                             "type": "string",
-                            "description": "Property. Model:'https://schema.org/Text'. City Id corresponding to this observation."
+                            "description": "Property. Model:'https://schema.org/Text'. City Id corresponding to this observation"
                         },
                         "wardId": {
                             "type": "string",
-                            "description": "Property. Model:'https://schema.org/Text'. Ward Id corresponding to this observation."
+                            "description": "Property. Model:'https://schema.org/Text'. Ward Id corresponding to this observation"
                         },
                         "stateName": {
                             "type": "string",
-                            "description": "Property. Model:'https://schema.org/Text'. Name of the state corresponding to this observation."
+                            "description": "Property. Model:'https://schema.org/Text'. Name of the state corresponding to this observation"
                         },
                         "cityName": {
                             "type": "string",
@@ -151,19 +151,19 @@
                         },
                         "zoneName": {
                             "type": "string",
-                            "description": "Property. Model:'https://schema.org/Text'. Zone name corresponding to this observation."
+                            "description": "Property. Model:'https://schema.org/Text'. Zone name corresponding to this observation"
                         },
                         "zoneId": {
                             "type": "string",
-                            "description": "Property. Model:'https://schema.org/Text'. Zone Id corresponding to this observation."
+                            "description": "Property. Model:'https://schema.org/Text'. Zone Id corresponding to this observation"
                         },
                         "wardName": {
                             "type": "string",
-                            "description": "Property. Model:'https://schema.org/Text'. Ward name corresponding to this observation."
+                            "description": "Property. Model:'https://schema.org/Text'. Ward name corresponding to this observation"
                         },
                         "wardNum": {
                             "type": "number",
-                            "description": "Property. Model:'https://schema.org/Number'. Ward number corresponding to this observation."
+                            "description": "Property. Model:'https://schema.org/Number'. Ward number corresponding to this observation"
                         }
                     }
                 }
