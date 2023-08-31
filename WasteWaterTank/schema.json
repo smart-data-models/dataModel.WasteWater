@@ -56,11 +56,11 @@
                     "properties": {
                         "measured": {
                             "type": "number",
-                            "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Power measured by a device."
+                            "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Power measured by a device"
                         },
                         "estimated": {
                             "type": "number",
-                            "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Power estimated by a model."
+                            "description": "Property. Model: https://schema.org/Number. Units: 'kW'. Power estimated by a model"
                         }
                     }
                 },
@@ -70,11 +70,11 @@
                     "properties": {
                         "measured": {
                             "type": "number",
-                            "description": "Property. Model: https://schema.org/Number. Units: 'm/s'. Airflow measured by a device."
+                            "description": "Property. Model: https://schema.org/Number. Units: 'm/s'. Airflow measured by a device"
                         },
                         "estimated": {
                             "type": "number",
-                            "description": "Property. Model: https://schema.org/Number. Units: 'm/s'. Airflow estimated by a model."
+                            "description": "Property. Model: https://schema.org/Number. Units: 'm/s'. Airflow estimated by a model"
                         }
                     }
                 },
