@@ -15,7 +15,26 @@
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `bod[number]`: Die in der Kläranlage gemessene Konzentration des biologischen Sauerstoffbedarfs entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `cod[number]`: Die in der Kläranlage gemessene Konzentration des chemischen Sauerstoffbedarfs entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `do[number]`: Der in der Kläranlage gemessene gelöste Sauerstoff entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `inFlow[number]`: Zuflussmenge in die Kläranlage/das Reservoir entsprechend dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `municipalityInfo[object]`: Informationen der Gemeinde zu dieser Beobachtung.  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: Der Name dieses Artikels.  - `nh4[number]`: Die in der Kläranlage gemessene Ammoniumkonzentration entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `no3[number]`: Die in der Kläranlage gemessene Nitratkonzentration entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `observationDateTime[string]`: Letzter gemeldeter Zeitpunkt der Beobachtung.  . Model: [https://schema.org/Text](https://schema.org/Text)- `outFlow[number]`: Abflussmenge in die Kläranlage/das Reservoir entsprechend dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pHTSA[object]`: Im Wasser beobachteter Säuregrad oder Basengehalt. Objekt, das die zeitliche Verarbeitung der Größeneigenschaft während einer Periode definiert. Es liefert Maximum, Minimum, Momentanwert und Durchschnitt  . Model: [https://schema.org/Text](https://schema.org/Text)- `po4[number]`: Die in der Kläranlage gemessene Ortho-Phosphat-Konzentration entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `redox[number]`: Das in der Kläranlage gemessene Reduktions- oder Oxidationspotenzial entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `tic[number]`: Die in der Kläranlage gemessene Gesamtkonzentration an anorganischem Kohlenstoff entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `tn[number]`: Die in der Kläranlage gemessene Gesamtstickstoffkonzentration entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `toc[number]`: Die in der Kläranlage gemessene Gesamtkonzentration an organischem Kohlenstoff entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `treatmentPlantCapacity[number]`: Die Umschlagskapazität der Kläranlage entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `treatmentPlantCode[string]`: Eindeutiger Code für die Kläranlage, die dieser Beobachtung entspricht.  . Model: [https://schema.org/Text](https://schema.org/Text)- `treatmentPlantId[number]`: Eindeutige Identifikationsnummer für die Kläranlage, die dieser Beobachtung entspricht.  . Model: [https://schema.org/Number](https://schema.org/Number)- `treatmentPlantName[string]`: Name der Kläranlage, die dieser Beobachtung entspricht.  . Model: [https://schema.org/Text](https://schema.org/Text)- `tss[number]`: Die in einer Kläranlage gemessene Gesamtkonzentration an suspendierten Feststoffen entspricht dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Entitätstyp. Es muss WasteWaterPlant sein  <!-- /30-PropertiesList -->  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `bod[number]`: In der Kläranlage gemessene Konzentration des biologischen Sauerstoffbedarfs, die dieser Beobachtung entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)- `cod[number]`: In der Kläranlage gemessene Konzentration des chemischen Sauerstoffbedarfs, die dieser Beobachtung entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `do[number]`: In der Kläranlage gemessener gelöster Sauerstoff, der dieser Beobachtung entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `inFlow[number]`: Zuflussmenge in die Kläranlage/das Reservoir entsprechend dieser Beobachtung  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `municipalityInfo[object]`: Informationen der Gemeinde zu dieser Beobachtung  . Model: [https://schema.org/Text](https://schema.org/Text)	- `cityId[string]`: Stadtnummer, die dieser Beobachtung entspricht  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `cityName[string]`: Name der Stadt, die dieser Beobachtung entspricht  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `district[string]`: Name des Bezirks, der dieser Beobachtung entspricht  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `stateName[string]`: Name des Staates, der dieser Beobachtung entspricht  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `ulbName[string]`: Name der lokalen Gebietskörperschaft, die dieser Beobachtung entspricht  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `wardId[string]`: Ward Id entsprechend dieser Beobachtung  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `wardName[string]`: Name der Station, die dieser Beobachtung entspricht  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `wardNum[number]`: Stationsnummer, die dieser Beobachtung entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)  
+	- `zoneId[string]`: Zone Id, die dieser Beobachtung entspricht  . Model: [https://schema.org/Text](https://schema.org/Text)  
+- `name[string]`: Der Name dieses Artikels  - `nh4[number]`: In der Kläranlage gemessene Ammoniumkonzentration, die dieser Beobachtung entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)- `no3[number]`: In der Kläranlage gemessene Nitratkonzentration, die dieser Beobachtung entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)- `observationDateTime[date-time]`: Letzter gemeldeter Zeitpunkt der Beobachtung  . Model: [https://schema.org/Text](https://schema.org/Text)- `outFlow[number]`: Abflussmenge in die Kläranlage/das Reservoir entsprechend dieser Beobachtung  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pHTSA[object]`: Im Wasser beobachteter Säuregrad oder Basizität. Objekt, das die zeitliche Verarbeitung der Größeneigenschaft während einer Periode definiert. Es liefert Maximum, Minimum, Momentanwert und Durchschnitt  . Model: [https://schema.org/Text](https://schema.org/Text)	- `avgOverTime[number]`: Beschreibt den Durchschnittswert von Zeitreihendaten über eine bestimmte Dauer in der Vergangenheit. Die Dauer wird über einen anderen Parameter im Wertdeskriptor-Objekt zu diesem Wert angegeben  . Model: [https://schema.org/Number](https://schema.org/Number)  
+	- `instValue[number]`: Beschreibt den Momentanwert (verbunden mit dem aktuellen Zeitstempel) einer zeitlich veränderlichen Größe  . Model: [https://schema.org/Number](https://schema.org/Number)  
+	- `maxOverTime[number]`: Beschreibt den Höchstwert einer Zeitreihe über eine bestimmte Dauer in der Vergangenheit. Die Dauer wird über einen anderen Parameter im Wertdeskriptor-Objekt zu diesem Wert angegeben  . Model: [https://schema.org/Number](https://schema.org/Number)  
+- `po4[number]`: In der Kläranlage gemessene Ortho-Phosphat-Konzentration, die dieser Beobachtung entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)- `redox[number]`: Das in der Kläranlage gemessene Reduktions- oder Oxidationspotenzial entspricht dieser Beobachtung  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `tic[number]`: In der Kläranlage gemessene anorganische Gesamtkohlenstoffkonzentration, die dieser Beobachtung entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)- `tn[number]`: In der Kläranlage gemessene Gesamtstickstoffkonzentration, die dieser Beobachtung entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)- `toc[number]`: In der Kläranlage gemessene Gesamtkonzentration an organischem Kohlenstoff, die dieser Beobachtung entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)- `treatmentPlantCapacity[number]`: Umschlagskapazität der Kläranlage entsprechend dieser Beobachtung  . Model: [https://schema.org/Number](https://schema.org/Number)- `treatmentPlantCode[string]`: Eindeutiger Code für die Kläranlage, die dieser Beobachtung entspricht  . Model: [https://schema.org/Text](https://schema.org/Text)- `treatmentPlantId[number]`: Eindeutige Identifikationsnummer für die Kläranlage, die dieser Beobachtung entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)- `treatmentPlantName[string]`: Name der Kläranlage, die dieser Beobachtung entspricht  . Model: [https://schema.org/Text](https://schema.org/Text)- `tss[number]`: In einer Kläranlage gemessene Gesamtschwebstoffkonzentration, die dieser Beobachtung entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Entitätstyp. Es muss WasteWaterPlant sein  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -29,99 +48,131 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WasteWaterPlant:    
-  description: 'Data model for waste water treatment plant.'    
+  description: Data model for waste water treatment plant.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     bod:    
-      description: 'Biological Oxygen Demand concentration measured in the waste-water treatment plant corresponding to this observation.'    
+      description: Biological Oxygen Demand concentration measured in the waste-water treatment plant corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     cod:    
-      description: 'Chemical Oxygen Demand concentration measured in the waste-water treatment plant corresponding to this observation.'    
+      description: Chemical Oxygen Demand concentration measured in the waste-water treatment plant corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     do:    
-      description: 'Dissolved oxygen measured in the waste-water treatment plant corresponding to this observation.'    
+      description: Dissolved oxygen measured in the waste-water treatment plant corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &wastewaterplant_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     inFlow:    
-      description: 'In-flow amount into the treatment plant/reservoir corresponding to this observation.'    
+      description: In-flow amount into the treatment plant/reservoir corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -129,7 +180,7 @@ WasteWaterPlant:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -148,9 +199,11 @@ WasteWaterPlant:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -172,9 +225,11 @@ WasteWaterPlant:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -198,9 +253,11 @@ WasteWaterPlant:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -221,9 +278,11 @@ WasteWaterPlant:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -247,9 +306,11 @@ WasteWaterPlant:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -275,82 +336,128 @@ WasteWaterPlant:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     municipalityInfo:    
-      description: 'Municipality information corresponding to this observation.'    
+      description: Municipality information corresponding to this observation    
       properties:    
         cityId:    
-          description: 'Property. Model:''https://schema.org/Text''. City Id corresponding to this observation.'    
+          description: City Id corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         cityName:    
-          description: 'Property. Model:''https://schema.org/Text''. City name corresponding to this observation'    
+          description: City name corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         district:    
-          description: 'Property. Model:''https://schema.org/Text''. District name corresponding to this observation.'    
+          description: District name corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         stateName:    
-          description: 'Property. Model:''https://schema.org/Text''. Name of the state corresponding to this observation.'    
+          description: Name of the state corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         ulbName:    
-          description: 'Property. Model:''https://schema.org/Text''. Name of the Urban Local Body corresponding to this observation.'    
+          description: Name of the Urban Local Body corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         wardId:    
-          description: 'Property. Model:''https://schema.org/Text''. Ward Id corresponding to this observation.'    
+          description: Ward Id corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         wardName:    
-          description: 'Property. Model:''https://schema.org/Text''. Ward name corresponding to this observation.'    
+          description: Ward name corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         wardNum:    
-          description: 'Property. Model:''https://schema.org/Number''. Ward number corresponding to this observation.'    
+          description: Ward number corresponding to this observation    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
         zoneId:    
-          description: 'Property. Model:''https://schema.org/Text''. Zone Id corresponding to this observation.'    
+          description: Zone Id corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         zoneName:    
-          description: 'Property. Model:''https://schema.org/Text''. Zone name corresponding to this observation.'    
+          description: Zone name corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     nh4:    
-      description: 'Ammonium concentration measured in the waste-water treatment plant corresponding to this observation.'    
+      description: Ammonium concentration measured in the waste-water treatment plant corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     no3:    
-      description: 'Nitrate concentration measured in waste-water treatment plant corresponding to this observation.'    
+      description: Nitrate concentration measured in waste-water treatment plant corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     observationDateTime:    
-      description: 'Last reported time of observation.'    
+      description: Last reported time of observation    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     outFlow:    
-      description: 'Out-flow amount into the treatment plant/reservoir corresponding to this observation.'    
+      description: Out-flow amount into the treatment plant/reservoir corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *wastewaterplant_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -358,35 +465,47 @@ WasteWaterPlant:
       description: 'Acidity level or basicity level observed in the water. Object defining the temporal processing of the magnitude property during a period. It provides maximum, minimum, instant value and average'    
       properties:    
         avgOverTime:    
-          description: 'Property. Model:''https://schema.org/Number''. Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: Describes the average value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
         instValue:    
-          description: 'Property. Model:''https://schema.org/Number''. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity.'    
+          description: Describes the instantaneous value (associated with the current timestamp) of a time varying quantity    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
         maxOverTime:    
-          description: 'Property. Model:''https://schema.org/Number''. Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value'    
+          description: Describes the maximum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
         minOverTime:    
-          description: 'Property. Model:''https://schema.org/Number''. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value.'    
+          description: Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     po4:    
-      description: 'Ortho-phosphate concentration measured in the waste-water treatment plant corresponding to this observation.'    
+      description: Ortho-phosphate concentration measured in the waste-water treatment plant corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     redox:    
-      description: 'Reduction potential or oxidation measured in waste-water treatment plant corresponding to this observation.'    
+      description: Reduction potential or oxidation measured in waste-water treatment plant corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -398,60 +517,60 @@ WasteWaterPlant:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     tic:    
-      description: 'Total Inorganic Carbon concentration measured in the waste-water treatment plant corresponding to this observation.'    
+      description: Total Inorganic Carbon concentration measured in the waste-water treatment plant corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     tn:    
-      description: 'Total Nitrogen concentration measured in waste-water treatment plant corresponding to this observation.'    
+      description: Total Nitrogen concentration measured in waste-water treatment plant corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     toc:    
-      description: 'Total Organic Carbon concentration measured in the waste-water treatment plant corresponding to this observation.'    
+      description: Total Organic Carbon concentration measured in the waste-water treatment plant corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     treatmentPlantCapacity:    
-      description: 'Handling capacity of the waste-water treatment plant corresponding to this observation.'    
+      description: Handling capacity of the waste-water treatment plant corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     treatmentPlantCode:    
-      description: 'Unique code for the waste-water treatment plant corresponding to this observation.'    
+      description: Unique code for the waste-water treatment plant corresponding to this observation    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     treatmentPlantId:    
-      description: 'Unique identification number for the waste-water treatment plant corresponding to this observation.'    
+      description: Unique identification number for the waste-water treatment plant corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     treatmentPlantName:    
-      description: 'Name of the waste-water treatment plant corresponding to this observation.'    
+      description: Name of the waste-water treatment plant corresponding to this observation    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     tss:    
-      description: 'Total suspended solids concentration measured in a waste-water treatment plant corresponding to this observation.'    
+      description: Total suspended solids concentration measured in a waste-water treatment plant corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI entity type. It has to be WasteWaterPlant'    
+      description: NGSI entity type. It has to be WasteWaterPlant    
       enum:    
         - WasteWaterPlant    
       type: string    
@@ -462,7 +581,7 @@ WasteWaterPlant:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterPlant/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.WasteWater/WasteWaterPlant/schema.json    
   x-model-tags: IUDX    
@@ -627,7 +746,7 @@ WasteWaterPlant:
 ```  
 </details>  
 #### WasteWaterPlant NGSI-LD key-values Beispiel  
-Hier ist ein Beispiel für eine WasteWaterPlant im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine WasteWaterPlant im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
