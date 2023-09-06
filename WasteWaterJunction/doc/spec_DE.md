@@ -15,7 +15,14 @@
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `bod[number]`: Konzentration des biologischen Sauerstoffbedarfs, gemessen im Zulauf oder Ablauf.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `cod[number]`: Konzentration des chemischen Sauerstoffbedarfs, gemessen im Zulauf oder Ablauf.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `do[number]`: Im Abwasser gemessene Konzentration des gelösten Sauerstoffs.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `emissionFlow[number]`: Gasemissionsvolumenstrom, der an einer Verbindungsstelle gemessen wird, bevor er in einen Abgaskamin abgegeben wird.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `endsAt[string]`: Eine Beziehung, die die Entität angibt, mit der der Knotenpunkt im nachgelagerten Punkt verbunden ist  - `flowrate[number]`: Durchflussmenge des Abwassers.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `nh4[number]`: In einem Tank gemessene Ammoniumkonzentration.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `no3[number]`: Gemessene Nitratkonzentration in Abwässern.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pH[number]`: Der pH-Wert des Wassers wird gemessen.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `po4[number]`: Im Abwasser gemessene Ortho-Phosphat-Konzentration.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `pressure[number]`: An einem bestimmten Ort gemessener Druck. Am wichtigsten für den Luftstrom, der von Gebläsen für Abwassertanks bereitgestellt wird  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `redox[number]`: Im Abwasser gemessener Redoxwert.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `startsAt[string]`: eine Beziehung, die angibt, mit welchem Unternehmen der Knotenpunkt im vorgelagerten Punkt verbunden ist  - `temperature[number]`: Messung der Abwassertemperatur.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `tic[number]`: Gesamte anorganische Kohlenstoffkonzentration, gemessen im Zu- oder Ablauf.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `tn[number]`: Im Abwasser gemessene Gesamtstickstoffkonzentration.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `toc[number]`: Konzentration des gesamten organischen Kohlenstoffs, gemessen im Zu- oder Ablauf.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `tss[number]`: die in einem Tank gemessene Gesamtkonzentration an suspendierten Feststoffen.  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `type[string]`: Es muss WasteWaterJunction sein. NGSI-LD Entitätsart  <!-- /30-PropertiesList -->  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `bod[number]`: Konzentration des biologischen Sauerstoffbedarfs, gemessen im Zulauf oder Ablauf  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `cod[number]`: Konzentration des chemischen Sauerstoffbedarfs, gemessen im Zu- oder Abfluss  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `do[number]`: Konzentration des gelösten Sauerstoffs im Abwasser gemessen  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `emissionFlow[number]`: Gasemissionsvolumenstrom, der an einer Verbindungsstelle gemessen wird, bevor er in einen Abgaskamin ausgestoßen wird  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `endsAt[uri]`: Eine Beziehung, die die Entität angibt, mit der der Knotenpunkt im nachgelagerten Punkt verbunden ist  - `flowrate[number]`: Durchflussmenge des Abwassers  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `nh4[number]`: Messung der Ammoniumkonzentration in einem Tank  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `no3[number]`: Gemessene Nitratkonzentration in Abwässern  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pH[number]`: pH-Wert des Wassers gemessen  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `po4[number]`: Messung der Ortho-Phosphat-Konzentration in Abwässern  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `pressure[number]`: An einem bestimmten Ort gemessener Druck. Am wichtigsten für den Luftstrom, der von Gebläsen für Abwassertanks bereitgestellt wird  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `redox[number]`: Redoxgehalt im Abwasser gemessen  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `startsAt[uri]`: eine Beziehung, die angibt, mit welchem Unternehmen der Knotenpunkt im vorgelagerten Punkt verbunden ist  - `temperature[number]`: Temperatur des Abwassers gemessen  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `tic[number]`: Anorganische Gesamtkohlenstoffkonzentration, gemessen im Zulauf oder Ablauf  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `tn[number]`: Im Abwasser gemessene Gesamtstickstoffkonzentration  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `toc[number]`: Gesamtkonzentration des organischen Kohlenstoffs, gemessen im Zu- oder Abfluss  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `tss[number]`: die in einem Tank gemessene Gesamtkonzentration an suspendierten Feststoffen  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `type[string]`: Es muss WasteWaterJunction sein. NGSI-LD Entitätsart  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `description`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,121 +39,153 @@ WasteWaterJunction:
   description: 'This entity contains an harmonised description of a generic Junction made for the Wastewater treatment domain. Junctions could be in place in certain sections of thetreatment plant. In wastewater treatment purposes, the junction is most useful if it is a locationof a sensor that measures a specific variable.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     bod:    
-      description: 'Biological Oxygen Demand concentration measured in the influent or effluent.'    
+      description: Biological Oxygen Demand concentration measured in the influent or effluent    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' mg/L'    
     cod:    
-      description: 'Chemical Oxygen Demand concentration measured in the influent or effluent.'    
+      description: Chemical Oxygen Demand concentration measured in the influent or effluent    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' mg/L'    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     do:    
-      description: 'Dissolved Oxygen concentration measured in wastewater.'    
+      description: Dissolved Oxygen concentration measured in wastewater    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' mg/L'    
     emissionFlow:    
-      description: 'Gas emission flow volume measured at a junction prior to being emitted in an off-gas stack.'    
+      description: Gas emission flow volume measured at a junction prior to being emitted in an off-gas stack    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' m3'    
     endsAt:    
-      description: 'A relationship indicating the entity the junction is connected to in the downstream point'    
+      description: A relationship indicating the entity the junction is connected to in the downstream point    
       format: uri    
       type: string    
       x-ngsi:    
         type: Relationship    
     flowrate:    
-      description: 'Flowrate of wastewater.'    
+      description: Flowrate of wastewater    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' m3/h'    
     id:    
-      anyOf: &wastewaterjunction_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -165,9 +204,11 @@ WasteWaterJunction:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -189,9 +230,11 @@ WasteWaterJunction:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -215,9 +258,11 @@ WasteWaterJunction:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -238,9 +283,11 @@ WasteWaterJunction:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -264,9 +311,11 @@ WasteWaterJunction:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -292,66 +341,82 @@ WasteWaterJunction:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     nh4:    
-      description: 'Ammonium concentration measured in a tank.'    
+      description: Ammonium concentration measured in a tank    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' mg/L'    
     no3:    
-      description: 'Nitrate concentration measured in wastewater.'    
+      description: Nitrate concentration measured in wastewater    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' mg/L'    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *wastewaterjunction_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     pH:    
-      description: 'Water pH level measured.'    
+      description: Water pH level measured    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
     po4:    
-      description: 'Ortho-phosphate concentration measured in wastewater.'    
+      description: Ortho-phosphate concentration measured in wastewater    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' mg/L'    
     pressure:    
-      description: 'Pressure measured at given location. Most relevant for airflow as provided by blowers to wastewater tanks'    
+      description: Pressure measured at given location. Most relevant for airflow as provided by blowers to wastewater tanks    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' kPa'    
     redox:    
-      description: 'Redox level measured in wastewater.'    
+      description: Redox level measured in wastewater    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' mV'    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -363,53 +428,53 @@ WasteWaterJunction:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     startsAt:    
-      description: 'A relationship indicating the entity the junction is connected to in the upstream point'    
+      description: A relationship indicating the entity the junction is connected to in the upstream point    
       format: uri    
       type: string    
       x-ngsi:    
         type: Relationship    
     temperature:    
-      description: 'Wastewater temperature measured.'    
+      description: Wastewater temperature measured    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' Celsius'    
     tic:    
-      description: 'Total Inorganic Carbon concentration measured in the influent or effluent.'    
+      description: Total Inorganic Carbon concentration measured in the influent or effluent    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' mg/L'    
     tn:    
-      description: 'Total Nitrogen concentration measured in wastewater.'    
+      description: Total Nitrogen concentration measured in wastewater    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' mg/L'    
     toc:    
-      description: 'Total Organic Carbon concentration measured in the influent or effluent.'    
+      description: Total Organic Carbon concentration measured in the influent or effluent    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' mg/L'    
     tss:    
-      description: 'total suspended solids concentration measured in a tank.'    
+      description: total suspended solids concentration measured in a tank    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
         units: ' mg/L'    
     type:    
-      description: 'It has to be WasteWaterJunction. NGSI-LD Entity Type'    
+      description: It has to be WasteWaterJunction. NGSI-LD Entity Type    
       enum:    
         - WasteWaterJunction    
       type: string    
@@ -421,7 +486,7 @@ WasteWaterJunction:
     - description    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.WasteWater/blob/master/WasteWaterJunction/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterJunction/schema.json    
   x-model-tags: ""    
