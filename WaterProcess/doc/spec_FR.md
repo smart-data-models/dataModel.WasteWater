@@ -15,7 +15,24 @@
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alkalinity[number]`: Le volume d'entrée de la station de pompage. Toutes les unités sont acceptées dans le code [CEFACT](https://www.unece.org/cefact.html).  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `bod[number]`: La demande biochimique en oxygène (DBO) est la quantité d'oxygène dissous (OD) nécessaire (c'est-à-dire demandée) par les organismes biologiques aérobies pour décomposer la matière organique présente dans un échantillon d'eau donné, à une certaine température et sur une période de temps spécifique.  - `chromaticity[number]`: La chromaticité de l'eau traitée. Toutes les unités sont acceptées dans le code [CEFACT] (https://www.unece.org/cefact.html).  . Model: [https://schema.org/Number](https://schema.org/Number)- `cod[number]`: La demande chimique en oxygène (DCO) est une mesure indicative de la quantité d'oxygène qui peut être consommée par les réactions dans une solution mesurée  - `contactPoint[object]`: Les coordonnées à contacter avec l'article.  . Model: [https://schema.org/ContactPoint](https://schema.org/ContactPoint)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `operationStatus[string]`:   . Model: [https://schema.org/Text.ss The operation status of the water proce.](https://schema.org/Text.ss The operation status of the water proce.)- `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `pH[number]`: Acidité ou basicité d'une solution aqueuse.  - `residualChlorine[number]`: Le volume d'entrée de la station de pompage. Toutes les unités sont acceptées dans le code [CEFACT](https://www.unece.org/cefact.html).  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `temperature[number]`: La température de l'eau traitée. Toutes les unités sont acceptées dans le code [CEFACT] (https://www.unece.org/cefact.html).  . Model: [https://schema.org/Number](https://schema.org/Number)- `tn[number]`: Azote total  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Phosphore total  . Model: [https://schema.org/Number](https://schema.org/Number)- `tss[number]`: Total des solides en suspension  . Model: [https://schema.org/Number](https://schema.org/Number)- `turbidity[number]`: Quantité de lumière diffusée par les particules dans la colonne d'eau. Unité : 'NTU  - `type[string]`: Type d'entité NGSI. Il doit s'agir de WaterProcess  - `waterProcessType[string]`: Le type de traitement de l'eau dans une station d'épuration ou une station de traitement de l'eau (alias station d'épuration des eaux usées).  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localité dans laquelle se trouve l'adresse postale et qui se trouve dans la région  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La région dans laquelle se trouve la localité et qui se trouve dans le pays  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local.    
+	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alkalinity[number]`: Le volume d'admission de la station de pompage. Toutes les unités sont acceptées dans le code [CEFACT] (https://www.unece.org/cefact.html).  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `bod[number]`: La demande biochimique en oxygène (DBO) est la quantité d'oxygène dissous (OD) nécessaire (c'est-à-dire demandée) par les organismes biologiques aérobies pour décomposer la matière organique présente dans un échantillon d'eau donné, à une certaine température et sur une période de temps spécifique.  - `chromaticity[number]`: La chromaticité de l'eau traitée. Toutes les unités sont acceptées dans le code [CEFACT] (https://www.unece.org/cefact.html).  . Model: [https://schema.org/Number](https://schema.org/Number)- `cod[number]`: La demande chimique en oxygène (DCO) est une mesure indicative de la quantité d'oxygène qui peut être consommée par les réactions dans une solution mesurée  - `contactPoint[object]`: Les coordonnées à contacter avec l'article  . Model: [https://schema.org/ContactPoint](https://schema.org/ContactPoint)	- `areaServed[string]`: Zone géographique dans laquelle un service ou un article est proposé. Remplace serviceArea    
+	- `availabilityRestriction[*]`: Cette propriété relie un point de contact à des informations sur les cas où le point de contact n'est pas disponible. Les détails sont fournis à l'aide de la classe de spécification des heures d'ouverture.  . Model: [http://schema.org/hoursAvailable](http://schema.org/hoursAvailable)  
+	- `availableLanguage[*]`: Langue que quelqu'un peut utiliser avec ou dans l'article, le service ou le lieu. Veuillez utiliser l'un des codes de langue de la norme IETF BCP 47. L'option Texte est mise en œuvre, mais il peut s'agir également de l'option Langue.  . Model: [http://schema.org/availableLanguage](http://schema.org/availableLanguage)  
+	- `contactOption[*]`: Une option disponible sur ce point de contact (par exemple, un numéro gratuit ou une assistance pour les malentendants).  . Model: [http://schema.org/contactOption](http://schema.org/contactOption)  
+	- `contactType[string]`: Type de contact de cet article    
+	- `email[idn-email]`: Adresse électronique du propriétaire    
+	- `faxNumber[string]`: Le numéro de fax  . Model: [http://schema.org/Text](http://schema.org/Text)  
+	- `name[string]`: Le nom de cet élément    
+	- `productSupported[string]`: Le produit ou le service auquel se rapporte ce point de contact d'assistance (par exemple, l'assistance produit pour une ligne de produits particulière). Il peut s'agir d'un produit ou d'une ligne de produits spécifique (par exemple "iPhone") ou d'une catégorie générale de produits ou de services (par exemple "smartphones").  . Model: [http://schema.org/Text](http://schema.org/Text)  
+	- `telephone[string]`: Téléphone de ce contact    
+- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément  - `operationStatus[string]`:   . Model: [https://schema.org/Text.ss The operation status of the water proce](https://schema.org/Text.ss The operation status of the water proce)- `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `pH[number]`: Acidité ou basicité d'une solution aqueuse  - `residualChlorine[number]`: Le volume d'admission de la station de pompage. Toutes les unités sont acceptées dans le code [CEFACT] (https://www.unece.org/cefact.html).  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `temperature[number]`: La température de l'eau traitée. Toutes les unités sont acceptées dans le code [CEFACT] (https://www.unece.org/cefact.html).  . Model: [https://schema.org/Number](https://schema.org/Number)- `tn[number]`: Azote total  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Phosphore total  . Model: [https://schema.org/Number](https://schema.org/Number)- `tss[number]`: Total des solides en suspension  . Model: [https://schema.org/Number](https://schema.org/Number)- `turbidity[number]`: Quantité de lumière diffusée par les particules dans la colonne d'eau. Unité : 'NTU  - `type[string]`: Type d'entité NGSI. Il doit s'agir de WaterProcess  - `waterProcessType[string]`: Le type de traitement de l'eau dans une station d'épuration ou une station de traitement de l'eau (alias station d'épuration des eaux usées)  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -35,35 +52,57 @@ WaterProcess:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alkalinity:    
-      description: 'The intake volume of the pump station. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code.'    
+      description: 'The intake volume of the pump station. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -88,7 +127,7 @@ WaterProcess:
         type: Property    
         units: mg/l    
     chromaticity:    
-      description: 'The chromaticity of the processed water. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code.'    
+      description: 'The chromaticity of the processed water. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -102,26 +141,35 @@ WaterProcess:
         type: Property    
         units: mg/l    
     contactPoint:    
-      description: The details to contact with the item.    
+      description: The details to contact with the item    
       properties:    
         areaServed:    
-          description: Property. The geographic area where a service or offered item is provided. Supersedes serviceArea.    
+          description: The geographic area where a service or offered item is provided. Supersedes serviceArea    
           type: string    
+          x-ngsi:    
+            type: Property    
         availabilityRestriction:    
           anyOf:    
-            - description: Property. Array of identifiers format of any NGSI entity.    
+            - description: Array of identifiers format of any NGSI entity    
               items:    
                 maxLength: 256    
                 minLength: 1    
                 pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
                 type: string    
               type: array    
-            - description: Property. Array of identifiers format of any NGSI entity.    
+              x-ngsi:    
+                type: Property    
+            - description: Array of identifiers format of any NGSI entity    
               items:    
                 format: uri    
                 type: string    
               type: array    
-          description: 'Relationship. Model:''http://schema.org/hoursAvailable''. This property links a contact point to information about when the contact point is not available. The details are provided using the Opening Hours Specification class.'    
+              x-ngsi:    
+                type: Property    
+          description: This property links a contact point to information about when the contact point is not available. The details are provided using the Opening Hours Specification class    
+          x-ngsi:    
+            model: http://schema.org/hoursAvailable    
+            type: Relationship    
         availableLanguage:    
           anyOf:    
             - anyOf:    
@@ -129,54 +177,76 @@ WaterProcess:
                 - items:    
                     type: string    
                   type: array    
-          description: 'Property. Model:''http://schema.org/availableLanguage''. A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. It is implemented the Text option but it could be also Language'    
+          description: 'A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. It is implemented the Text option but it could be also Language'    
+          x-ngsi:    
+            model: http://schema.org/availableLanguage    
+            type: Property    
         contactOption:    
           anyOf:    
             - type: string    
             - items:    
                 type: string    
               type: array    
-          description: 'Property. Model:''http://schema.org/contactOption''. An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).'    
+          description: An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers)    
+          x-ngsi:    
+            model: http://schema.org/contactOption    
+            type: Property    
         contactType:    
-          description: Property. Contact type of this item.    
+          description: Contact type of this item    
           type: string    
+          x-ngsi:    
+            type: Property    
         email:    
-          description: Property. Email address of owner.    
+          description: Email address of owner    
           format: idn-email    
           type: string    
+          x-ngsi:    
+            type: Property    
         faxNumber:    
-          description: 'Property. Model:''http://schema.org/Text''. The fax number.'    
+          description: The fax number    
           type: string    
+          x-ngsi:    
+            model: http://schema.org/Text    
+            type: Property    
         name:    
-          description: Property. The name of this item.    
+          description: The name of this item    
           type: string    
+          x-ngsi:    
+            type: Property    
         productSupported:    
-          description: 'Property. Model:''http://schema.org/Text''. The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. "iPhone") or a general category of products or services (e.g. "smartphones").'    
+          description: The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. 'iPhone') or a general category of products or services (e.g. 'smartphones')    
           type: string    
+          x-ngsi:    
+            model: http://schema.org/Text    
+            type: Property    
         telephone:    
-          description: Property. Telephone of this contact.    
+          description: Telephone of this contact    
           type: string    
+          x-ngsi:    
+            type: Property    
         url:    
-          description: Property. URL which provides a description or further information about this item.    
+          description: URL which provides a description or further information about this item    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/ContactPoint    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -187,22 +257,26 @@ WaterProcess:
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &waterprocess_-_properties_-_owner_-_items_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -223,7 +297,9 @@ WaterProcess:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -247,7 +323,9 @@ WaterProcess:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -273,7 +351,9 @@ WaterProcess:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -296,7 +376,9 @@ WaterProcess:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -322,7 +404,9 @@ WaterProcess:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -350,10 +434,12 @@ WaterProcess:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -365,25 +451,39 @@ WaterProcess:
         - warning    
       type: string    
       x-ngsi:    
-        model: 'https://schema.org/Text.ss The operation status of the water proce.'    
+        model: 'https://schema.org/Text.ss The operation status of the water proce'    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *waterprocess_-_properties_-_owner_-_items_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     pH:    
-      description: Acidity or basicity of an aqueous solution.    
+      description: Acidity or basicity of an aqueous solution    
       maximum: 14    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     residualChlorine:    
-      description: 'The intake volume of the pump station. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code.'    
+      description: 'The intake volume of the pump station. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -402,12 +502,12 @@ WaterProcess:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     temperature:    
-      description: 'The temperature of the processed water. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code.'    
+      description: 'The temperature of the processed water. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -449,7 +549,7 @@ WaterProcess:
       x-ngsi:    
         type: Property    
     waterProcessType:    
-      description: The type of water process at water purification plant or water treatment plant (aka. waste water treatment plant).    
+      description: The type of water process at water purification plant or water treatment plant (aka. waste water treatment plant)    
       enum:    
         - inflow    
         - sedimentation    
