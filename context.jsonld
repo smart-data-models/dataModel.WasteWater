@@ -19,6 +19,10 @@
         "availabilityRestriction": "https://smartdatamodels.org/availabilityRestriction",
         "availableLanguage": "https://smartdatamodels.org/availableLanguage",
         "avgOverTime": "https://smartdatamodels.org/avgOverTime",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "bod": "https://smartdatamodels.org/dataModel.WasteWater/bod",
         "ch4": "https://smartdatamodels.org/dataModel.WasteWater/ch4",
         "chromaticity": "https://smartdatamodels.org/dataModel.WasteWater/chromaticity",
@@ -29,6 +33,10 @@
         "contactOption": "https://smartdatamodels.org/contactOption",
         "contactPoint": "https://smartdatamodels.org/contactPoint",
         "contactType": "https://smartdatamodels.org/contactType",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
         "dateModified": "https://smartdatamodels.org/dateModified",
