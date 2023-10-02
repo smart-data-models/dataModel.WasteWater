@@ -1,3 +1,3 @@
-/* (Beta) Export of data model OffGasStack of the subject dataModel.WasteWater for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model OffGasStack of the subject dataModel.WasteWater for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE OffGasStack_type AS ENUM ('OffGasStack');
-CREATE TABLE OffGasStack (address json, alternateName text, areaServed text, ch4 text, co2 text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, endsAt text, id text, location json, n2o text, name text, o2 text, owner json, seeAlso json, source text, startsAt text, type OffGasStack_type);
+CREATE TABLE OffGasStack (address JSON, alternateName TEXT, areaServed TEXT, ch4 NUMERIC, co2 NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, endsAt TEXT, n2o NUMERIC, name TEXT, o2 NUMERIC, owner JSON, source TEXT, startsAt TEXT, type OffGasStack_type);
