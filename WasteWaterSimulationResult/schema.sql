@@ -1,3 +1,3 @@
 /* (Beta) Export of data model WasteWaterSimulationResult of the subject dataModel.WasteWater for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE WasteWaterSimulationResult_type AS ENUM ('WasteWaterSimulationResult');
-CREATE TABLE WasteWaterSimulationResult (address JSON, airflow NUMERIC, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, nh4 NUMERIC, no3 NUMERIC, owner JSON, power NUMERIC, source TEXT, type WasteWaterSimulationResult_type);
+CREATE TABLE WasteWaterSimulationResult (address JSON, airflow NUMERIC, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, nh4 NUMERIC, no3 NUMERIC, owner JSON, power NUMERIC, seeAlso JSON, source TEXT, type WasteWaterSimulationResult_type);
