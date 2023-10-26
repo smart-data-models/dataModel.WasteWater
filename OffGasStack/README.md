@@ -22,6 +22,8 @@ Link alla [specifica](https://github.com/smart-data-models/dataModel.WasteWater/
 [仕様へのリンク](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/OffGasStack/doc/spec_JA.md)
 
 [链接到规范](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/OffGasStack/doc/spec_ZH.md)
+
+[사양 링크](https://github.com/smart-data-models/dataModel.WasteWater/blob/master/OffGasStack/doc/spec_KO.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.WasteWater/OffGasStack/examples/example.json) (keyvalues) for NGSI v2
