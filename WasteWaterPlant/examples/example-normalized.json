@@ -62,11 +62,11 @@
     "value": 25
   },
   "treatmentPlantName": {
-    "type": "Number",
+    "type": "Text",
     "value": "A"
   },
   "treatmentPlantCode": {
-    "type": "Number",
+    "type": "Text",
     "value": "2"
   },
   "observationDateTime": {
