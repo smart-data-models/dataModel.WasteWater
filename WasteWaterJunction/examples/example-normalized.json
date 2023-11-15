@@ -58,7 +58,7 @@
     "value": 7.8
   },
   "startsAt": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"
   }
 }
