@@ -1,15 +1,15 @@
 {
-    "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",
-    "type": "OffGasStack",
-    "ch4": 35,
-    "co2": 1.8,
-    "description": "Off gas stack from treatment lane 2.",
-    "endsAt": "urn:ngsi-ld:WasteWaterJunction:junction4",
-    "n2o": 380,
-    "name": "Off Gas Stack 2",
-    "o2": 18.6,
-    "startsAt": "urn:ngsi-ld:WasteWaterJunction:junction3",
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:OffGasStack:OffGasStack2",
+  "type": "OffGasStack",
+  "ch4": 35,
+  "co2": 1.8,
+  "description": "Off gas stack from treatment lane 2.",
+  "endsAt": "urn:ngsi-ld:WasteWaterJunction:junction4",
+  "n2o": 380,
+  "name": "Off Gas Stack 2",
+  "o2": 18.6,
+  "startsAt": "urn:ngsi-ld:WasteWaterJunction:junction3",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"
+  ]
 }
