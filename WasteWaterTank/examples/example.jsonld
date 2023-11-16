@@ -1,19 +1,19 @@
 {
-    "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",
-    "type": "WasteWaterTank",
-    "description": "Aerobic tank in treatment lane 2.",
-    "do": 1.2,
-    "endsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a",
-    "name": "Aerobic Tank 2",
-    "nh4": 1.3,
-    "no3": 5.2,
-    "pH": 7.8,
-    "redox": 250,
-    "sludgeLevel": 0.8,
-    "startsAt": "urn:ngsi-ld:WasteWaterTank:facultativeTank2",
-    "temperature": 16,
-    "tss": 3500,
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",
+  "type": "WasteWaterTank",
+  "description": "Aerobic tank in treatment lane 2.",
+  "do": 1.2,
+  "endsAt": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a",
+  "name": "Aerobic Tank 2",
+  "nh4": 1.3,
+  "no3": 5.2,
+  "pH": 7.8,
+  "redox": 250,
+  "sludgeLevel": 0.8,
+  "startsAt": "urn:ngsi-ld:WasteWaterTank:facultativeTank2",
+  "temperature": 16,
+  "tss": 3500,
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"
+  ]
 }
