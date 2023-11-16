@@ -1,44 +1,44 @@
 {
-    "id": "uri:ngsi-ld:1234:A43R",
-    "type": "WasteWaterPlant",
-    "bod": 250,
-    "cod": 25,
-    "do": 4,
-    "inFlow": 5,
-    "municipalityInfo": {
-        "district": "Bangalore Urban",
-        "ulbName": "BMC",
-        "cityId": "23",
-        "wardId": "23",
-        "stateName": "Karnataka",
-        "cityName": "Bangalore",
-        "zoneName": "South",
-        "wardName": "Bangalore Urban",
-        "zoneId": "2",
-        "wardNum": 4
-    },
-    "nh4": 50,
-    "no3": 10,
-    "observationDateTime": "2021-03-11T15:51:02+05:30",
-    "outFlow": 6.7,
-    "pHTSA": {
-        "avgOverTime": 8,
-        "maxOverTime": 10,
-        "instValue": 6,
-        "minOverTime": 6
-    },
-    "po4": 6,
-    "redox": 25,
-    "tic": 2,
-    "tn": 9,
-    "toc": 0.7,
-    "treatmentPlantCapacity": 10,
-    "treatmentPlantCode": "2",
-    "treatmentPlantId": 7,
-    "treatmentPlantName": "A",
-    "tss": 2,
-    "@context": [
-        "iudx:WasteWaterMgmt",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"
-    ]
+  "id": "uri:ngsi-ld:1234:A43R",
+  "type": "WasteWaterPlant",
+  "bod": 250,
+  "cod": 25,
+  "do": 4,
+  "inFlow": 5,
+  "municipalityInfo": {
+    "district": "Bangalore Urban",
+    "ulbName": "BMC",
+    "cityId": "23",
+    "wardId": "23",
+    "stateName": "Karnataka",
+    "cityName": "Bangalore",
+    "zoneName": "South",
+    "wardName": "Bangalore Urban",
+    "zoneId": "2",
+    "wardNum": 4
+  },
+  "nh4": 50,
+  "no3": 10,
+  "observationDateTime": "2021-03-11T15:51:02+05:30",
+  "outFlow": 6.7,
+  "pHTSA": {
+    "avgOverTime": 8,
+    "maxOverTime": 10,
+    "instValue": 6,
+    "minOverTime": 6
+  },
+  "po4": 6,
+  "redox": 25,
+  "tic": 2,
+  "tn": 9,
+  "toc": 0.7,
+  "treatmentPlantCapacity": 10,
+  "treatmentPlantCode": "2",
+  "treatmentPlantId": 7,
+  "treatmentPlantName": "A",
+  "tss": 2,
+  "@context": [
+    "iudx:WasteWaterMgmt",
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"
+  ]
 }
