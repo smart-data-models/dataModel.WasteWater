@@ -1,2 +1,2 @@
 "id_", "type_", "location__type_", "location__value__type_", "location__value__coordinates__0_", "location__value__coordinates__1_", "name__type_", "name__value_", "waterProcessType__type_", "waterProcessType__value_", "tn__type_", "tn__value_", "tp__type_", "tp__value_", "tss__type_", "tss__value_"
-"urn:waterdna:haemil:WaterProcess_01", "WaterProcess", "geo:sjon", "Point", "127.266663", "36.524677", "Text", "inflow process at water treatment plant 1", "Text", "inflow", "Number", "73.152", "Number", "6.1", "Number", "130.9"
+"urn:waterdna:haemil:WaterProcess_01", "WaterProcess", "geo:json", "Point", "127.266663", "36.524677", "Text", "inflow process at water treatment plant 1", "Text", "inflow", "Number", "73.152", "Number", "6.1", "Number", "130.9"
