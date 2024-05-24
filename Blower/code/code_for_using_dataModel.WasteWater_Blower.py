@@ -24,25 +24,30 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Blower"
 subject = "dataModel.WasteWater"
-airflow = {'type': 'Property', 'value': 368.75}
+airflow = 368.75
 attribute = "airflow"
 value = airflow
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-energy = {'type': 'Property', 'value': 229.89}
+energy = 229.89
 attribute = "energy"
 value = energy
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-pressure = {'type': 'Property', 'value': 84.06}
+pressure = 84.06
 attribute = "pressure"
 value = pressure
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
