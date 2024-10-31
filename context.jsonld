@@ -21,7 +21,7 @@
         "avgOverTime": "https://smartdatamodels.org/avgOverTime",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "bod": "https://smartdatamodels.org/dataModel.WasteWater/bod",
         "ch4": "https://smartdatamodels.org/dataModel.WasteWater/ch4",
@@ -35,7 +35,7 @@
         "contactType": "https://smartdatamodels.org/contactType",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
@@ -53,7 +53,7 @@
         "id": "@id",
         "inFlow": "https://smartdatamodels.org/dataModel.WasteWater/inFlow",
         "instValue": "https://smartdatamodels.org/instValue",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "maxOverTime": "https://smartdatamodels.org/maxOverTime",
         "measured": "https://smartdatamodels.org/dataModel.WasteWater/measured",
         "minOverTime": "https://smartdatamodels.org/minOverTime",
