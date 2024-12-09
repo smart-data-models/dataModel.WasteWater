@@ -2,7 +2,7 @@
   "id": "urn:waterdna:haemil:WaterProcess_01",
   "type": "WaterProcess",
   "location": {
-    "type": "geo:sjon",
+    "type": "geo:json",
     "value": {
       "type": "Point",
       "coordinates": [

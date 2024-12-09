@@ -1,41 +1,41 @@
 {
-  "$schema": "https://json-schema.org/schema#",
-  "$id": "https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWater-schema.json",
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://smart-data-models.github.io/dataModel.WasteWater/WasteWater-schema.json",
   "title": "Smart Data Models - Wastewater Treatment base schema",
-  "descriptions": "Common NGSI-LD definitions of a wastewater treatment data models",
+  "description": "Common NGSI-LD definitions of a wastewater treatment data models",
   "type": "object",
   "definitions": {
     "tss": {
       "type": "number",
-      "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. total suspended solids concentration measured in a tank."
+      "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. total suspended solids concentration measured in a tank"
     },
     "nh4": {
       "type": "number",
-      "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Ammonium concentration measured in a tank."
+      "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Ammonium concentration measured in a tank"
     },
     "no3": {
       "type": "number",
-      "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Nitrate concentration measured in wastewater."
+      "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Nitrate concentration measured in wastewater"
     },
     "do": {
       "type": "number",
-      "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Dissolved Oxygen concentration measured in wastewater."
+      "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Dissolved Oxygen concentration measured in wastewater"
     },
     "redox": {
       "type": "number",
-      "description": "Property. Model: https://schema.org/Number. Units: 'mV'. Redox level measured in wastewater."
+      "description": "Property. Model: https://schema.org/Number. Units: 'mV'. Redox level measured in wastewater"
     },
     "tn": {
       "type": "number",
-      "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Total Nitrogen concentration measured in wastewater."
+      "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Total Nitrogen concentration measured in wastewater"
     },
     "temperature": {
       "type": "number",
-      "description": "Property. Model: https://schema.org/Number. Units: 'Celsius'. Wastewater temperature measured."
+      "description": "Property. Model: https://schema.org/Number. Units: 'Celsius'. Wastewater temperature measured"
     },
     "pH": {
       "type": "number",
-      "description": "Property. Model: https://schema.org/Number. Water pH level measured."
+      "description": "Property. Model: https://schema.org/Number. Water pH level measured"
     }
   }
 }

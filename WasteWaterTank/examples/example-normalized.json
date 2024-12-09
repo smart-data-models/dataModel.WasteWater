@@ -1,5 +1,4 @@
 {
-
   "id": "urn:ngsi-ld:WasteWaterTank:aerobicTank2",
   "type": "WasteWaterTank",
   "name": {
@@ -43,11 +42,11 @@
     "value": 7.8
   },
   "startsAt": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:WasteWaterTank:facultativeTank2"
   },
   "endsAt": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:WasteWaterTank:secondarySettler2a"
   }
 }

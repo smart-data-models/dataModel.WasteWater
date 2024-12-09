@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Blower of the subject dataModel.WasteWater for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model Blower of the subject dataModel.WasteWater for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Blower_type AS ENUM ('Blower');
-CREATE TABLE Blower (address json, airflow text, airflowEstimation text, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, endsAt text, energy text, id text, location json, name text, owner json, pressure text, seeAlso json, source text, startsAt text, type Blower_type);
+CREATE TABLE Blower (address JSON, airflow NUMERIC, airflowEstimation NUMERIC, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, endsAt TEXT, energy NUMERIC, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, pressure NUMERIC, seeAlso JSON, source TEXT, startsAt TEXT, type Blower_type);

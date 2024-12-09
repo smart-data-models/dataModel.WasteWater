@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/schema",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "0.0.2",
   "$id": "https://smart-data-models.github.io/dataModel.WasteWater/WasteWaterPlant/schema.json",
   "title": "Smart Data models -Waste Water Plant schema",
@@ -28,76 +28,76 @@
         },
         "no3": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Nitrate concentration measured in waste-water treatment plant corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Number'. Nitrate concentration measured in waste-water treatment plant corresponding to this observation"
         },
         "bod": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Biological Oxygen Demand concentration measured in the waste-water treatment plant corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Number'. Biological Oxygen Demand concentration measured in the waste-water treatment plant corresponding to this observation"
         },
         "inFlow": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. In-flow amount into the treatment plant/reservoir corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Number'. In-flow amount into the treatment plant/reservoir corresponding to this observation"
         },
         "toc": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Total Organic Carbon concentration measured in the waste-water treatment plant corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Number'. Total Organic Carbon concentration measured in the waste-water treatment plant corresponding to this observation"
         },
         "nh4": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Ammonium concentration measured in the waste-water treatment plant corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Number'. Ammonium concentration measured in the waste-water treatment plant corresponding to this observation"
         },
         "redox": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Reduction potential or oxidation measured in waste-water treatment plant corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Number'. Reduction potential or oxidation measured in waste-water treatment plant corresponding to this observation"
         },
         "do": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Dissolved oxygen measured in the waste-water treatment plant corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Number'. Dissolved oxygen measured in the waste-water treatment plant corresponding to this observation"
         },
         "treatmentPlantId": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Unique identification number for the waste-water treatment plant corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Number'. Unique identification number for the waste-water treatment plant corresponding to this observation"
         },
         "outFlow": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Out-flow amount into the treatment plant/reservoir corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Number'. Out-flow amount into the treatment plant/reservoir corresponding to this observation"
         },
         "tss": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Total suspended solids concentration measured in a waste-water treatment plant corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Number'. Total suspended solids concentration measured in a waste-water treatment plant corresponding to this observation"
         },
         "treatmentPlantCapacity": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Handling capacity of the waste-water treatment plant corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Number'. Handling capacity of the waste-water treatment plant corresponding to this observation"
         },
         "tic": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Total Inorganic Carbon concentration measured in the waste-water treatment plant corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Number'. Total Inorganic Carbon concentration measured in the waste-water treatment plant corresponding to this observation"
         },
         "tn": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Total Nitrogen concentration measured in waste-water treatment plant corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Number'. Total Nitrogen concentration measured in waste-water treatment plant corresponding to this observation"
         },
         "po4": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Ortho-phosphate concentration measured in the waste-water treatment plant corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Number'. Ortho-phosphate concentration measured in the waste-water treatment plant corresponding to this observation"
         },
         "cod": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Chemical Oxygen Demand concentration measured in the waste-water treatment plant corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Number'. Chemical Oxygen Demand concentration measured in the waste-water treatment plant corresponding to this observation"
         },
         "treatmentPlantName": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Name of the waste-water treatment plant corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Text'. Name of the waste-water treatment plant corresponding to this observation"
         },
         "treatmentPlantCode": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Unique code for the waste-water treatment plant corresponding to this observation."
+          "description": "Property. Model:'https://schema.org/Text'. Unique code for the waste-water treatment plant corresponding to this observation"
         },
         "observationDateTime": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Model:'https://schema.org/Text'. Last reported time of observation."
+          "description": "Property. Model:'https://schema.org/Text'. Last reported time of observation"
         },
         "pHTSA": {
           "type": "object",
@@ -113,37 +113,37 @@
             },
             "instValue": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Number'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity."
+              "description": "Property. Model:'https://schema.org/Number'. Describes the instantaneous value (associated with the current timestamp) of a time varying quantity"
             },
             "minOverTime": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Number'. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value."
+              "description": "Property. Model:'https://schema.org/Number'. Describes the minimum value of a time-series data over a specified duration in past. The duration is specified using another parameter in the value descriptor object related to this value"
             }
           }
         },
         "municipalityInfo": {
           "type": "object",
-          "description": "Property. Model:'https://schema.org/Text. Municipality information corresponding to this observation.",
+          "description": "Property. Model:'https://schema.org/Text. Municipality information corresponding to this observation",
           "properties": {
             "district": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text'. District name corresponding to this observation."
+              "description": "Property. Model:'https://schema.org/Text'. District name corresponding to this observation"
             },
             "ulbName": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text'. Name of the Urban Local Body corresponding to this observation."
+              "description": "Property. Model:'https://schema.org/Text'. Name of the Urban Local Body corresponding to this observation"
             },
             "cityId": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text'. City Id corresponding to this observation."
+              "description": "Property. Model:'https://schema.org/Text'. City Id corresponding to this observation"
             },
             "wardId": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text'. Ward Id corresponding to this observation."
+              "description": "Property. Model:'https://schema.org/Text'. Ward Id corresponding to this observation"
             },
             "stateName": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text'. Name of the state corresponding to this observation."
+              "description": "Property. Model:'https://schema.org/Text'. Name of the state corresponding to this observation"
             },
             "cityName": {
               "type": "string",
@@ -151,19 +151,19 @@
             },
             "zoneName": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text'. Zone name corresponding to this observation."
+              "description": "Property. Model:'https://schema.org/Text'. Zone name corresponding to this observation"
             },
             "zoneId": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text'. Zone Id corresponding to this observation."
+              "description": "Property. Model:'https://schema.org/Text'. Zone Id corresponding to this observation"
             },
             "wardName": {
               "type": "string",
-              "description": "Property. Model:'https://schema.org/Text'. Ward name corresponding to this observation."
+              "description": "Property. Model:'https://schema.org/Text'. Ward name corresponding to this observation"
             },
             "wardNum": {
               "type": "number",
-              "description": "Property. Model:'https://schema.org/Number'. Ward number corresponding to this observation."
+              "description": "Property. Model:'https://schema.org/Number'. Ward number corresponding to this observation"
             }
           }
         }

@@ -1,12 +1,12 @@
 {
-    "id": "urn:ngsi-ld:Blower:Blower2",
-    "type": "Blower",
-    "airflow": 368.75,
-    "description": "Blower 2 providing aeration for wastewater treatment process.",
-    "energy": 229.89,
-    "name": "Blower 2",
-    "pressure": 84.06,
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:Blower:Blower2",
+  "type": "Blower",
+  "airflow": 368.75,
+  "description": "Blower 2 providing aeration for wastewater treatment process.",
+  "energy": 229.89,
+  "name": "Blower 2",
+  "pressure": 84.06,
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/master/context.jsonld"
+  ]
 }

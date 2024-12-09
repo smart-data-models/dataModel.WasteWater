@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "0.0.1",
   "modelTags": "",
   "derivedFrom": "",
@@ -23,11 +23,13 @@
         "type": {
           "type": "string",
           "description": "Property. NGSI Entity type. It has to be WaterProcess",
-          "enum": ["WaterProcess"]
+          "enum": [
+            "WaterProcess"
+          ]
         },
         "waterProcessType": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. The type of water process at water purification plant or water treatment plant (aka. waste water treatment plant).",
+          "description": "Property. Model:'https://schema.org/Text'. The type of water process at water purification plant or water treatment plant (aka. waste water treatment plant)",
           "enum": [
             "inflow",
             "sedimentation",
@@ -41,30 +43,34 @@
         },
         "operationStatus": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'.ss The operation status of the water proce.",
-          "enum": ["normal", "watch", "warning"]
+          "description": "Property. Model:'https://schema.org/Text'.ss The operation status of the water proce",
+          "enum": [
+            "normal",
+            "watch",
+            "warning"
+          ]
         },
         "temperature": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Units:'celsius'. The temperature of the processed water. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code."
+          "description": "Property. Model:'https://schema.org/Number'. Units:'celsius'. The temperature of the processed water. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code"
         },
         "chromaticity": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Units:'none'. The chromaticity of the processed water. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code."
+          "description": "Property. Model:'https://schema.org/Number'. Units:'none'. The chromaticity of the processed water. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code"
         },
         "pH": {
           "type": "number",
           "minimum": 0,
           "maximum": 14,
-          "description": "Property. Acidity or basicity of an aqueous solution."
+          "description": "Property. Acidity or basicity of an aqueous solution"
         },
         "alkalinity": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Units:'cubic metre per second'. The intake volume of the pump station. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code."
+          "description": "Property. Model:'https://schema.org/Number'. Units:'cubic metre per second'. The intake volume of the pump station. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code"
         },
         "residualChlorine": {
           "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Units:'cubic metre per second'. The intake volume of the pump station. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code."
+          "description": "Property. Model:'https://schema.org/Number'. Units:'cubic metre per second'. The intake volume of the pump station. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code"
         },
         "turbidity": {
           "type": "number",
@@ -97,5 +103,8 @@
       }
     }
   ],
-  "required": ["id", "type"]
+  "required": [
+    "id",
+    "type"
+  ]
 }

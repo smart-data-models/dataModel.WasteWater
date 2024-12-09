@@ -1,99 +1,99 @@
 {
-    "$schema": "http://json-schema.org/schema#",
-    "modelTags": "",
-    "$id": "https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterJunction/schema.json",
-    "title": "WasteWaterTreatment - Junction",
-    "description": "This entity contains an harmonised description of a generic Junction made for the Wastewater treatment domain. Junctions could be in place in certain sections of thetreatment plant. In wastewater treatment purposes, the junction is most useful if it is a locationof a sensor that measures a specific variable.",
-    "type": "object",
-    "allOf": [
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "modelTags": "",
+  "$id": "https://smart-data-models.github.io/data-models/specs/WasteWaterTreatment/WasteWaterJunction/schema.json",
+  "title": "WasteWaterTreatment - Junction",
+  "description": "This entity contains an harmonised description of a generic Junction made for the Wastewater treatment domain. Junctions could be in place in certain sections of thetreatment plant. In wastewater treatment purposes, the junction is most useful if it is a locationof a sensor that measures a specific variable.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "WasteWaterJunction"
+          ],
+          "description": "Property. It has to be WasteWaterJunction. NGSI-LD Entity Type"
         },
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        "tss": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/tss"
         },
-        {
-            "properties": {
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "WasteWaterJunction"
-                    ],
-                    "description": "Property. It has to be WasteWaterJunction. NGSI-LD Entity Type"
-                },
-                "tss": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/tss"
-                },
-                "nh4": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/nh4"
-                },
-                "no3": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/no3"
-                },
-                "do": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/do"
-                },
-                "redox": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/redox"
-                },
-                "tn": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/tn"
-                },
-                "toc": {
-                    "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Total Organic Carbon concentration measured in the influent or effluent."
-                },
-                "tic": {
-                    "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Total Inorganic Carbon concentration measured in the influent or effluent."
-                },
-                "po4": {
-                    "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Ortho-phosphate concentration measured in wastewater."
-                },
-                "bod": {
-                    "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Biological Oxygen Demand concentration measured in the influent or effluent."
-                },
-                "cod": {
-                    "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Chemical Oxygen Demand concentration measured in the influent or effluent."
-                },
-                "flowrate": {
-                    "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'm3/h'. Flowrate of wastewater."
-                },
-                "temperature": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/temperature"
-                },
-                "pH": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/pH"
-                },
-                "pressure": {
-                    "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: kPa. Pressure measured at given location. Most relevant for airflow as provided by blowers to wastewater tanks"
-                },
-                "emissionFlow": {
-                    "type": "number",
-                    "description": "Property. Model: https://schema.org/Number. Units: 'm3'. Gas emission flow volume measured at a junction prior to being emitted in an off-gas stack."
-                },
-                "startsAt": {
-                    "type": "string",
-                    "format": "uri",
-                    "description": "Relationship. A relationship indicating the entity the junction is connected to in the upstream point"
-                },
-                "endsAt": {
-                    "type": "string",
-                    "format": "uri",
-                    "description": "Relationship. A relationship indicating the entity the junction is connected to in the downstream point"
-                }
-            }
+        "nh4": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/nh4"
+        },
+        "no3": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/no3"
+        },
+        "do": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/do"
+        },
+        "redox": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/redox"
+        },
+        "tn": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/tn"
+        },
+        "toc": {
+          "type": "number",
+          "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Total Organic Carbon concentration measured in the influent or effluent"
+        },
+        "tic": {
+          "type": "number",
+          "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Total Inorganic Carbon concentration measured in the influent or effluent"
+        },
+        "po4": {
+          "type": "number",
+          "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Ortho-phosphate concentration measured in wastewater"
+        },
+        "bod": {
+          "type": "number",
+          "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Biological Oxygen Demand concentration measured in the influent or effluent"
+        },
+        "cod": {
+          "type": "number",
+          "description": "Property. Model: https://schema.org/Number. Units: 'mg/L'. Chemical Oxygen Demand concentration measured in the influent or effluent"
+        },
+        "flowrate": {
+          "type": "number",
+          "description": "Property. Model: https://schema.org/Number. Units: 'm3/h'. Flowrate of wastewater"
+        },
+        "temperature": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/temperature"
+        },
+        "pH": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteWater/main/WasteWater-schema.json#/definitions/pH"
+        },
+        "pressure": {
+          "type": "number",
+          "description": "Property. Model: https://schema.org/Number. Units: kPa. Pressure measured at given location. Most relevant for airflow as provided by blowers to wastewater tanks"
+        },
+        "emissionFlow": {
+          "type": "number",
+          "description": "Property. Model: https://schema.org/Number. Units: 'm3'. Gas emission flow volume measured at a junction prior to being emitted in an off-gas stack"
+        },
+        "startsAt": {
+          "type": "string",
+          "format": "uri",
+          "description": "Relationship. A relationship indicating the entity the junction is connected to in the upstream point"
+        },
+        "endsAt": {
+          "type": "string",
+          "format": "uri",
+          "description": "Relationship. A relationship indicating the entity the junction is connected to in the downstream point"
         }
-    ],
-    "required": [
-        "id",
-        "type",
-        "description"
-    ],
-    "$schemaVersion": "0.0.1"
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "description"
+  ],
+  "$schemaVersion": "0.0.1"
 }
