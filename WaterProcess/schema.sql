@@ -1,7 +1,7 @@
 /* (Beta) Export of data model WaterProcess of the subject dataModel.WasteWater for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE operationStatus_type AS ENUM ('normal', 'watch', 'warning');
+CREATE TYPE WaterProcess_operationStatus_type AS ENUM ('normal', 'watch', 'warning');
 CREATE TYPE WaterProcess_type AS ENUM ('WaterProcess');
-CREATE TYPE waterProcessType_type AS ENUM ('inflow', 'sedimentation', 'filtration', 'disinfection', 'waterTreatment', 'primarySedimentation', 'bioreactor', 'effluent');
+CREATE TYPE WaterProcess_waterProcessType_type AS ENUM ('inflow', 'sedimentation', 'filtration', 'disinfection', 'waterTreatment', 'primarySedimentation', 'bioreactor', 'effluent');
 CREATE TABLE WaterProcess (
   "address" JSON,
   "alkalinity" NUMERIC,
@@ -18,7 +18,7 @@ CREATE TABLE WaterProcess (
   "id" TEXT PRIMARY KEY,
   "location" JSON,
   "name" TEXT,
-  "operationStatus" operationStatus_type,
+  "operationStatus" WaterProcess_operationStatus_type,
   "owner" JSON,
   "pH" NUMERIC,
   "residualChlorine" NUMERIC,
@@ -30,5 +30,5 @@ CREATE TABLE WaterProcess (
   "tss" NUMERIC,
   "turbidity" NUMERIC,
   "type" WaterProcess_type,
-  "waterProcessType" waterProcessType_type
+  "waterProcessType" WaterProcess_waterProcessType_type
 );
